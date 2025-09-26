@@ -62,10 +62,4 @@
   CONFIG  EBTR3 = OFF           ; Table Read Protection bit (Block 3 (006000-007FFFh) is not protected from table reads executed in other blocks)
 
 ; CONFIG7H
-  CONFIG  EBTRB = OFF          ; Boot Block Table Read Protection bit (Boot block (000000-0007FFh) is protected from table reads executed in other blocks)
-
-// config statements should precede project file includes.
-#include <xc.inc>
-
-
-
+  CONFIG  EBTRB = OFF           ; Boot Block Table Read Protection bit (Boot block (000000-0007FFh) is not protected from table reads executed in other blocks) Block Table Read Protection bit (Boot block (000000-0007FFh) is not protected from table reads executed in other blocks)
