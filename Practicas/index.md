@@ -1,7 +1,7 @@
 # Practicas
 
 > [!TIP]
-> En caso de tener problemas de loops o encendidos intermitentes, el causante mas posible son los "config bits" o "palabra de configuracion" por lo que es recomendable deshabilitar todas las caracteristicas no nesesarias, incluido el MTCLR. [Failsafe-Config-Bits](Practicas/Practica 1 PORT/Practica1PORT.X/configbits.s)
+> En caso de tener problemas de loops o encendidos intermitentes, el causante mas posible son los "config bits" o "palabra de configuracion" por lo que es recomendable deshabilitar todas las caracteristicas no nesesarias, incluido el MTCLR. [Failsafe Config Bits]('Practicas/Practica 1 PORT/Practica1PORT.X/configbits.s')
 
 ## Indice de practicas
 
