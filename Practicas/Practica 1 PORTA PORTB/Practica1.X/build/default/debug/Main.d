@@ -1,1 +1,1 @@
-build/default/debug\Main.i: Main.asm
+build/default/debug/Main.i: Main.asm
