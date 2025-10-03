@@ -1,0 +1,98 @@
+#include"configbits.s"
+#include<xc.inc>
+		
+/*declaracion de variables */
+DECLARAR_VARIABLES:
+PSECT	udata_acs ;SECCION DE PROGRAMACION, las variables aqui se configuran con acceso al access bank, sin esto da error el programa.
+	datoA: DS 1 ;el numero es el numero de bytes que contiene
+	datoB: DS 1
+    
+ ; PSECT udata setea las variables en el bank que elija mplab
+ ; PSECT udata_bnk7 coloca la variable en el access bank 7
+    
+    
+VECTOR_RESET:
+PSECT CODE, RELOC=2, ABS
+ ; ORG 0X00 PUEDE IR O NO EN COMENTARIO
+ 
+REINICIO: 
+GOTO INICIO
+    
+CONFIGURACION_SFR: ;es  nuestro MAIN:
+PSECT CODE, RELOC=2
+ORG 0X20 ;para saltar completamente el vector de interrupcion
+ 
+
+INICIO:
+CLRF ADCON0, A
+CLRF ADCON1, A
+MOVLW 0X0F
+MOVWF ADCON1, A
+CLRF CMCON, A
+MOVLW 00000111B
+MOVWF CMCON, A
+CLRF TRISA, A
+MOVLW 1111111B   
+MOVWF TRISA, 0
+CLRF PORTA, A
+CLRF TRISB, A
+MOVLW 00000000B
+MOVWF TRISB, 0
+CLRF PORTB, A
+CLRF TRISC, A
+BSF TRISC, 1, A
+CLRF PORTC, A
+	
+MAIN: 
+BTFSC PORTA, 0, A
+GOTO INCORRECTO
+GOTO BIT1
+    
+BIT1:
+BTFSS PORTA, 1, A
+GOTO INCORRECTO
+GOTO BIT2
+    
+BIT2:
+BTFSC PORTA, 2, A
+GOTO INCORRECTO
+GOTO BIT3
+    
+BIT3:
+BTFSS PORTA, 3, A
+GOTO INCORRECTO
+GOTO BIT4
+    
+BIT4:
+BTFSC PORTA, 4, A
+GOTO INCORRECTO
+GOTO BIT5
+    
+BIT5:
+BTFSS PORTA, 5, A
+GOTO INCORRECTO
+GOTO BIT6
+    
+BIT6:
+BTFSC PORTA, 6, A
+GOTO INCORRECTO
+GOTO BIT7
+    
+BIT7:
+BTFSS PORTC, 1, A
+GOTO INCORRECTO
+GOTO CORRECTO
+    
+CORRECTO:
+MOVLW 10000001B
+MOVWF datoA, A
+MOVFF datoA, PORTB
+GOTO MAIN
+    
+INCORRECTO: 
+MOVLW 11111111B
+MOVWF datoB, A
+MOVFF datoB, PORTB
+GOTO MAIN
+	
+END
