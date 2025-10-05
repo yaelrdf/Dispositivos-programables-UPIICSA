@@ -4,11 +4,11 @@ Linker command line:
 
 -W-3 \
   --edf=/opt/microchip/mplabx/v6.25/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8/pic/dat/20250117225543_en.msgs \
-  -cs -h+dist/default/debug/Fecha.X.debug.sym \
-  --cmf=dist/default/debug/Fecha.X.debug.cmf -z -Q18F4550 \
-  -o/tmp/xcXBgbPGE/driver_tmp_3.o --fixupoverflow=error \
+  -cs -h+dist/default/production/Fecha.X.production.sym \
+  --cmf=dist/default/production/Fecha.X.production.cmf -z -Q18F4550 \
+  -o/tmp/xcXLpFLJd/driver_tmp_3.o --fixupoverflow=error \
   -ver=XC8 PIC(R) Assembler --fixupoverflow=lstwarn \
-  -Mdist/default/debug/Fecha.X.debug.map -E1 -ACODE=00h-07FFFh \
+  -Mdist/default/production/Fecha.X.production.map -E1 -ACODE=00h-07FFFh \
   -ACONST=00h-07FFFh -ASMALLCONST=0800h-08FFhx120 \
   -AMEDIUMCONST=0800h-07FFFh -ACOMRAM=00h-05Fh -AABS1=00h-07FFh \
   -ABIGRAM=00h-07FFh -ARAM=060h-0FFh,0100h-01FFhx7 -ABANK0=060h-0FFh \
@@ -16,7 +16,7 @@ Linker command line:
   -ABANK4=0400h-04FFh -ABANK5=0500h-05FFh -ABANK6=0600h-06FFh \
   -ABANK7=0700h-07FFh -ASFR=0F60h-0FFFh -ABIGSFR=0F60h-0FFFh \
   -AIDLOC=0200000h-0200007h -AEEDATA=0F00000h-0F000FFh \
-  build/default/debug/main.o 
+  build/default/production/main.o 
 
 Object code version is 3.11
 
@@ -25,7 +25,7 @@ Machine type is 18F4550
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-build/default/debug/main.o
+build/default/production/main.o
                 config                           300000   300000        E        0       4
                 resetVec                           7FCE     7FCE        4     3FE7       0
                 code                               7FD2     7FD2       2E     3FE9       0
