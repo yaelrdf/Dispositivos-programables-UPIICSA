@@ -6,7 +6,7 @@ Linker command line:
   --edf=C:\Program Files\Microchip\xc8\v3.10\pic\dat\20250813170317_en.msgs \
   -cs -h+dist/default/debug\Hola_IPN.X.debug.sym \
   --cmf=dist/default/debug\Hola_IPN.X.debug.cmf -z -Q18F4550 \
-  -oC:\Users\mcmin\AppData\Local\Temp\xcAskp8.0\driver_tmp_3.o \
+  -oC:\Users\mcmin\AppData\Local\Temp\xcAsjxw.0\driver_tmp_3.o \
   --fixupoverflow=error -ver=XC8 PIC(R) Assembler --fixupoverflow=lstwarn \
   -Mdist/default/debug/Hola_IPN.X.debug.map -E1 -ACODE=00h-07FFFh \
   -ACONST=00h-07FFFh -ASMALLCONST=0800h-08FFhx120 \
@@ -27,16 +27,16 @@ Machine type is 18F4550
                 Name                               Link     Load   Length Selector   Space Scale
 build/default/debug/main.o
                 config                           300000   300000        E        0       4
-                resetVec                           7FB0     7FB0        4     3FD8       0
-                code                               7FC6     7FC6       3A     3FE3       0
+                resetVec                           7F98     7F98        4     3FCC       0
+                code                               7FBE     7FBE       42     3FDF       0
 build/default/debug/DisplayCode.o
-                code                               7FB4     7FB4       12     3FDA       0
+                code                               7F9C     7F9C       22     3FCE       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   CODE           
-                resetVec                           7FB0     7FB0        4         0
-                code                               7FC6     7FC6       3A         0
-                code                               7FB4     7FB4       12         0
+                resetVec                           7F98     7F98        4         0
+                code                               7FBE     7FBE       42         0
+                code                               7F9C     7F9C       22         0
 
         CLASS   CONST          
 
@@ -83,9 +83,9 @@ TOTAL           Name                               Link     Load   Length     Sp
 
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class
 
-                resetVec                       007FB0  000004  007FB4      3FD8       0  CODE    
-                code%80                        007FB4  000012  007FC6      3FDA       0  CODE    
-                code                           007FC6  00003A  008000      3FE3       0  CODE    
+                resetVec                       007F98  000004  007F9C      3FCC       0  CODE    
+                code%80                        007F9C  000022  007FBE      3FCE       0  CODE    
+                code                           007FBE  000042  008000      3FDF       0  CODE    
 
 
 UNUSED ADDRESS RANGES
@@ -101,15 +101,15 @@ UNUSED ADDRESS RANGES
         BANK7            000700-0007FF              100
         BIGRAM           000000-0007FF              800
         BIGSFR           000F60-000FFF               A0
-        CODE             000000-007FAF             7FB0
+        CODE             000000-007F97             7F98
         COMRAM           000000-00005F               60
-        CONST            000000-007FAF             7FB0
+        CONST            000000-007F97             7F98
         EEDATA           F00000-F000FF              100
         IDLOC            200000-200007                8
-        MEDIUMCONST      000800-007FAF             77B0
+        MEDIUMCONST      000800-007F97             7798
         RAM              000060-0007FF              100
         SFR              000F60-000FFF               A0
-        SMALLCONST       000800-007FAF              100
+        SMALLCONST       000800-007F97              100
 
                                   Symbol Table
 

@@ -1,9 +1,6 @@
 #include "configbits.s"
 #include <xc.inc>
 
-;variable valor maximo
-MAX EQU 0x08
-
 ; Reset vector
 PSECT resetVec,class=CODE,reloc=2
 resetVec:
@@ -27,24 +24,12 @@ CONF:
     GOTO LOOP
 
 LOOP:
-    MOVWF    PORTA,0 ;Leer Puerto A y 
-    ;ANDLW   0x0F                ; Mask lower 4 bits (keep only values 0-15)
-    ; Use W as offset to fetch 7-segment pattern from lookup table
-    ;MOVWF   WREG                ; Ensure value is in W for comparison
-    SUBLW   MAX           ; Subtract W from MAX_VALUE (result in W)
-                                ; If W <= MAX_VALUE, result is positive or zero (no borrow, C=1)
-                                ; If W > MAX_VALUE, result is negative (borrow occurs, C=0)
-    BC VALIDO         ; Branch if Carry set (input <= MAX_VALUE)
-    ; If we reach here, input is out of range - skip display update
-    GOTO    LOOP                ; Return to loop without updating display
-
-VALIDO:
-    MOVWF PORTA, 0  ; Read PORTA value again into W
-    ;ANDLW   0x0F                ; Mask lower 4 bits
-    ; Use W as offset to fetch 7-segment pattern from lookup table
+    MOVF    PORTA, W, a ;Leer Puerto A y 
+    ANDLW   0x0F                ; Mask lower 4 bita
     CALL    GET_COMBINACION         ; Call lookup routine (returns pattern in W)
-    MOVWF   PORTB, 0        ; Write 7-segment pattern to PORTB (update display)
+    MOVWF   PORTB, a        ; Write 7-segment pattern to PORTB (update display)
     GOTO LOOP
 
 #include"DisplayCode.s"
+    
 END     resetVec

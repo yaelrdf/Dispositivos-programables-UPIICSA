@@ -5511,9 +5511,6 @@ ENDM
 # 6 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include/xc.inc" 2 3
 # 3 "main.s" 2
 
-;variable valor maximo
-MAX EQU 0x08
-
 ; Reset vector
 PSECT resetVec,class=CODE,reloc=2
 resetVec:
@@ -5537,23 +5534,10 @@ CONF:
     GOTO LOOP
 
 LOOP:
-    MOVWF PORTA,0 ;Leer Puerto A y
-    ;ANDLW 0x0F ; Mask lower 4 bits (keep only values 0-15)
-    ; Use W as offset to fetch 7-segment pattern from lookup table
-    ;MOVWF WREG ; Ensure value is in W for comparison
-    SUBLW MAX ; Subtract W from MAX_VALUE (result in W)
-                                ; If W <= MAX_VALUE, result is positive or zero (no borrow, C=1)
-                                ; If W > MAX_VALUE, result is negative (borrow occurs, C=0)
-    BC VALIDO ; Branch if Carry set (input <= MAX_VALUE)
-    ; If we reach here, input is out of range - skip display update
-    GOTO LOOP ; Return to loop without updating display
-
-VALIDO:
-    MOVWF PORTA, 0 ; Read PORTA value again into W
-    ;ANDLW 0x0F ; Mask lower 4 bits
-    ; Use W as offset to fetch 7-segment pattern from lookup table
+    MOVF PORTA, W, a ;Leer Puerto A y
+    ANDLW 0x0F ; Mask lower 4 bita
     CALL GET_COMBINACION ; Call lookup routine (returns pattern in W)
-    MOVWF PORTB, 0 ; Write 7-segment pattern to PORTB (update display)
+    MOVWF PORTB, a ; Write 7-segment pattern to PORTB (update display)
     GOTO LOOP
 
 # 1 "./DisplayCode.s" 1
@@ -5564,14 +5548,29 @@ PSECT code
 ;GLOBAL GET_COMBINACION ; Make function accessible from main file
 
 GET_COMBINACION:
-    ADDWF PCL ; Add W to Program Counter Low (jump to corresponding entry)
-    RETLW 0x2E ; H
-    RETLW 0xFD ; O
-    RETLW 0x1C ; L
-    RETLW 0xEC ; A
-    RETLW 0x02 ; -
-    RETLW 0x0C ; I
-    RETLW 0xCE ; P
-    RETLW 0x2A ; N
-# 50 "main.s" 2
+    ; Simple and reliable approach - use computed GOTO with fixed table
+    MULLW 2 ; Multiply by 2 (each GOTO is 2 bytes)
+    MOVF PRODL, W, a ; Get low byte of offset
+    ; Load the high byte of table base address
+    MOVLW HIGH(TABLE)
+    MOVWF PCLATH, a
+    MOVLW LOW(TABLE) ; Load low byte of table base address
+    ADDWF PRODL, W, a ; Add offset to table base low byte
+    BTFSC STATUS, 0, a ; Check for carry
+    INCF PCLATH, F, a ; Adjust high byte if carry
+    MOVWF PCL, a ; Jump to the table entry
+
+
+TABLE:
+    ; Lookup table - 7-segment patterns for H, O, L, A, -, I, P, N
+    RETLW 0x2E ; H - 0010 1110
+    RETLW 0xFD ; O - 1111 1101
+    RETLW 0x1C ; L - 0001 1100
+    RETLW 0xEC ; A - 1110 1100
+    RETLW 0x02 ; - - 0000 0010
+    RETLW 0x0C ; I - 0000 1100
+    RETLW 0xCE ; P - 1100 1110
+    RETLW 0x2A ; N - 0010 1010
+# 34 "main.s" 2
+
 END resetVec
