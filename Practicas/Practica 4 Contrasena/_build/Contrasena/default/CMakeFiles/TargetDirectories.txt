@@ -1,0 +1,4 @@
+C:/Users/mcmin/Documents/GitHub/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Contrasena/_build/Contrasena/default/CMakeFiles/Contrasena_default_default_PIC_AS_assemble.dir
+C:/Users/mcmin/Documents/GitHub/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Contrasena/_build/Contrasena/default/CMakeFiles/Contrasena_default_image_w7wlzkrg.dir
+C:/Users/mcmin/Documents/GitHub/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Contrasena/_build/Contrasena/default/CMakeFiles/edit_cache.dir
+C:/Users/mcmin/Documents/GitHub/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Contrasena/_build/Contrasena/default/CMakeFiles/rebuild_cache.dir

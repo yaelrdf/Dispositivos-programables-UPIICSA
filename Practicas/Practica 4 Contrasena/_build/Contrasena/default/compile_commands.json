@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/mcmin/Documents/GitHub/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Contrasena/_build/Contrasena/default",
+  "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v3.10\\pic-as\\bin\\pic-as.exe -D__DEBUG=1 -I\"C:\\Users\\mcmin\\Documents\\GitHub\\Dispositivos-programables-UPIICSA\\Practicas\\Practica 4 Contrasena\\Contrasena.X\" -mcpu=18F4550 -c -misa=std -fmax-errors=20 -mwarn=0 -xassembler-with-cpp -mdfp=C:/Users/mcmin/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8 -o CMakeFiles\\Contrasena_default_default_PIC_AS_assemble.dir\\9ec73190f89e15f6002df077f2dff911\\Contrasena.X\\main.s.o -c \"C:\\Users\\mcmin\\Documents\\GitHub\\Dispositivos-programables-UPIICSA\\Practicas\\Practica 4 Contrasena\\Contrasena.X\\main.s\"",
+  "file": "C:/Users/mcmin/Documents/GitHub/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Contrasena/Contrasena.X/main.s",
+  "output": "C:/Users/mcmin/Documents/GitHub/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Contrasena/_build/Contrasena/default/CMakeFiles/Contrasena_default_default_PIC_AS_assemble.dir/9ec73190f89e15f6002df077f2dff911/Contrasena.X/main.s.o"
+}
+]

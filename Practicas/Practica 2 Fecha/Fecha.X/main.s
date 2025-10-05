@@ -25,20 +25,19 @@ CONF:
 
 LOOP:
     ; Load W with the comparison value
-    MOVLW 0xA        ; Target value (0x3F = 63 decimal
-    CPFSEQ PORTA, 0         ; Compare PORTA with W
-    GOTO NO_IGUAL           ; If NOT equal, go to NO_IGUAL (FIXED!)
-    GOTO IGUAL              ; If equal, go to IGUAL (FIXED!)
+    MOVLW 0xA ;Tarjet value
+    CPFSEQ PORTA, 0   ;Comparar con PORTA
+    GOTO NO_IGUAL     
+    GOTO IGUAL  ;Si igual llamar a igual
     
 IGUAL:
-    ; PORTA = target value, set PORTB to 0x09
-    MOVLW 0x09              ; Value to display
-    MOVWF LATB, 0           ; Write to PORTB
+    MOVLW 0x0C ;Mes
+    MOVWF LATB, 0
     GOTO LOOP
     
 NO_IGUAL:
-    MOVLW 0x01              ; Value to display if not equal
-    MOVWF LATB, 0           ; Write to PORTB (FIXED!)
+    MOVLW 0x0A ;Ano
+    MOVWF LATB, 0
     GOTO LOOP
 
 END resetVec

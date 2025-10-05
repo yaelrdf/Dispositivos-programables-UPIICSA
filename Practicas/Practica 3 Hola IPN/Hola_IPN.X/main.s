@@ -1,71 +1,50 @@
 #include "configbits.s"
-#include "DisplayCode.s"
 #include <xc.inc>
-    
-; Define variables in data memory    
-VARIABLES:
-    PSECT udata_acs
-datoA:  DS 1    ; Reserve 1 byte for datoA
-datoB:  DS 1    ; Reserve 1 byte for datoB (though not used in your code)
 
-    PSECT code
+;variable valor maximo
+MAX EQU 0x08
 
-ORG Ox0000
-GOTO CONFIG
- 
-CONFIG:
-    //Ports Config
-    CLRF PORTA
-    CLRF TRISA
-    CLRF PORTB
-    CLRF TRISB
-    //I/o Config
-    MOVLW OXFF
-    MOVWF TRISA
-    MOVLW OX00
-    MOVWF TRISB
+; Reset vector
+PSECT resetVec,class=CODE,reloc=2
+resetVec:
+    GOTO CONF
+
+PSECT code
+CONF:
+    ; Configure PORTA as input
+    CLRF LATA, 0            ; Clear LATA output latch
+    SETF TRISA, 0           ; Set TRISA = 0xFF (all bits as inputs)
     
-    RETURN
+    ; Configure PORTB as output
+    CLRF LATB, 0            ; Clear LATB output latch
+    CLRF TRISB, 0           ; Set TRISB = 0x00 (all bits as outputs)
     
- MAIN;
-    //Leer de A
-    MOVF PORTA, W
-    //Comparaciones
-    BTFSC 0X01
-    GOTO Display_Y
-    
-    SUBLW 0X02
-    GOTO Display_A
-    
-    SUBLW 0X03
-    GOTO DISPLAY_E
-    
-    SUBLW 0X04
-    GOTO DISPLAY_L
-    
-    SUBLW 0X04
-    GOTO DISPLAY_ESPACIO
-    
-    SUBLW 0X05
-    GOTO DISPLAY_S
-    
-    SUBLW 0X06
-    GOTO DISPLAY_A
-    
-    SUBLW 0X07
-    GOTO DISPLAY_L
-    
-    SUBLW 0X07
-    GOTO DISPLAY_D
-    
-    SUBLW 0X08
-    GOTO DISPLAY_A
-    
-    SUBLW 0X9
-    GOTO DISPLAY_N
-    
-    SUBLW 0X0A
-    GOTO DISPLAY_A
-    
-    
-    
+    ; Disable analog functions on PORTA and PORTB
+    CLRF ADCON1, 0          ; Configure all pins as digital
+    MOVLW 0x0F              ; Load W with 0x0F
+    MOVWF ADCON1, 0         ; Set ADCON1 to make all pins digital (FIXED!)
+    ;Main Prog
+    GOTO LOOP
+
+LOOP:
+    MOVWF    PORTA,0 ;Leer Puerto A y 
+    ;ANDLW   0x0F                ; Mask lower 4 bits (keep only values 0-15)
+    ; Use W as offset to fetch 7-segment pattern from lookup table
+    ;MOVWF   WREG                ; Ensure value is in W for comparison
+    SUBLW   MAX           ; Subtract W from MAX_VALUE (result in W)
+                                ; If W <= MAX_VALUE, result is positive or zero (no borrow, C=1)
+                                ; If W > MAX_VALUE, result is negative (borrow occurs, C=0)
+    BC VALIDO         ; Branch if Carry set (input <= MAX_VALUE)
+    ; If we reach here, input is out of range - skip display update
+    GOTO    LOOP                ; Return to loop without updating display
+
+VALIDO:
+    MOVWF PORTA, 0  ; Read PORTA value again into W
+    ;ANDLW   0x0F                ; Mask lower 4 bits
+    ; Use W as offset to fetch 7-segment pattern from lookup table
+    CALL    GET_COMBINACION         ; Call lookup routine (returns pattern in W)
+    MOVWF   PORTB, 0        ; Write 7-segment pattern to PORTB (update display)
+    GOTO LOOP
+
+#include"DisplayCode.s"
+END     resetVec

@@ -1,41 +1,16 @@
-TABLA:
-    retlw   b'01110111'         ; A 
-    retlw   b'01111100'         ; b 
-    retlw   b'00111001'         ; C
-    retlw   b'01011110'         ; d 
-    retlw   b'01111001'         ; E 
-    retlw   b'01110001'         ; F 
- 
+#include <xc.inc>
     
-Display_A:
-    movlw   b'01110111'     
-    movwf   PORTB
-    goto    MAIN
+PSECT code
 
-Display_b:
-    movlw   b'01111100'     
-    movwf   PORTB
-    goto    MAIN
+;GLOBAL GET_COMBINACION      ; Make function accessible from main file
 
-Display_C:
-    movlw   b'00111001'     
-    movwf   PORTB
-    goto    MAIN
-
-Display_d:
-    movlw   b'01011110'     
-    movwf   PORTB
-    goto    MAIN
-
-Display_E:
-    movlw   b'01111001'     
-    movwf   PORTB
-    goto    MAIN
-
-Display_F:
-    movlw   b'01110001'     
-    movwf   PORTB
-    goto    MAIN
-
-
-
+GET_COMBINACION:
+    ADDWF PCL  ; Add W to Program Counter Low (jump to corresponding entry)
+    RETLW   0x2E ; H
+    RETLW   0xFD ; O
+    RETLW   0x1C ; L
+    RETLW   0xEC ; A
+    RETLW   0x02 ; -
+    RETLW   0x0C ; I
+    RETLW   0xCE ; P
+    RETLW   0x2A ; N

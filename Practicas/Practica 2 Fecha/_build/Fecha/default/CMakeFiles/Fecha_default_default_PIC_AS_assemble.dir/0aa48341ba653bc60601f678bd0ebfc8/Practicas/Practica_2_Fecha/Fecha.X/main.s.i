@@ -5529,28 +5529,25 @@ CONF:
     ; Disable analog functions on PORTA and PORTB
     CLRF ADCON1, 0 ; Configure all pins as digital
     MOVLW 0x0F ; Load W with 0x0F
-    MOVLW ADCON1 ; Set ADCON1 to make all pins digital
+    MOVWF ADCON1, 0 ; Set ADCON1 to make all pins digital (FIXED!)
     ;Main Prog
     GOTO LOOP
 
 LOOP:
-    ; Load W with the comparison value 0x0A
-    MOVLW 0x0A ; Target value
-
-    ; Compare PORTA with W, skip next instruction if equal
-    CPFSEQ PORTA, 0 ; Compare PORTA with W (0x0A)
-    GOTO IGUAL ;Si PORTA es igual
-    GOTO NO_IGUAL ;Si PORTA no es igual
+    ; Load W with the comparison value
+    MOVLW 0xA ;Tarjet value
+    CPFSEQ PORTA, 0 ;Comparar con PORTA
+    GOTO NO_IGUAL
+    GOTO IGUAL ;Si igual llamar a igual
 
 IGUAL:
-    ; PORTA = 0x0A, set PORTB to 0xFF
-    MOVLW 0x09 ;Valor a mostrar
+    MOVLW 0x0C ;Mes
     MOVWF LATB, 0
     GOTO LOOP
 
 NO_IGUAL:
-    MOVLW 0x01 ;Valor a mostrar si no igual
-    MOVLW LATB
+    MOVLW 0x0A ;Ano
+    MOVWF LATB, 0
     GOTO LOOP
 
 END resetVec

@@ -1,0 +1,4 @@
+C:/Users/mcmin/Documents/GitHub/Dispositivos-programables-UPIICSA/Practicas/Practica 3 Hola IPN/_build/Hola_IPN/default.production/CMakeFiles/Hola_IPN_default_default_PIC_AS_assemble.dir
+C:/Users/mcmin/Documents/GitHub/Dispositivos-programables-UPIICSA/Practicas/Practica 3 Hola IPN/_build/Hola_IPN/default.production/CMakeFiles/Hola_IPN_default_image_T73NJ7QA.dir
+C:/Users/mcmin/Documents/GitHub/Dispositivos-programables-UPIICSA/Practicas/Practica 3 Hola IPN/_build/Hola_IPN/default.production/CMakeFiles/edit_cache.dir
+C:/Users/mcmin/Documents/GitHub/Dispositivos-programables-UPIICSA/Practicas/Practica 3 Hola IPN/_build/Hola_IPN/default.production/CMakeFiles/rebuild_cache.dir

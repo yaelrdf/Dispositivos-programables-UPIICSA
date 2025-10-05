@@ -1,0 +1,42 @@
+{
+    "importedFrom": "Hola_IPN.X",
+    "version": "1.7",
+    "configurations": [
+        {
+            "name": "default",
+            "id": "conf1",
+            "device": "PIC18F4550",
+            "imageType": "application",
+            "imagePath": "./out/Hola_IPN/default.elf",
+            "toolProperties": "default-tool",
+            "packs": [
+                {
+                    "name": "PIC18Fxxxx_DFP",
+                    "vendor": "Microchip",
+                    "version": "1.7.171"
+                }
+            ],
+            "fileSet": "Project files",
+            "toolchain": "default-PIC-AS"
+        }
+    ],
+    "propertyGroups": [
+        {
+            "name": "default-PIC-AS",
+            "type": "toolchain",
+            "provider": "microchip.toolchains:pic-as@3.10",
+            "properties": {}
+        }
+    ],
+    "fileSets": [
+        {
+            "name": "Project files",
+            "files": [
+                "Hola_IPN.X/Makefile",
+                "Hola_IPN.X/main.s",
+                "Hola_IPN.X/DisplayCode.s"
+            ],
+            "encoding": "ISO-8859-1"
+        }
+    ]
+}

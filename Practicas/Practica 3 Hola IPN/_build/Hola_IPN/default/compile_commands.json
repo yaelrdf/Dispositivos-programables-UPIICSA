@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/Users/mcmin/Documents/GitHub/Dispositivos-programables-UPIICSA/Practicas/Practica 3 Hola IPN/_build/Hola_IPN/default",
+  "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v3.10\\pic-as\\bin\\pic-as.exe -D__DEBUG=1 -I\"C:\\Users\\mcmin\\Documents\\GitHub\\Dispositivos-programables-UPIICSA\\Practicas\\Practica 3 Hola IPN\\Hola_IPN.X\" -mcpu=18F4550 -c -misa=std -fmax-errors=20 -mwarn=0 -xassembler-with-cpp -mdfp=C:/Users/mcmin/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8 -o CMakeFiles\\Hola_IPN_default_default_PIC_AS_assemble.dir\\34739efb3d63f3a055dc7f5e38df2f54\\Hola_IPN.X\\DisplayCode.s.o -c \"C:\\Users\\mcmin\\Documents\\GitHub\\Dispositivos-programables-UPIICSA\\Practicas\\Practica 3 Hola IPN\\Hola_IPN.X\\DisplayCode.s\"",
+  "file": "C:/Users/mcmin/Documents/GitHub/Dispositivos-programables-UPIICSA/Practicas/Practica 3 Hola IPN/Hola_IPN.X/DisplayCode.s",
+  "output": "C:/Users/mcmin/Documents/GitHub/Dispositivos-programables-UPIICSA/Practicas/Practica 3 Hola IPN/_build/Hola_IPN/default/CMakeFiles/Hola_IPN_default_default_PIC_AS_assemble.dir/34739efb3d63f3a055dc7f5e38df2f54/Hola_IPN.X/DisplayCode.s.o"
+},
+{
+  "directory": "C:/Users/mcmin/Documents/GitHub/Dispositivos-programables-UPIICSA/Practicas/Practica 3 Hola IPN/_build/Hola_IPN/default",
+  "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v3.10\\pic-as\\bin\\pic-as.exe -D__DEBUG=1 -I\"C:\\Users\\mcmin\\Documents\\GitHub\\Dispositivos-programables-UPIICSA\\Practicas\\Practica 3 Hola IPN\\Hola_IPN.X\" -mcpu=18F4550 -c -misa=std -fmax-errors=20 -mwarn=0 -xassembler-with-cpp -mdfp=C:/Users/mcmin/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8 -o CMakeFiles\\Hola_IPN_default_default_PIC_AS_assemble.dir\\b678c3dfcf96157ac519f2b80da0b8be\\Practica_3_Hola_IPN\\Hola_IPN.X\\main.s.o -c \"C:\\Users\\mcmin\\Documents\\GitHub\\Dispositivos-programables-UPIICSA\\Practicas\\Practica 3 Hola IPN\\Hola_IPN.X\\main.s\"",
+  "file": "C:/Users/mcmin/Documents/GitHub/Dispositivos-programables-UPIICSA/Practicas/Practica 3 Hola IPN/Hola_IPN.X/main.s",
+  "output": "C:/Users/mcmin/Documents/GitHub/Dispositivos-programables-UPIICSA/Practicas/Practica 3 Hola IPN/_build/Hola_IPN/default/CMakeFiles/Hola_IPN_default_default_PIC_AS_assemble.dir/b678c3dfcf96157ac519f2b80da0b8be/Practica_3_Hola_IPN/Hola_IPN.X/main.s.o"
+}
+]
