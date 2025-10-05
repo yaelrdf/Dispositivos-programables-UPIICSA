@@ -1,32 +1,46 @@
 #include "configbits.s"
-#include "DisplayCode.s"
 #include <xc.inc>
+
+; Reset vector
+PSECT resetVec,class=CODE,reloc=2
+resetVec:
+    GOTO CONF
+
+PSECT code
+CONF:
+    ; Configure PORTA as input
+    CLRF LATA, 0            ; Clear LATA output latch
+    SETF TRISA, 0           ; Set TRISA = 0xFF (all bits as inputs)
     
-; Define variables in data memory    
-VARIABLES:
-    PSECT udata_acs
-datoA:  DS 1    ; Reserve 1 byte for datoA
-datoB:  DS 1    ; Reserve 1 byte for datoB (though not used in your code)
-
-    PSECT code
-
-ORG Ox0000
-GOTO CONFIG
- 
-CONFIG:
-    //Ports Config
-    CLRF PORTA
-    CLRF TRISA
-    CLRF PORTB
-    CLRF TRISB
-    //I/o Config
-    MOVLW OXFF
-    MOVWF TRISA
-    MOVLW OX00
-    MOVWF TRISB
-    GOTO MAIN
-
-MAIN:
+    ; Configure PORTB as output
+    CLRF LATB, 0            ; Clear LATB output latch
+    CLRF TRISB, 0           ; Set TRISB = 0x00 (all bits as outputs)
     
+    ; Disable analog functions on PORTA and PORTB
+    CLRF ADCON1, 0          ; Configure all pins as digital
+    MOVLW 0x0F              ; Load W with 0x0F
+    MOVLW ADCON1         ; Set ADCON1 to make all pins digital
+    ;Main Prog
+    GOTO LOOP
 
+LOOP:
+    ; Load W with the comparison value 0x0A
+    MOVLW 0x0A              ; Target value
+    
+    ; Compare PORTA with W, skip next instruction if equal
+    CPFSEQ PORTA, 0         ; Compare PORTA with W (0x0A)
+    GOTO IGUAL ;Si PORTA es igual
+    GOTO NO_IGUAL ;Si PORTA no es igual
+    
+IGUAL:
+    ; PORTA = 0x0A, set PORTB to 0xFF
+    MOVLW 0x09 ;Valor a mostrar
+    MOVWF LATB, 0
+    GOTO LOOP
+    
+NO_IGUAL:
+    MOVLW 0x01 ;Valor a mostrar si no igual
+    MOVLW LATB
+    GOTO LOOP
 
+END resetVec

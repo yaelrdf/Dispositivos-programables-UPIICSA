@@ -1,0 +1,7 @@
+# ninja log v7
+16	473	7813440632976077	build.ninja	9f57ee9e2109baa6
+16	473	7813440632976077	C:/Users/mcmin/Documents/GitHub/Dispositivos-programables-UPIICSA/Practicas/Practica 2 Fecha/_build/Fecha/default/cmake_install.cmake	9f57ee9e2109baa6
+3	281	7813442863064500	CMakeFiles/Fecha_default_default_PIC_AS_assemble.dir/0aa48341ba653bc60601f678bd0ebfc8/Practicas/Practica_2_Fecha/Fecha.X/main.s.o	5d255dd997396c70
+282	556	7813442865855297	C:/Users/mcmin/Documents/GitHub/Dispositivos-programables-UPIICSA/Practicas/Practica 2 Fecha/out/Fecha/default.elf	460d7a327565926e
+21	295	7813443379621466	CMakeFiles/Fecha_default_default_PIC_AS_assemble.dir/0aa48341ba653bc60601f678bd0ebfc8/Practicas/Practica_2_Fecha/Fecha.X/main.s.o	5d255dd997396c70
+297	556	7813443382380343	C:/Users/mcmin/Documents/GitHub/Dispositivos-programables-UPIICSA/Practicas/Practica 2 Fecha/out/Fecha/default.elf	460d7a327565926e
