@@ -6004,14 +6004,11 @@ void main()
 
         unsigned char input = PORTA;
 
-        if(input==0b1010000){
-            LATB=0x0C;
-        }
-        else if(input==0b1100000){
-            LATB=0x05;
+        if(input==0b1101010){
+            LATB=0x06;
         }
         else{
-            LATB=0x0A;
+            LATB=0x27;
         }
 
 

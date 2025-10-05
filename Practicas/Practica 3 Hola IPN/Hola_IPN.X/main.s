@@ -31,7 +31,7 @@ CONFIG:
     //Leer de A
     MOVF PORTA, W
     //Comparaciones
-    SUBLW 0X01
+    BTFSC 0X01
     GOTO Display_Y
     
     SUBLW 0X02

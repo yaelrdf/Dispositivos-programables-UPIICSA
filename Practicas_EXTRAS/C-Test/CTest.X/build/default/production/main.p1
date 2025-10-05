@@ -686,47 +686,34 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _input `uc ~T0 @X0 1 a ]
 [e = _input _PORTA ]
 "32
-[; ;main.c: 32:         if(input==0b1010000){
-[e $ ! == -> _input `i -> 80 `i 403  ]
+[; ;main.c: 32:         if(input==0b1101010){
+[e $ ! == -> _input `i -> 106 `i 403  ]
 {
 "33
-[; ;main.c: 33:             LATB=0x0C;
-[e = _LATB -> -> 12 `i `uc ]
+[; ;main.c: 33:             LATB=0x06;
+[e = _LATB -> -> 6 `i `uc ]
 "34
 [; ;main.c: 34:         }
 }
 [e $U 404  ]
 "35
-[; ;main.c: 35:         else if(input==0b1100000){
+[; ;main.c: 35:         else{
 [e :U 403 ]
-[e $ ! == -> _input `i -> 96 `i 405  ]
 {
 "36
-[; ;main.c: 36:             LATB=0x05;
-[e = _LATB -> -> 5 `i `uc ]
+[; ;main.c: 36:             LATB=0x27;
+[e = _LATB -> -> 39 `i `uc ]
 "37
 [; ;main.c: 37:         }
 }
-[e $U 406  ]
-"38
-[; ;main.c: 38:         else{
-[e :U 405 ]
-{
-"39
-[; ;main.c: 39:             LATB=0x0A;
-[e = _LATB -> -> 10 `i `uc ]
-"40
-[; ;main.c: 40:         }
-}
-[e :U 406 ]
 [e :U 404 ]
-"46
-[; ;main.c: 46:     }
+"43
+[; ;main.c: 43:     }
 }
 [e :U 400 ]
 [e $U 401  ]
 [e :U 402 ]
-"47
-[; ;main.c: 47: }
+"44
+[; ;main.c: 44: }
 [e :UE 399 ]
 }

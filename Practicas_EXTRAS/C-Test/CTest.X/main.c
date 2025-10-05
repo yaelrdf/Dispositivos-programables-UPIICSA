@@ -29,14 +29,11 @@ void main()
         //Input
         unsigned char input = PORTA;
         
-        if(input==0b1010000){
-            LATB=0x0C;
-        }
-        else if(input==0b1100000){
-            LATB=0x05;
+        if(input==0b1101010){
+            LATB=0x07;
         }
         else{
-            LATB=0x0A;
+            LATB=0x27;
         }
         //LATB = 0x0F;            /* Turn ON LED for 500 ms */
         //MSdelay (500);
