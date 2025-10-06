@@ -1,7 +1,7 @@
 # 1 "main.s"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
-# 286 "<built-in>" 3
+# 296 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
 # 1 "main.s" 2
@@ -72,21 +72,21 @@
 ; CONFIG7H
   CONFIG EBTRB = OFF ; Boot Block Table Read Protection bit (Boot block (000000-0007FFh) is not protected from table reads executed in other blocks)
 # 2 "main.s" 2
-# 1 "/opt/microchip/xc8/v3.00/pic/include/xc.inc" 1 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include/xc.inc" 1 3
 
 
 
 
-# 1 "/opt/microchip/mplabx/v6.25/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8/pic/include/pic18.inc" 1 3
+# 1 "C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\\pic\\include/pic18.inc" 1 3
 
 
 
 
 
-# 1 "/opt/microchip/mplabx/v6.25/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8/pic/include/pic18_chip_select.inc" 1 3
-# 339 "/opt/microchip/mplabx/v6.25/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8/pic/include/pic18_chip_select.inc" 3
-# 1 "/opt/microchip/mplabx/v6.25/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8/pic/include/proc/pic18f4550.inc" 1 3
-# 47 "/opt/microchip/mplabx/v6.25/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8/pic/include/proc/pic18f4550.inc" 3
+# 1 "C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\\pic\\include/pic18_chip_select.inc" 1 3
+# 339 "C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\\pic\\include/pic18_chip_select.inc" 3
+# 1 "C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\\pic\\include\\proc/pic18f4550.inc" 1 3
+# 47 "C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\\pic\\include\\proc/pic18f4550.inc" 3
 SPPDATA equ 0F62h
 
 SPPDATA_DATA_POSN equ 0000h
@@ -5428,7 +5428,7 @@ TOSH equ 0FFEh
 
 
 TOSU equ 0FFFh
-# 6181 "/opt/microchip/mplabx/v6.25/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8/pic/include/proc/pic18f4550.inc" 3
+# 6181 "C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\\pic\\include\\proc/pic18f4550.inc" 3
 psect udata_acs,class=COMRAM,space=1,noexec,lowdata
 
 psect udata_bank0,class=BANK0,space=1,noexec,lowdata
@@ -5443,8 +5443,8 @@ psect udata,class=RAM,space=1,noexec
 psect code,class=CODE,space=0,reloc=2
 psect data,class=CONST,space=0,reloc=2,noexec
 psect edata,class=EEDATA,space=3,delta=1,noexec
-# 340 "/opt/microchip/mplabx/v6.25/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8/pic/include/pic18_chip_select.inc" 2 3
-# 7 "/opt/microchip/mplabx/v6.25/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8/pic/include/pic18.inc" 2 3
+# 340 "C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\\pic\\include/pic18_chip_select.inc" 2 3
+# 7 "C:/Program Files/Microchip/MPLABX/v6.25/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8\\pic\\include/pic18.inc" 2 3
 
 
 
@@ -5508,45 +5508,46 @@ addwfc FSR1H,c
 stk_offset SET 0
 auto_size SET 0
 ENDM
-# 6 "/opt/microchip/xc8/v3.00/pic/include/xc.inc" 2 3
+# 6 "C:\\Program Files\\Microchip\\xc8\\v3.10\\pic\\include/xc.inc" 2 3
 # 3 "main.s" 2
 
-    PSECT resetVec,class=CODE,reloc=2
-    PSECT code
+; Reset vector
+PSECT resetVec,class=CODE,reloc=2
+resetVec:
     GOTO CONF
 
+PSECT code
 CONF:
+    ; Configure PORTA as input
+    CLRF LATA, 0 ; Clear LATA output latch
+    SETF TRISA, 0 ; Set TRISA = 0xFF (all bits as inputs)
 
-    CLRF ADCON0, a ; limpiar el adcon 0, para que quede el registro como digital
-    MOVLW 0x0F ; mueve el 15 a W
-    MOVWF ADCON1, a ; de w al ADCON1, MUEVO EL 15
-    MOVLW 00000111B ; MUEVO EL VALOR DE 7 A W ; CONFIGURA LOS COMPARADORES PARA ENTRAR
-    MOVWF CMCON, A ; /PARA LOS PINES ((PORTA) and 0FFh), 0, a-((PORTA) and 0FFh), 3, a
-    MOVLW 11111111B ; MUEVE FF A W
-    MOVWF TRISA, a ; EL 0 ES EL ACCESS BANK , habilito al puerto a como entrada
-    CLRF PORTA, a ; 0 EN EL ACCES BANK , limpio
-    MOVLW 00000000B ; habilito al puerto b como salida
-    MOVWF TRISB, 0
-    CLRF PORTB, a ; limpio
+    ; Configure PORTB as output
+    CLRF LATB, 0 ; Clear LATB output latch
+    CLRF TRISB, 0 ; Set TRISB = 0x00 (all bits as outputs)
 
-    GOTO MAIN
+    ; Disable analog functions on PORTA and PORTB
+    CLRF ADCON1, 0 ; Configure all pins as digital
+    MOVLW 0x0F ; Load W with 0x0F
+    MOVWF ADCON1, 0 ; Set ADCON1 to make all pins digital (FIXED!)
+    ;Main Prog
+    GOTO LOOP
 
+LOOP:
+    ; Load W with the comparison value
+    MOVLW 0x1E ;Tarjet value
+    CPFSEQ PORTA, 0 ;Comparar con PORTA
+    GOTO NO_IGUAL
+    GOTO IGUAL ;Si igual llamar a igual
 
- MAIN:
-    ; Read PORTA
-    MOVF PORTA,w,c ; W = PORTA
-    ; Compare with 0x05
-    SUBLW 0x05 ; W = 0x05 - W
-    BNZ NOT_EQU ; Branch if not zero (not equal)
-    ; If equal: output 0x0F to PORTB
-    MOVLW 0x0F
-    MOVF PORTB,c
-    GOTO MAIN
+IGUAL:
+    MOVLW 0xFF ;Si contrasena
+    MOVWF LATB, 0
+    GOTO LOOP
 
-NOT_EQU:
-    ; If not equal: output 0x0A to PORTB
-    MOVLW 0x0A
-    MOVWF PORTB,c
-    GOTO MAIN
+NO_IGUAL:
+    MOVLW 0xC ;No contrasena
+    MOVWF LATB, 0
+    GOTO LOOP
 
-    END
+END resetVec

@@ -25,7 +25,7 @@ CONF:
 
 LOOP:
     ; Load W with the comparison value
-    MOVLW 0x15 ;Tarjet value
+    MOVLW 0x1E ;Tarjet value
     CPFSEQ PORTA, 0   ;Comparar con PORTA
     GOTO NO_IGUAL     
     GOTO IGUAL  ;Si igual llamar a igual
@@ -36,7 +36,7 @@ IGUAL:
     GOTO LOOP
     
 NO_IGUAL:
-    MOVLW 0x55 ;No contrasena
+    MOVLW 0xC ;No contrasena
     MOVWF LATB, 0
     GOTO LOOP
 

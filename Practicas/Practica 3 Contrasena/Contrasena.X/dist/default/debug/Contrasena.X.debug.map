@@ -1,13 +1,13 @@
-Microchip MPLAB XC8 PIC(R) Assembler V3.0
+Microchip MPLAB XC8 PIC(R) Assembler V3.10
 
 Linker command line:
 
 -W-3 \
-  --edf=/opt/microchip/mplabx/v6.25/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8/pic/dat/20250117225543_en.msgs \
-  -cs -h+dist/default/debug/Contrasena.X.debug.sym \
-  --cmf=dist/default/debug/Contrasena.X.debug.cmf -z -Q18F4550 \
-  -o/tmp/xcXCfFAmg/driver_tmp_3.o --fixupoverflow=error \
-  -ver=XC8 PIC(R) Assembler --fixupoverflow=lstwarn \
+  --edf=C:\Program Files\Microchip\xc8\v3.10\pic\dat\20250813170317_en.msgs \
+  -cs -h+dist/default/debug\Contrasena.X.debug.sym \
+  --cmf=dist/default/debug\Contrasena.X.debug.cmf -z -Q18F4550 \
+  -oC:\Users\mcmin\AppData\Local\Temp\xcAs50g.0\driver_tmp_3.o \
+  --fixupoverflow=error -ver=XC8 PIC(R) Assembler --fixupoverflow=lstwarn \
   -Mdist/default/debug/Contrasena.X.debug.map -E1 -ACODE=00h-07FFFh \
   -ACONST=00h-07FFFh -ASMALLCONST=0800h-08FFhx120 \
   -AMEDIUMCONST=0800h-07FFFh -ACOMRAM=00h-05Fh -AABS1=00h-07FFh \
@@ -27,11 +27,13 @@ Machine type is 18F4550
                 Name                               Link     Load   Length Selector   Space Scale
 build/default/debug/main.o
                 config                           300000   300000        E        0       4
-                code                               7FCC     7FCC       34     3FE6       0
+                resetVec                           7FCE     7FCE        4     3FE7       0
+                code                               7FD2     7FD2       2E     3FE9       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   CODE           
-                code                               7FCC     7FCC       34         0
+                resetVec                           7FCE     7FCE        4         0
+                code                               7FD2     7FD2       2E         0
 
         CLASS   CONST          
 
@@ -78,7 +80,8 @@ TOTAL           Name                               Link     Load   Length     Sp
 
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class
 
-                code                           007FCC  000034  008000      3FE6       0  CODE    
+                resetVec                       007FCE  000004  007FD2      3FE7       0  CODE    
+                code                           007FD2  00002E  008000      3FE9       0  CODE    
 
 
 UNUSED ADDRESS RANGES
@@ -94,15 +97,15 @@ UNUSED ADDRESS RANGES
         BANK7            000700-0007FF              100
         BIGRAM           000000-0007FF              800
         BIGSFR           000F60-000FFF               A0
-        CODE             000000-007FCB             7FCC
+        CODE             000000-007FCD             7FCE
         COMRAM           000000-00005F               60
-        CONST            000000-007FCB             7FCC
+        CONST            000000-007FCD             7FCE
         EEDATA           F00000-F000FF              100
         IDLOC            200000-200007                8
-        MEDIUMCONST      000800-007FCB             77CC
+        MEDIUMCONST      000800-007FCD             77CE
         RAM              000060-0007FF              100
         SFR              000F60-000FFF               A0
-        SMALLCONST       000800-007FCB              100
+        SMALLCONST       000800-007FCD              100
 
                                   Symbol Table
 

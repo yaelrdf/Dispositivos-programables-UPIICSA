@@ -1,0 +1,4 @@
+C:/Users/mcmin/Documents/GitHub/Dispositivos-programables-UPIICSA/Practicas_EXTRAS/Hola-IPN C/_build/Hola_IPN/default/CMakeFiles/Hola_IPN_default_default_XC8_compile.dir
+C:/Users/mcmin/Documents/GitHub/Dispositivos-programables-UPIICSA/Practicas_EXTRAS/Hola-IPN C/_build/Hola_IPN/default/CMakeFiles/Hola_IPN_default_image_cgQNNq1X.dir
+C:/Users/mcmin/Documents/GitHub/Dispositivos-programables-UPIICSA/Practicas_EXTRAS/Hola-IPN C/_build/Hola_IPN/default/CMakeFiles/edit_cache.dir
+C:/Users/mcmin/Documents/GitHub/Dispositivos-programables-UPIICSA/Practicas_EXTRAS/Hola-IPN C/_build/Hola_IPN/default/CMakeFiles/rebuild_cache.dir

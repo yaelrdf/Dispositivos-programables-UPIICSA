@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/mcmin/Documents/GitHub/Dispositivos-programables-UPIICSA/Practicas_EXTRAS/Hola-IPN C/_build/Hola_IPN/default",
+  "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v3.10\\bin\\xc8-cc.exe -DXPRJ_default=default -D__18F4550__ -D__DEBUG=1 -I\"C:\\Users\\mcmin\\Documents\\GitHub\\Dispositivos-programables-UPIICSA\\Practicas_EXTRAS\\Hola-IPN C\\cmake\\Hola_IPN\\default\\..\\..\\..\\Hola_IPN.X\" -c -mcpu=18F4550 -mdfp=C:/Users/mcmin/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8 -fno-short-double -fno-short-float -memi=wordwrite -O0 -fasmfile -maddrqual=ignore -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-download -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto -o CMakeFiles\\Hola_IPN_default_default_XC8_compile.dir\\9b695909e7245f7050caf20118e7d2e3\\Hola-IPN_C\\Hola_IPN.X\\main.c.p1 -c \"C:\\Users\\mcmin\\Documents\\GitHub\\Dispositivos-programables-UPIICSA\\Practicas_EXTRAS\\Hola-IPN C\\Hola_IPN.X\\main.c\"",
+  "file": "C:/Users/mcmin/Documents/GitHub/Dispositivos-programables-UPIICSA/Practicas_EXTRAS/Hola-IPN C/Hola_IPN.X/main.c",
+  "output": "C:/Users/mcmin/Documents/GitHub/Dispositivos-programables-UPIICSA/Practicas_EXTRAS/Hola-IPN C/_build/Hola_IPN/default/CMakeFiles/Hola_IPN_default_default_XC8_compile.dir/9b695909e7245f7050caf20118e7d2e3/Hola-IPN_C/Hola_IPN.X/main.c.p1"
+}
+]
