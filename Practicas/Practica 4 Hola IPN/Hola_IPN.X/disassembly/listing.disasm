@@ -1,0 +1,98 @@
+Disassembly Listing for Hola_IPN
+Generated From:
+/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 3 Hola IPN/Hola_IPN.X/dist/default/debug/Hola_IPN.X.debug.elf
+Oct 5, 2025 2:22:49 AM
+
+---  /home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 3 Hola IPN/Hola_IPN.X/main.s
+                                                  1:     #include "configbits.s"
+                                                  2:     #include <xc.inc>
+                                                  3:     
+                                                  4:     PROCESSOR 18F4550
+                                                  5:     
+                                                  6:     ; Variable valor maximo
+                                                  7:     MAX EQU 0x08
+                                                  8:     
+                                                  9:     ; Reset vector
+                                                  10:    PSECT resetVec,class=CODE,reloc=2
+                                                  11:    resetVec:
+7F9E  EFDA     GOTO 0x7FB4                        12:        GOTO CONF
+                                                  13:    
+                                                  14:    PSECT code
+                                                  15:    CONF:
+                                                  16:        ; Configure PORTA as input
+7FB4  6A89     CLRF LATA, ACCESS                  17:        CLRF LATA, 0            ; Clear LATA output latch
+7FB6  6892     SETF TRISA, ACCESS                 18:        SETF TRISA, 0           ; Set TRISA = 0xFF (all bits as inputs)
+                                                  19:        
+                                                  20:        ; Configure PORTB as output
+7FB8  6A8A     CLRF LATB, ACCESS                  21:        CLRF LATB, 0            ; Clear LATB output latch
+7FBA  6A93     CLRF TRISB, ACCESS                 22:        CLRF TRISB, 0           ; Set TRISB = 0x00 (all bits as outputs)
+                                                  23:        
+                                                  24:        ; Disable analog functions on PORTA and PORTB
+7FBC  0E0F     MOVLW 0xF                          25:        MOVLW 0x0F              ; Load W with 0x0F
+7FBE  6EC1     MOVWF ADCON1, ACCESS               26:        MOVWF ADCON1, 0         ; Set ADCON1 to make all pins digital
+                                                  27:        
+                                                  28:        ; Main Prog
+7FC0  EFE2     GOTO 0x7FC4                        29:        GOTO LOOP
+                                                  30:    
+                                                  31:    LOOP:
+7FC4  5080     MOVF PORTA, W, ACCESS              32:        MOVF PORTA, W       ; Read PORTA value into W (FIXED: was MOVWF - wrong direction!)
+7FC6  0B0F     ANDLW 0xF                          33:        ANDLW 0x0F              ; Mask lower 4 bits (MUST be enabled!)
+                                                  34:        
+                                                  35:        ; Compare input with MAX
+7FC8  0808     SUBLW 0x8                          36:        SUBLW MAX               ; Subtract W from MAX (result in W)
+                                                  37:                                ; If W <= MAX, result is positive or zero (C=1)
+                                                  38:                                ; If W > MAX, result is negative (C=0)
+                                                  39:        
+7FCA  E202     BC 0x7FD0                          40:        BC VALIDO               ; Branch if Carry set (input <= MAX)
+                                                  41:        
+                                                  42:        ; If we reach here, input is out of range - skip display update
+7FCC  EFE2     GOTO 0x7FC4                        43:        GOTO LOOP               ; Return to loop without updating display
+                                                  44:    
+                                                  45:    VALIDO:
+7FD0  5080     MOVF PORTA, W, ACCESS              46:        MOVF PORTA, W        ; Read PORTA value again into W (FIXED: was MOVWF!)
+7FD2  0B0F     ANDLW 0xF                          47:        ANDLW 0x0F              ; Mask lower 4 bits (MUST be enabled!)
+                                                  48:        
+                                                  49:        ; Use W as offset to fetch 7-segment pattern from lookup table
+7FD4  ECEF     CALL 0x7FDE, 0                     50:        CALL GET_COMBINACION    ; Call lookup routine (returns pattern in W)
+                                                  51:        
+7FD8  6E81     MOVWF PORTB, ACCESS                52:        MOVWF PORTB, 0          ; Write 7-segment pattern to PORTB (update display)
+                                                  53:        
+7FDA  EFE2     GOTO 0x7FC4                        54:        GOTO LOOP               ; Repeat forever
+                                                  55:    
+                                                  56:    ; Lookup table for 7-segment display patterns (common cathode)
+                                                  57:    GET_COMBINACION:
+7FDE  26F9     ADDWF PCL, F, ACCESS               58:        ADDWF PCL, F         ; Add W to Program Counter Low (FIXED: added F and bank)
+7FE0  0C3F     RETLW 0x3F                         59:        RETLW 0x3F              ; 0: displays "0" (segments A,B,C,D,E,F on)
+7FE2  0C06     RETLW 0x6                          60:        RETLW 0x06              ; 1: displays "1" (segments B,C on)
+7FE4  0C5B     RETLW 0x5B                         61:        RETLW 0x5B              ; 2: displays "2" (segments A,B,D,E,G on)
+7FE6  0C4F     RETLW 0x4F                         62:        RETLW 0x4F              ; 3: displays "3" (segments A,B,C,D,G on)
+7FE8  0C66     RETLW 0x66                         63:        RETLW 0x66              ; 4: displays "4" (segments B,C,F,G on)
+7FEA  0C6D     RETLW 0x6D                         64:        RETLW 0x6D              ; 5: displays "5" (segments A,C,D,F,G on)
+7FEC  0C7D     RETLW 0x7D                         65:        RETLW 0x7D              ; 6: displays "6" (segments A,C,D,E,F,G on)
+7FEE  0C07     RETLW 0x7                          66:        RETLW 0x07              ; 7: displays "7" (segments A,B,C on)
+7FF0  0C7F     RETLW 0x7F                         67:        RETLW 0x7F              ; 8: displays "8" (all segments on)
+7FF2  0C6F     RETLW 0x6F                         68:        RETLW 0x6F              ; 9: displays "9" (segments A,B,C,D,F,G on)
+7FF4  0C00     RETLW 0x0                          69:        RETLW 0x00              ; 10: blank
+7FF6  0C00     RETLW 0x0                          70:        RETLW 0x00              ; 11: blank
+7FF8  0C00     RETLW 0x0                          71:        RETLW 0x00              ; 12: blank
+7FFA  0C00     RETLW 0x0                          72:        RETLW 0x00              ; 13: blank
+7FFC  0C00     RETLW 0x0                          73:        RETLW 0x00              ; 14: blank
+                                                  75:    
+                                                  76:    END resetVec
+---  /home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 3 Hola IPN/Hola_IPN.X/DisplayCode.s
+                                                  1:     #include <xc.inc>
+                                                  2:         
+                                                  3:     PSECT code
+                                                  4:     
+                                                  5:     ;GLOBAL GET_COMBINACION      ; Make function accessible from main file
+                                                  6:     
+                                                  7:     GET_COMBINACION:
+7FA2  26F9     ADDWF PCL, F, ACCESS               8:         ADDWF PCL  ; Add W to Program Counter Low (jump to corresponding entry)
+7FA4  0C2E     RETLW 0x2E                         9:         RETLW   0x2E ; H
+7FA6  0CFD     RETLW 0xFD                         10:        RETLW   0xFD ; O
+7FA8  0C1C     RETLW 0x1C                         11:        RETLW   0x1C ; L
+7FAA  0CEC     RETLW 0xEC                         12:        RETLW   0xEC ; A
+7FAC  0C02     RETLW 0x2                          13:        RETLW   0x02 ; -
+7FAE  0C0C     RETLW 0xC                          14:        RETLW   0x0C ; I
+7FB0  0CCE     RETLW 0xCE                         15:        RETLW   0xCE ; P
+7FB2  0C2A     RETLW 0x2A                         16:        RETLW   0x2A ; N
