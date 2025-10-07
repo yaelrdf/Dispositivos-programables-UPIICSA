@@ -24,39 +24,39 @@ void main(void) {
        
        switch (input) {
         case 0x00:  // H
-            LATB = 0x76;    // 7-segment pattern for 'H'
+            LATB = 0b00101110;    // 7-segment pattern for 'H'
             break;
             
         case 0x01:  // o
-            LATB = 0x5C;    // 7-segment pattern for 'o'
+            LATB = 0b11111101;    // 7-segment pattern for 'o'
             break;
             
         case 0x02:  // l
-            LATB = 0x0E;    // 7-segment pattern for 'l'
+            LATB = 0b00011100;    // 7-segment pattern for 'l'
             break;
             
         case 0x03:  // a
-            LATB = 0x5E;    // 7-segment pattern for 'a'
+            LATB = 0b11101110;    // 7-segment pattern for 'a'
             break;
             
         case 0x04:  // -
-            LATB = 0x40;    // 7-segment pattern for '-'
+            LATB = 0b00000010;    // 7-segment pattern for '-'
             break;
             
         case 0x05:  // I
-            LATB = 0x06;    // 7-segment pattern for 'I'
+            LATB = 0b00001100;    // 7-segment pattern for 'I'
             break;
             
         case 0x06:  // P
-            LATB = 0x73;    // 7-segment pattern for 'P'
+            LATB = 0b11001110;    // 7-segment pattern for 'P'
             break;
             
         case 0x07:  // N
-            LATB= 0x54;    // 7-segment pattern for 'N'
+            LATB= 0b00101010;    // 7-segment pattern for 'N'
             break;
             
         default:
-            LATB = 0x00;    // Turn off all segments
+            LATB = 0b00000001;    // Turn off all segments
         break;
     }
     }
