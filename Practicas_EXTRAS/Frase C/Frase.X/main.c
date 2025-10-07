@@ -21,74 +21,103 @@ void main(void) {
     while(1){
        //INPUT
        unsigned char input = PORTA;
-       
+       //For
+       //Electroencefalografista
        switch (input) {
-        case 0x00:  // N
-            LATB = 0x54;    // 7-segment pattern for 'N'
+        case 0x00:  // E
+            LATB = 0b10011110;
             break;
 
-        case 0x01:  // o
-            LATB = 0x5C;    // 7-segment pattern for 'o'
+        case 0x01:  // L
+            LATB = 0b00011100;
             break;
 
-        case 0x02:  // -
-            LATB = 0x40;    // 7-segment pattern for '-'
+        case 0x02:  // E
+            LATB = 0b10011110;
             break;
 
-        case 0x03:  // g
-            LATB = 0x6F;    // 7-segment pattern for 'g'
+        case 0x03:  // C
+            LATB = 0b10011100;
             break;
 
-        case 0x04:  // u
-            LATB = 0x1C;    // 7-segment pattern for 'u'
+        case 0x04:  // T
+            LATB = 0b10001101;
             break;
 
-        case 0x05:  // s
-            LATB = 0x6D;    // 7-segment pattern for 's'
+        case 0x05:  // R
+            LATB = 0b00001010;
             break;
 
-        case 0x06:  // t
-            LATB = 0x78;    // 7-segment pattern for 't'
+        case 0x06:  // O
+            LATB = 0b11111101;
             break;
 
-        case 0x07:  // a
-            LATB = 0x5E;    // 7-segment pattern for 'a'
+        case 0x07:  // E
+            LATB = 0b10011110;
             break;
 
-        case 0x08:  // -
-            LATB = 0x40;    // 7-segment pattern for '-'
+        case 0x08:  // N
+            LATB = 0b00101010;
             break;
 
-        case 0x09:  // p
-            LATB = 0x73;    // 7-segment pattern for 'p'
+        case 0x09:  // C
+            LATB = 0b10011100;
             break;
 
-        case 0x0A:  // r
-            LATB = 0x50;    // 7-segment pattern for 'r'
+        case 0x0A:  // E
+            LATB = 0b10011110;
             break;
 
-        case 0x0B:  // o
-            LATB = 0x5C;    // 7-segment pattern for 'o'
+        case 0x0B:  // F
+            LATB = 0b10001110;
             break;
 
-        case 0x0C:  // t
-            LATB = 0x78;    // 7-segment pattern for 't'
+        case 0x0C:  // A
+            LATB = 0b11101110;
             break;
 
-        case 0x0D:  // e
-            LATB = 0x79;    // 7-segment pattern for 'e'
+        case 0x0D:  // L
+            LATB = 0b00011100;
             break;
 
-        case 0x0E:  // u
-            LATB = 0x1C;    // 7-segment pattern for 'u'
+        case 0x0E:  // O
+            LATB = 0b11111101;
             break;
 
-        case 0x0F:  // s
-            LATB = 0x6D;    // 7-segment pattern for 's'
+        case 0x0F:  // G
+            LATB = 0b10111110;
+            break;
+
+        case 0x1F: //R
+            LATB = 0b00001010;
+            break;
+
+        case 0x2F: //A
+            LATB = 0b11101110;    
+            break;
+        
+        case 0x3F: //F
+            LATB = 10001110;
+            break;
+        
+        case 0x4F: //I
+            LATB = 0b00001100;
+            break;
+        
+        case 0x5F: //S
+            LATB = 0b10110110;
+            break;
+        
+        case 0x6F: //T
+            LATB = 0b10001101;
+            break;
+        
+        case 0x7F: //A
+            LATB = 0b11101110;
             break;
 
         default:
-            LATB = 0x00;    // Turn off all segments
+            LATB = 0b00000001;
             break;
         }
     }
