@@ -19,6 +19,7 @@
                    projectFiles="true">
       <itemPath>main.s</itemPath>
       <itemPath>DisplayCode.s</itemPath>
+      <itemPath>configbits.s</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
@@ -32,7 +33,7 @@
         <platformTool>Simulator</platformTool>
         <languageToolchain>pic-as</languageToolchain>
         <languageToolchainVersion>3.0</languageToolchainVersion>
-        <platform>3</platform>
+        <platform>2</platform>
       </toolsSet>
       <packs>
         <pack name="PIC18Fxxxx_DFP" vendor="Microchip" version="1.7.171"/>

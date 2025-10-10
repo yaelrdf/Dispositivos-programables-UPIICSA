@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=main.s DisplayCode.s
+SOURCEFILES_QUOTED_IF_SPACED=main.s DisplayCode.s configbits.s
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/main.o ${OBJECTDIR}/DisplayCode.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/main.o.d ${OBJECTDIR}/DisplayCode.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/main.o ${OBJECTDIR}/DisplayCode.o ${OBJECTDIR}/configbits.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/main.o.d ${OBJECTDIR}/DisplayCode.o.d ${OBJECTDIR}/configbits.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/main.o ${OBJECTDIR}/DisplayCode.o
+OBJECTFILES=${OBJECTDIR}/main.o ${OBJECTDIR}/DisplayCode.o ${OBJECTDIR}/configbits.o
 
 # Source Files
-SOURCEFILES=main.s DisplayCode.s
+SOURCEFILES=main.s DisplayCode.s configbits.s
 
 
 
@@ -105,6 +105,14 @@ ${OBJECTDIR}/DisplayCode.o: DisplayCode.s  nbproject/Makefile-${CND_CONF}.mk
 	DisplayCode.s \
 	 -D__DEBUG=1   -mdfp="${DFP_DIR}/xc8"  -misa=std -msummary=+mem,-psect,-class,-hex,-file,-sha1,-sha256,-xml,-xmlfull -fmax-errors=20 -mwarn=0 -xassembler-with-cpp
 	
+${OBJECTDIR}/configbits.o: configbits.s  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/configbits.o 
+	${MP_AS} -mcpu=PIC18F4550 -c \
+	-o ${OBJECTDIR}/configbits.o \
+	configbits.s \
+	 -D__DEBUG=1   -mdfp="${DFP_DIR}/xc8"  -misa=std -msummary=+mem,-psect,-class,-hex,-file,-sha1,-sha256,-xml,-xmlfull -fmax-errors=20 -mwarn=0 -xassembler-with-cpp
+	
 else
 ${OBJECTDIR}/main.o: main.s  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}" 
@@ -120,6 +128,14 @@ ${OBJECTDIR}/DisplayCode.o: DisplayCode.s  nbproject/Makefile-${CND_CONF}.mk
 	${MP_AS} -mcpu=PIC18F4550 -c \
 	-o ${OBJECTDIR}/DisplayCode.o \
 	DisplayCode.s \
+	  -mdfp="${DFP_DIR}/xc8"  -misa=std -msummary=+mem,-psect,-class,-hex,-file,-sha1,-sha256,-xml,-xmlfull -fmax-errors=20 -mwarn=0 -xassembler-with-cpp
+	
+${OBJECTDIR}/configbits.o: configbits.s  nbproject/Makefile-${CND_CONF}.mk 
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/configbits.o 
+	${MP_AS} -mcpu=PIC18F4550 -c \
+	-o ${OBJECTDIR}/configbits.o \
+	configbits.s \
 	  -mdfp="${DFP_DIR}/xc8"  -misa=std -msummary=+mem,-psect,-class,-hex,-file,-sha1,-sha256,-xml,-xmlfull -fmax-errors=20 -mwarn=0 -xassembler-with-cpp
 	
 endif

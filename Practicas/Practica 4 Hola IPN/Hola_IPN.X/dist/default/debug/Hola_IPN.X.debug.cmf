@@ -12,10 +12,12 @@
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
 $build/default/debug/DisplayCode.o
-code CODE 0 7F9C 7F9C 22 1 2
+code CODE 0 7F9A 7F9A 22 1 2
 $build/default/debug/main.o
-resetVec CODE 0 7F98 7F98 4 1 2
-code CODE 0 7FBE 7FBE 42 1 2
+resetVec CODE 0 7F96 7F96 4 1 2
+code CODE 0 7FBC 7FBC 44 1 2
+config CONFIG 4 300000 300000 E 1 1
+$build/default/debug/configbits.o
 config CONFIG 4 300000 300000 E 1 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -33,15 +35,15 @@ BANK4 400-4FF 1
 BANK5 500-5FF 1
 BANK6 600-6FF 1
 BANK7 700-7FF 1
-CONST 0-7F97 1
+CONST 0-7F95 1
 IDLOC 200000-200007 1
-SMALLCONST 800-7F97 1
-CODE 0-7F97 1
+SMALLCONST 800-7F95 1
+CODE 0-7F95 1
 BIGRAM 0-7FF 1
 BIGSFR F60-FFF 1
 COMRAM 0-5F 1
 EEDATA F00000-F000FF 1
-MEDIUMCONST 800-7F97 1
+MEDIUMCONST 800-7F95 1
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -56,38 +58,39 @@ MEDIUMCONST 800-7F97 1
 # All other numeric values are in decimal.
 %LINETAB
 $build/default/debug/DisplayCode.o
-7F9C code CODE >9:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
-7F9E code CODE >10:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
-7FA0 code CODE >12:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
-7FA2 code CODE >13:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
-7FA4 code CODE >14:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
-7FA6 code CODE >15:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
-7FA8 code CODE >16:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
-7FAA code CODE >17:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
-7FAC code CODE >18:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
-7FAE code CODE >23:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
-7FB0 code CODE >24:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
-7FB2 code CODE >25:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
-7FB4 code CODE >26:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
-7FB6 code CODE >27:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
-7FB8 code CODE >28:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
-7FBA code CODE >29:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
-7FBC code CODE >30:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
+7F9A code CODE >9:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
+7F9C code CODE >10:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
+7F9E code CODE >12:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
+7FA0 code CODE >13:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
+7FA2 code CODE >14:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
+7FA4 code CODE >15:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
+7FA6 code CODE >16:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
+7FA8 code CODE >17:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
+7FAA code CODE >18:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
+7FAC code CODE >23:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
+7FAE code CODE >24:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
+7FB0 code CODE >25:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
+7FB2 code CODE >26:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
+7FB4 code CODE >27:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
+7FB6 code CODE >28:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
+7FB8 code CODE >29:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
+7FBA code CODE >30:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
 $build/default/debug/main.o
-7F98 resetVec CODE >7:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/main.s
-7FBE code CODE >12:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/main.s
-7FC0 code CODE >13:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/main.s
-7FC2 code CODE >16:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/main.s
-7FC4 code CODE >17:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/main.s
-7FC6 code CODE >20:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/main.s
-7FC8 code CODE >21:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/main.s
-7FCA code CODE >22:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/main.s
-7FCC code CODE >24:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/main.s
-7FD0 code CODE >27:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/main.s
-7FD2 code CODE >28:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/main.s
-7FD4 code CODE >29:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/main.s
-7FD8 code CODE >30:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/main.s
-7FDA code CODE >31:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/main.s
+7F96 resetVec CODE >7:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/main.s
+7FBC code CODE >12:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/main.s
+7FBE code CODE >13:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/main.s
+7FC0 code CODE >14:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/main.s
+7FC2 code CODE >17:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/main.s
+7FC4 code CODE >18:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/main.s
+7FC6 code CODE >19:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/main.s
+7FC8 code CODE >22:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/main.s
+7FCA code CODE >23:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/main.s
+7FCC code CODE >26:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/main.s
+7FD0 code CODE >29:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/main.s
+7FD2 code CODE >30:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/main.s
+7FD4 code CODE >31:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/main.s
+7FD8 code CODE >32:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/main.s
+7FDA code CODE >33:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/main.s
 7FDE code CODE >9:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
 7FE0 code CODE >10:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
 7FE2 code CODE >12:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 4 Hola IPN/Hola_IPN.X/DisplayCode.s
@@ -186,9 +189,9 @@ __Ludata_acs 0 0 ABS 0 udata_acs -
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-resetVec 0 7F98 7F98 4 1
-code 0 7FBE 7FBE 42 1
-code%80 0 7F9C 7F9C 22 1
+resetVec 0 7F96 7F96 4 1
+code 0 7FBC 7FBC 44 1
+code%80 0 7F9A 7F9A 22 1
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
 # is indicated by %NOTES. The first line indicates the name and decimal

@@ -5520,16 +5520,18 @@ PSECT code
 CONF:
     ; Configure PORTA as input
     CLRF LATA, 0 ; Clear LATA output latch
-    SETF TRISA, 0 ; Set TRISA = 0xFF (all bits as inputs)
+    MOVLW 0xFF ; Load W with 0xFF (all inputs)
+    MOVWF TRISA, 0 ; Set TRISA = 0xFF (all bits as inputs)
 
     ; Configure PORTB as output
     CLRF LATB, 0 ; Clear LATB output latch
-    CLRF TRISB, 0 ; Set TRISB = 0x00 (all bits as outputs)
+    MOVLW 0x00 ; Load W with 0x00 (all outputs)
+    MOVWF TRISB, 0 ; Set TRISB = 0x00 (all bits as outputs)
 
     ; Disable analog functions on PORTA and PORTB
-    CLRF ADCON1, 0 ; Configure all pins as digital
-    MOVLW 0x0F ; Load W with 0x0F
-    MOVWF ADCON1, 0 ; Set ADCON1 to make all pins digital (FIXED!)
+    MOVLW 0xF ; Configure all pins as digital (ADCON1 = 0x0F)
+    MOVWF ADCON1, 0 ; Write to ADCON1
+
     ;Main Prog
     GOTO LOOP
 
@@ -5563,14 +5565,14 @@ GET_COMBINACION:
 
 TABLE:
     ; Lookup table - 7-segment patterns for H, O, L, A, -, I, P, N
-    RETLW 0x2E ; H - 0010 1110
-    RETLW 0xFD ; O - 1111 1101
-    RETLW 0x1C ; L - 0001 1100
-    RETLW 0xEC ; A - 1110 1100
-    RETLW 0x02 ; - - 0000 0010
-    RETLW 0x0C ; I - 0000 1100
-    RETLW 0xCE ; P - 1100 1110
-    RETLW 0x2A ; N - 0010 1010
-# 34 "main.s" 2
+    RETLW 0b00101110 ; H
+    RETLW 0b11111101 ; O
+    RETLW 0b00011100 ; L
+    RETLW 0b11101110 ; A
+    RETLW 0b00000010 ; -
+    RETLW 0b00001100 ; I
+    RETLW 0b11001110 ; P
+    RETLW 0b00101010 ; N
+# 36 "main.s" 2
 
 END resetVec

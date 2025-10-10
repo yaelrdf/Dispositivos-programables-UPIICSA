@@ -87,14 +87,16 @@ void main(void) {
                 LATB = 0b00001010;    // 7-segment pattern for 'F'
                 break;
 
-            case 0x1F:  //e
+            case 0x10:  //e
                 LATB= 0b10011110;
+                break;
             
-            case 0x2F:  //s
+            case 0x11:  //s
                 LATB = 0b10110110;
+                break;
             
             default:
-                LATB = 0x00;    // Turn off all segments
+                LATB = 0x01;    // Turn off all segments
                 break;
         }
     }

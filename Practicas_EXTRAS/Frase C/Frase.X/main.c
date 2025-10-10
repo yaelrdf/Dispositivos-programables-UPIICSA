@@ -88,31 +88,31 @@ void main(void) {
             LATB = 0b10111110;
             break;
 
-        case 0x1F: //R
+        case 0x10: //R
             LATB = 0b00001010;
             break;
 
-        case 0x2F: //A
+        case 0x11: //A
             LATB = 0b11101110;    
             break;
         
-        case 0x3F: //F
-            LATB = 10001110;
+        case 0x12: //F
+            LATB = 0b10001110;
             break;
         
-        case 0x4F: //I
+        case 0x13: //I
             LATB = 0b00001100;
             break;
         
-        case 0x5F: //S
+        case 0x14: //S
             LATB = 0b10110110;
             break;
         
-        case 0x6F: //T
+        case 0x15: //T
             LATB = 0b10001101;
             break;
         
-        case 0x7F: //A
+        case 0x16: //A
             LATB = 0b11101110;
             break;
 

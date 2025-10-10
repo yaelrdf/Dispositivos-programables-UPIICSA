@@ -6,7 +6,7 @@ Linker command line:
   --edf=/opt/microchip/mplabx/v6.25/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8/pic/dat/20250117225543_en.msgs \
   -cs -h+dist/default/debug/Hola_IPN.X.debug.sym \
   --cmf=dist/default/debug/Hola_IPN.X.debug.cmf -z -Q18F4550 \
-  -o/tmp/xcXpOHpJn/driver_tmp_3.o --fixupoverflow=error \
+  -o/tmp/xcXAcDLbL/driver_tmp_3.o --fixupoverflow=error \
   -ver=XC8 PIC(R) Assembler --fixupoverflow=lstwarn \
   -Mdist/default/debug/Hola_IPN.X.debug.map -E1 -ACODE=00h-07FFFh \
   -ACONST=00h-07FFFh -ASMALLCONST=0800h-08FFhx120 \
@@ -16,7 +16,8 @@ Linker command line:
   -ABANK4=0400h-04FFh -ABANK5=0500h-05FFh -ABANK6=0600h-06FFh \
   -ABANK7=0700h-07FFh -ASFR=0F60h-0FFFh -ABIGSFR=0F60h-0FFFh \
   -AIDLOC=0200000h-0200007h -AEEDATA=0F00000h-0F000FFh \
-  build/default/debug/main.o build/default/debug/DisplayCode.o 
+  build/default/debug/main.o build/default/debug/DisplayCode.o \
+  build/default/debug/configbits.o 
 
 Object code version is 3.11
 
@@ -27,16 +28,18 @@ Machine type is 18F4550
                 Name                               Link     Load   Length Selector   Space Scale
 build/default/debug/main.o
                 config                           300000   300000        E        0       4
-                resetVec                           7F98     7F98        4     3FCC       0
-                code                               7FBE     7FBE       42     3FDF       0
+                resetVec                           7F96     7F96        4     3FCB       0
+                code                               7FBC     7FBC       44     3FDE       0
 build/default/debug/DisplayCode.o
-                code                               7F9C     7F9C       22     3FCE       0
+                code                               7F9A     7F9A       22     3FCD       0
+build/default/debug/configbits.o
+                config                           300000   300000        E        0       4
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   CODE           
-                resetVec                           7F98     7F98        4         0
-                code                               7FBE     7FBE       42         0
-                code                               7F9C     7F9C       22         0
+                resetVec                           7F96     7F96        4         0
+                code                               7FBC     7FBC       44         0
+                code                               7F9A     7F9A       22         0
 
         CLASS   CONST          
 
@@ -83,9 +86,9 @@ TOTAL           Name                               Link     Load   Length     Sp
 
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class
 
-                code%80                        007F9C  000022  007FBE      3FCE       0  CODE    
-                resetVec                       007F98  000004  007F9C      3FCC       0  CODE    
-                code                           007FBE  000042  008000      3FDF       0  CODE    
+                code%80                        007F9A  000022  007FBC      3FCD       0  CODE    
+                resetVec                       007F96  000004  007F9A      3FCB       0  CODE    
+                code                           007FBC  000044  008000      3FDE       0  CODE    
 
 
 UNUSED ADDRESS RANGES
@@ -101,15 +104,15 @@ UNUSED ADDRESS RANGES
         BANK7            000700-0007FF              100
         BIGRAM           000000-0007FF              800
         BIGSFR           000F60-000FFF               A0
-        CODE             000000-007F97             7F98
+        CODE             000000-007F95             7F96
         COMRAM           000000-00005F               60
-        CONST            000000-007F97             7F98
+        CONST            000000-007F95             7F96
         EEDATA           F00000-F000FF              100
         IDLOC            200000-200007                8
-        MEDIUMCONST      000800-007F97             7798
+        MEDIUMCONST      000800-007F95             7796
         RAM              000060-0007FF              100
         SFR              000F60-000FFF               A0
-        SMALLCONST       000800-007F97              100
+        SMALLCONST       000800-007F95              100
 
                                   Symbol Table
 

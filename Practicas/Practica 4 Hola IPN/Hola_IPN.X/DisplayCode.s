@@ -19,7 +19,6 @@ GET_COMBINACION:
 
     
 TABLE:
-    ; Lookup table - 7-segment patterns for H, O, L, A, -, I, P, N
     RETLW   0b00101110 ; H 
     RETLW   0b11111101 ; O 
     RETLW   0b00011100 ; L 
@@ -27,4 +26,4 @@ TABLE:
     RETLW   0b00000010 ; - 
     RETLW   0b00001100 ; I 
     RETLW   0b11001110 ; P 
-    RETLW   0b00101010; N 
+    RETLW   0b00101010 ; N 
