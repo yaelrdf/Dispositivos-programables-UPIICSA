@@ -26,19 +26,9 @@ void main()
     LATB=0x00;
             
     while(1){
-        //Input
-        unsigned char input = PORTA;
-        
-        if(input==0b1101010){
-            LATB=0x07;
-        }
-        else{
-            LATB=0x27;
-        }
-        //LATB = 0x0F;            /* Turn ON LED for 500 ms */
-        //MSdelay (500);
-        //LATB = 0x00;            /* Turn OFF LED for 500 ms */
-        //MSdelay (500);
-        //LATB=PORTA;
+        LATB = 0xFF;            /* Turn ON LED for 500 ms */
+        MSdelay (500);
+        LATB = 0x00;            /* Turn OFF LED for 500 ms */
+        MSdelay (500);
     }
 }

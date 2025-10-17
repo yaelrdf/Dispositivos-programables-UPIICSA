@@ -5511,44 +5511,43 @@ ENDM
 # 6 "/opt/microchip/xc8/v3.00/pic/include/xc.inc" 2 3
 # 3 "main.s" 2
 
-    PSECT resetVec,class=CODE,reloc=2
-    PSECT code
+; Reset vector
+PSECT resetVec,class=CODE,reloc=2
+resetVec:
     GOTO CONF
 
+PSECT code
 CONF:
+    ; Configure PORTA as input
+    CLRF LATA, 0 ; Clear LATA output latch
+    SETF TRISA, 0 ; Set TRISA = 0xFF (all bits as inputs)
 
-    CLRF ADCON0, a ; limpiar el adcon 0, para que quede el registro como digital
-    MOVLW 0x0F ; mueve el 15 a W
-    MOVWF ADCON1, a ; de w al ADCON1, MUEVO EL 15
-    MOVLW 00000111B ; MUEVO EL VALOR DE 7 A W ; CONFIGURA LOS COMPARADORES PARA ENTRAR
-    MOVWF CMCON, A ; /PARA LOS PINES ((PORTA) and 0FFh), 0, a-((PORTA) and 0FFh), 3, a
-    MOVLW 11111111B ; MUEVE FF A W
-    MOVWF TRISA, a ; EL 0 ES EL ACCESS BANK , habilito al puerto a como entrada
-    CLRF PORTA, a ; 0 EN EL ACCES BANK , limpio
-    MOVLW 00000000B ; habilito al puerto b como salida
-    MOVWF TRISB, 0
-    CLRF PORTB, a ; limpio
+    ; Configure PORTB as output
+    CLRF LATB, 0 ; Clear LATB output latch
+    CLRF TRISB, 0 ; Set TRISB = 0x00 (all bits as outputs)
 
-    GOTO MAIN
+    ; Disable analog functions on PORTA and PORTB
+    CLRF ADCON1, 0 ; Configure all pins as digital
+    MOVLW 0x0F ; Load W with 0x0F
+    MOVWF ADCON1, 0 ; Set ADCON1 to make all pins digital (FIXED!)
+    ;Main Prog
+    GOTO LOOP
 
+LOOP:
+    ; Load W with the comparison value
+    MOVLW 0x1E ;Tarjet value
+    CPFSEQ PORTA, 0 ;Comparar con PORTA
+    GOTO NO_IGUAL
+    GOTO IGUAL ;Si igual llamar a igual
 
- MAIN:
-    ; Read PORTA
-    MOVF PORTA,w,c ; W = PORTA
+IGUAL:
+    MOVLW 0xFF ;Si contrasena
+    MOVWF LATB, 0
+    GOTO LOOP
 
-    ; Compare with 0x05
-    SUBLW 0x05 ; W = 0x05 - W
-    BNZ NOT_EQU ; Branch if not zero (not equal)
+NO_IGUAL:
+    MOVLW 0xC ;No contrasena
+    MOVWF LATB, 0
+    GOTO LOOP
 
-    ; If equal: output 0x0F to PORTB
-    MOVLW 0x0F
-    MOVF PORTB,c
-    GOTO MAIN
-
-NOT_EQU:
-    ; If not equal: output 0x0A to PORTB
-    MOVLW 0x0A
-    MOVWF PORTB,c
-    GOTO MAIN
-
-    END
+END resetVec

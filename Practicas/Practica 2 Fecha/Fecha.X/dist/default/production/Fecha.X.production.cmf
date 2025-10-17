@@ -11,6 +11,8 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
+$build/default/production/configbits.o
+config CONFIG 4 300000 300000 E 1 1
 $build/default/production/main.o
 resetVec CODE 0 7FCE 7FCE 4 1 2
 code CODE 0 7FD2 7FD2 2E 1 2
@@ -67,12 +69,12 @@ $build/default/production/main.o
 7FE6 code CODE >29:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 2 Fecha/Fecha.X/main.s
 7FE8 code CODE >30:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 2 Fecha/Fecha.X/main.s
 7FEC code CODE >31:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 2 Fecha/Fecha.X/main.s
-7FF0 code CODE >35:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 2 Fecha/Fecha.X/main.s
-7FF2 code CODE >36:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 2 Fecha/Fecha.X/main.s
-7FF4 code CODE >37:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 2 Fecha/Fecha.X/main.s
-7FF8 code CODE >40:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 2 Fecha/Fecha.X/main.s
-7FFA code CODE >41:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 2 Fecha/Fecha.X/main.s
-7FFC code CODE >42:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 2 Fecha/Fecha.X/main.s
+7FF0 code CODE >34:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 2 Fecha/Fecha.X/main.s
+7FF2 code CODE >35:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 2 Fecha/Fecha.X/main.s
+7FF4 code CODE >36:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 2 Fecha/Fecha.X/main.s
+7FF8 code CODE >39:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 2 Fecha/Fecha.X/main.s
+7FFA code CODE >40:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 2 Fecha/Fecha.X/main.s
+7FFC code CODE >41:/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas/Practica 2 Fecha/Fecha.X/main.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.

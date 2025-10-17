@@ -18,9 +18,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "3071
 [; ;/opt/microchip/mplabx/v6.25/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8/pic/include/proc/pic18f4550.h: 3071: extern volatile unsigned char LATB __attribute__((address(0xF8A)));
 [v _LATB `Vuc ~T0 @X0 0 e@3978 ]
-"2312
-[; ;/opt/microchip/mplabx/v6.25/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8/pic/include/proc/pic18f4550.h: 2312: extern volatile unsigned char PORTA __attribute__((address(0xF80)));
-[v _PORTA `Vuc ~T0 @X0 0 e@3968 ]
 "7 ./config_bits.h
 [p x PLLDIV  =  1        ]
 "8
@@ -681,39 +678,25 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 28:     while(1){
 [e :U 401 ]
 {
+"29
+[; ;main.c: 29:         LATB = 0xFF;
+[e = _LATB -> -> 255 `i `uc ]
 "30
-[; ;main.c: 30:         unsigned char input = PORTA;
-[v _input `uc ~T0 @X0 1 a ]
-[e = _input _PORTA ]
+[; ;main.c: 30:         MSdelay (500);
+[e ( _MSdelay (1 -> -> 500 `i `ui ]
+"31
+[; ;main.c: 31:         LATB = 0x00;
+[e = _LATB -> -> 0 `i `uc ]
 "32
-[; ;main.c: 32:         if(input==0b1101010){
-[e $ ! == -> _input `i -> 106 `i 403  ]
-{
+[; ;main.c: 32:         MSdelay (500);
+[e ( _MSdelay (1 -> -> 500 `i `ui ]
 "33
-[; ;main.c: 33:             LATB=0x06;
-[e = _LATB -> -> 6 `i `uc ]
-"34
-[; ;main.c: 34:         }
-}
-[e $U 404  ]
-"35
-[; ;main.c: 35:         else{
-[e :U 403 ]
-{
-"36
-[; ;main.c: 36:             LATB=0x27;
-[e = _LATB -> -> 39 `i `uc ]
-"37
-[; ;main.c: 37:         }
-}
-[e :U 404 ]
-"43
-[; ;main.c: 43:     }
+[; ;main.c: 33:     }
 }
 [e :U 400 ]
 [e $U 401  ]
 [e :U 402 ]
-"44
-[; ;main.c: 44: }
+"34
+[; ;main.c: 34: }
 [e :UE 399 ]
 }

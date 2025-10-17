@@ -27,11 +27,11 @@
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "91 /opt/microchip/xc8/v3.00/pic/sources/c99/common/Umul64.c
 [v ___omul __omul `(uo  1 e 8 0 ]
-"18 /home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas_EXTRAS/C-Test/CTest.X/main.c
+"11 /home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas_EXTRAS/C-Test/CTest.X/main.c
+[v _MSdelay MSdelay `(v  1 e 1 0 ]
+"18
 [v _main main `(v  1 e 1 0 ]
-"2312 /opt/microchip/mplabx/v6.25/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8/pic/include/proc/pic18f4550.h
-[v _PORTA PORTA `VEuc  1 e 1 @3968 ]
-"2971
+"2971 /opt/microchip/mplabx/v6.25/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8/pic/include/proc/pic18f4550.h
 [v _LATA LATA `VEuc  1 e 1 @3977 ]
 "3071
 [v _LATB LATB `VEuc  1 e 1 @3978 ]
@@ -46,7 +46,15 @@
 "18 /home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas_EXTRAS/C-Test/CTest.X/main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"30
-[v main@input input `uc  1 a 1 0 ]
-"44
+"34
+} 0
+"11
+[v _MSdelay MSdelay `(v  1 e 1 0 ]
+{
+"13
+[v MSdelay@j j `ui  1 a 2 4 ]
+[v MSdelay@i i `ui  1 a 2 2 ]
+"11
+[v MSdelay@val val `ui  1 p 2 0 ]
+"16
 } 0

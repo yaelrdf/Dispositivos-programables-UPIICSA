@@ -36,7 +36,7 @@ IGUAL:
     GOTO LOOP
     
 NO_IGUAL:
-    MOVLW 0x0A ;Ano
+    MOVLW 0x0A ;Dia
     MOVWF LATB, 0
     GOTO LOOP
 

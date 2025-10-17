@@ -34,7 +34,7 @@
   CONFIG CCP2MX = OFF ; CCP2 MUX bit (CCP2 input/output is multiplexed with RB3)
   CONFIG PBADEN = OFF ; PORTB A/D Enable bit (PORTB<4:0> pins are configured as digital I/O on Reset)
   CONFIG LPT1OSC = OFF ; Low-Power Timer 1 Oscillator Enable bit (Timer1 configured for higher power operation)
-  CONFIG MCLRE = OFF ; MCLR Pin Enable bit (RE3 input pin enabled; MCLR pin disabled)
+  CONFIG MCLRE = ON ; MCLR Pin Enable bit (RE3 input pin enabled; MCLR pin disabled)
 
 ; CONFIG4L
   CONFIG STVREN = ON ; Stack Full/Underflow Reset Enable bit (Stack full/underflow will cause Reset)
@@ -5535,20 +5535,19 @@ CONF:
 
 LOOP:
     ; Load W with the comparison value
-    MOVLW 0xA ; Target value (0x3F = 63 decimal
-    CPFSEQ PORTA, 0 ; Compare PORTA with W
-    GOTO NO_IGUAL ; If NOT equal, go to NO_IGUAL (FIXED!)
-    GOTO IGUAL ; If equal, go to IGUAL (FIXED!)
+    MOVLW 0xA ;Tarjet value
+    CPFSEQ PORTA, 0 ;Comparar con PORTA
+    GOTO NO_IGUAL
+    GOTO IGUAL ;Si igual llamar a igual
 
 IGUAL:
-    ; PORTA = target value, set PORTB to 0x09
-    MOVLW 0x09 ; Value to display
-    MOVWF LATB, 0 ; Write to PORTB
+    MOVLW 0x0C ;Mes
+    MOVWF LATB, 0
     GOTO LOOP
 
 NO_IGUAL:
-    MOVLW 0x01 ; Value to display if not equal
-    MOVWF LATB, 0 ; Write to PORTB (FIXED!)
+    MOVLW 0x0A ;Dia
+    MOVWF LATB, 0
     GOTO LOOP
 
 END resetVec

@@ -6001,19 +6001,9 @@ void main()
     LATB=0x00;
 
     while(1){
-
-        unsigned char input = PORTA;
-
-        if(input==0b1101010){
-            LATB=0x06;
-        }
-        else{
-            LATB=0x27;
-        }
-
-
-
-
-
+        LATB = 0xFF;
+        MSdelay (500);
+        LATB = 0x00;
+        MSdelay (500);
     }
 }

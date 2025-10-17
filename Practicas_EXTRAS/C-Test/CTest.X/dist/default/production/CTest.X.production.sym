@@ -1,17 +1,18 @@
 __S0 8000 0 ABS 0
-__S1 2 0 ABS 0
+__S1 7 0 ABS 0
 __S4 0 0 ABS 0
 __S5 0 0 ABS 0
 __Hintentry 0 0 ABS 0
 __Lintentry 0 0 ABS 0
+MSdelay@i 3 0 COMRAM 1
+MSdelay@j 5 0 COMRAM 1
 _LATA F89 0 ABS 0
 _LATB F8A 0 ABS 0
-_main 802 0 CODE 0
+_main 84C 0 CODE 0
 ___sp 0 0 STACK 2
 start 7FFC 0 CODE 0
 _TRISA F92 0 ABS 0
 _TRISB F93 0 ABS 0
-_PORTA F80 0 ABS 0
 __Hirdata 0 0 CODE 0
 __Lirdata 0 0 CODE 0
 __HRAM 0 0 ABS 0
@@ -85,12 +86,12 @@ __Linit 7FFC 0 CODE 0
 __Hintcodelo 18 0 CODE 0
 __Lintcodelo 18 0 CODE 0
 __Hrbss 0 0 COMRAM 1
-__end_of_main 83C 0 CODE 0
+__end_of_main 880 0 CODE 0
 __Lrbss 0 0 COMRAM 1
 __Htext 0 0 ABS 0
 __Ltext 0 0 ABS 0
 ___heap_lo 0 0 ABS 0
-end_of_initialization 83C 0 CODE 0
+end_of_initialization 880 0 CODE 0
 __Hsivt_lo 18 0 CODE 0
 __Lsivt_lo 18 0 CODE 0
 __Hibigdata 0 0 CODE 0
@@ -117,12 +118,15 @@ __Hbank7 0 0 ABS 0
 __Lbank7 0 0 ABS 0
 __Htext0 0 0 ABS 0
 __Ltext0 0 0 ABS 0
-__ptext0 802 0 CODE 0
+__Htext1 0 0 ABS 0
+__Ltext1 0 0 ABS 0
+__ptext0 84C 0 CODE 0
+__ptext1 802 0 CODE 0
 ___stack_hi 0 0 STACK 2
-main@input 1 0 COMRAM 1
 __Hclrtext 0 0 ABS 0
 __Lclrtext 0 0 ABS 0
-__end_of__initialization 83C 0 CODE 0
+MSdelay@val 1 0 COMRAM 1
+__end_of__initialization 880 0 CODE 0
 ___rparam_used 1 0 ABS 0
 __H__absolute__ 0 0 ABS 0
 __L__absolute__ 0 0 ABS 0
@@ -141,7 +145,7 @@ __HcstackCOMRAM 0 0 ABS 0
 __Lspace_0 0 0 ABS 0
 __LcstackCOMRAM 0 0 ABS 0
 __pcstackCOMRAM 1 0 COMRAM 1
-__Hspace_1 2 0 ABS 0
+__Hspace_1 7 0 ABS 0
 __Lspace_1 0 0 ABS 0
 __Hsmallconst 802 0 SMALLCONST 0
 __Lsmallconst 800 0 SMALLCONST 0
@@ -151,8 +155,9 @@ __Lspace_2 0 0 ABS 0
 __Hnvbit 0 0 COMRAM 1
 __Lnvbit 0 0 COMRAM 1
 __Hcinit 0 0 ABS 0
+_MSdelay 802 0 CODE 0
 __Lcinit 0 0 ABS 0
-__pcinit 83C 0 CODE 0
+__pcinit 880 0 CODE 0
 __ramtop 800 0 RAM 0
 __mediumconst 800 0 SMALLCONST 0
 __Hconst 0 0 CONST 0
@@ -172,36 +177,41 @@ intlevel0 0 0 CODE 0
 intlevel1 0 0 CODE 0
 intlevel2 0 0 CODE 0
 intlevel3 0 0 CODE 0
+__end_of_MSdelay 84C 0 CODE 0
 ___inthi_stack_lo 0 0 STACK 2
-start_initialization 83C 0 CODE 0
+start_initialization 880 0 CODE 0
 ___intlo_stack_lo 0 0 STACK 2
-__initialization 83C 0 CODE 0
+__initialization 880 0 CODE 0
 __activetblptr 0 0 ABS 0
 %segments
 reset_vec 0 3 CODE 0 0
 init 7FFC 7FFF CODE 7FFC 0
 smallconst 800 801 SMALLCONST 800 0
-cstackCOMRAM 1 1 COMRAM 1 1
-text0 802 841 CODE 802 0
+cstackCOMRAM 1 6 COMRAM 1 1
+text1 802 885 CODE 802 0
 %locals
 dist/default/production/CTest.X.production.o
-/tmp/xcXABhoNE/driver_tmp_1.s
-515 83C 0 CODE 0
-517 83C 0 CODE 0
-520 83C 0 CODE 0
-526 83C 0 CODE 0
-528 83C 0 CODE 0
-529 83E 0 CODE 0
+/tmp/xcXabEglC/driver_tmp_1.s
+514 880 0 CODE 0
+516 880 0 CODE 0
+519 880 0 CODE 0
+525 880 0 CODE 0
+527 880 0 CODE 0
+528 882 0 CODE 0
 main.c
-18 802 0 CODE 0
-20 802 0 CODE 0
-21 806 0 CODE 0
-22 808 0 CODE 0
-24 80A 0 CODE 0
-25 80E 0 CODE 0
-26 810 0 CODE 0
-30 812 0 CODE 0
-32 816 0 CODE 0
-33 828 0 CODE 0
-34 82C 0 CODE 0
-36 830 0 CODE 0
+18 84C 0 CODE 0
+20 84C 0 CODE 0
+21 850 0 CODE 0
+22 852 0 CODE 0
+24 854 0 CODE 0
+25 858 0 CODE 0
+26 85A 0 CODE 0
+29 85C 0 CODE 0
+30 85E 0 CODE 0
+31 86A 0 CODE 0
+32 86C 0 CODE 0
+main.c
+11 802 0 CODE 0
+14 802 0 CODE 0
+15 80E 0 CODE 0
+16 84A 0 CODE 0
