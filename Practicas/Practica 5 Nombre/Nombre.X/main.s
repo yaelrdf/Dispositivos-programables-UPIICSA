@@ -14,14 +14,14 @@ CONF:
     MOVWF   TRISA, 0
     
     ;PORTB Output
-    CLRF    LATB, 0            ; Clear LATB output latch
-    MOVLW   0x00        ; Load W with 0x00 (all outputs)
-    MOVWF   TRISB, 0           ; Set TRISB = 0x00 (all bits as outputs)\
+    CLRF    LATB, 0    
+    MOVLW   0x00       
+    MOVWF   TRISB, 0   
     BCF  PORTB,5
     
     ;Pines digitales
-    MOVLW   0xF        ; Configure all pins as digital (ADCON1 = 0x0F)
-    MOVWF   ADCON1, 0          ; Write to ADCON1
+    MOVLW   0xF        
+    MOVWF   ADCON1, 0  
     
     ;Main Prog
     GOTO LOOP
