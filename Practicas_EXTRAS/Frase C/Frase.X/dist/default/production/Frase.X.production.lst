@@ -1,9 +1,9 @@
 
 
-Microchip MPLAB XC8 Assembler V3.00 build 20241204225717 
-                                                                                               Tue Oct  7 23:28:31 2025
+Microchip MPLAB XC8 Assembler V3.10 build 20250813170317 
+                                                                                               Wed Oct 15 11:33:15 2025
 
-Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1 
+Microchip MPLAB XC8 C Compiler v3.10 (Free license) build 20250813170317 Og1 
      1                           	processor	18F4550
      2                           	fnconf	rparam,??,?,0
      3                           	pagewidth 120
@@ -360,118 +360,118 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
    346   000810                     
    347                           ;main.c: 19:     LATB=0x00;
    348   000810  6A8A               	clrf	138,c	;volatile
-   349   000812                     l734:
+   349   000812                     l844:
    350                           
    351                           ;main.c: 23:        unsigned char input = PORTA;
    352   000812  CF80 F001          	movff	3968,main@input	;volatile
    353                           
    354                           ;main.c: 26:        switch (input) {
-   355   000816  EF41  F004         	goto	l786
-   356   00081A                     l736:
+   355   000816  EF41  F004         	goto	l896
+   356   00081A                     l846:
    357                           
    358                           ;main.c: 28:             LATB = 0b10011110;
    359   00081A  0E9E               	movlw	158
    360   00081C  6E8A               	movwf	138,c	;volatile
    361                           
    362                           ;main.c: 29:             break;
-   363   00081E  EF09  F004         	goto	l734
-   364   000822                     l738:
+   363   00081E  EF09  F004         	goto	l844
+   364   000822                     l848:
    365                           
    366                           ;main.c: 32:             LATB = 0b00011100;
    367   000822  0E1C               	movlw	28
    368   000824  6E8A               	movwf	138,c	;volatile
    369                           
    370                           ;main.c: 33:             break;
-   371   000826  EF09  F004         	goto	l734
-   372   00082A                     l742:
+   371   000826  EF09  F004         	goto	l844
+   372   00082A                     l852:
    373                           
    374                           ;main.c: 40:             LATB = 0b10011100;
    375   00082A  0E9C               	movlw	156
    376   00082C  6E8A               	movwf	138,c	;volatile
    377                           
    378                           ;main.c: 41:             break;
-   379   00082E  EF09  F004         	goto	l734
-   380   000832                     l744:
+   379   00082E  EF09  F004         	goto	l844
+   380   000832                     l854:
    381                           
    382                           ;main.c: 44:             LATB = 0b10001101;
    383   000832  0E8D               	movlw	141
    384   000834  6E8A               	movwf	138,c	;volatile
    385                           
    386                           ;main.c: 45:             break;
-   387   000836  EF09  F004         	goto	l734
-   388   00083A                     l746:
+   387   000836  EF09  F004         	goto	l844
+   388   00083A                     l856:
    389                           
    390                           ;main.c: 48:             LATB = 0b00001010;
    391   00083A  0E0A               	movlw	10
    392   00083C  6E8A               	movwf	138,c	;volatile
    393                           
    394                           ;main.c: 49:             break;
-   395   00083E  EF09  F004         	goto	l734
-   396   000842                     l748:
+   395   00083E  EF09  F004         	goto	l844
+   396   000842                     l858:
    397                           
    398                           ;main.c: 52:             LATB = 0b11111101;
    399   000842  0EFD               	movlw	253
    400   000844  6E8A               	movwf	138,c	;volatile
    401                           
    402                           ;main.c: 53:             break;
-   403   000846  EF09  F004         	goto	l734
-   404   00084A                     l752:
+   403   000846  EF09  F004         	goto	l844
+   404   00084A                     l862:
    405                           
    406                           ;main.c: 60:             LATB = 0b00101010;
    407   00084A  0E2A               	movlw	42
    408   00084C  6E8A               	movwf	138,c	;volatile
    409                           
    410                           ;main.c: 61:             break;
-   411   00084E  EF09  F004         	goto	l734
-   412   000852                     l758:
+   411   00084E  EF09  F004         	goto	l844
+   412   000852                     l868:
    413                           
    414                           ;main.c: 72:             LATB = 0b10001110;
    415   000852  0E8E               	movlw	142
    416   000854  6E8A               	movwf	138,c	;volatile
    417                           
    418                           ;main.c: 73:             break;
-   419   000856  EF09  F004         	goto	l734
-   420   00085A                     l760:
+   419   000856  EF09  F004         	goto	l844
+   420   00085A                     l870:
    421                           
    422                           ;main.c: 76:             LATB = 0b11101110;
    423   00085A  0EEE               	movlw	238
    424   00085C  6E8A               	movwf	138,c	;volatile
    425                           
    426                           ;main.c: 77:             break;
-   427   00085E  EF09  F004         	goto	l734
-   428   000862                     l766:
+   427   00085E  EF09  F004         	goto	l844
+   428   000862                     l876:
    429                           
    430                           ;main.c: 88:             LATB = 0b10111110;
    431   000862  0EBE               	movlw	190
    432   000864  6E8A               	movwf	138,c	;volatile
    433                           
    434                           ;main.c: 89:             break;
-   435   000866  EF09  F004         	goto	l734
-   436   00086A                     l774:
+   435   000866  EF09  F004         	goto	l844
+   436   00086A                     l884:
    437                           
    438                           ;main.c: 104:             LATB = 0b00001100;
    439   00086A  0E0C               	movlw	12
    440   00086C  6E8A               	movwf	138,c	;volatile
    441                           
    442                           ;main.c: 105:             break;
-   443   00086E  EF09  F004         	goto	l734
-   444   000872                     l776:
+   443   00086E  EF09  F004         	goto	l844
+   444   000872                     l886:
    445                           
    446                           ;main.c: 108:             LATB = 0b10110110;
    447   000872  0EB6               	movlw	182
    448   000874  6E8A               	movwf	138,c	;volatile
    449                           
    450                           ;main.c: 109:             break;
-   451   000876  EF09  F004         	goto	l734
-   452   00087A                     l782:
+   451   000876  EF09  F004         	goto	l844
+   452   00087A                     l892:
    453                           
    454                           ;main.c: 120:             LATB = 0b00000001;
    455   00087A  0E01               	movlw	1
    456   00087C  6E8A               	movwf	138,c	;volatile
    457                           
    458                           ;main.c: 121:             break;
-   459   00087E  EF09  F004         	goto	l734
-   460   000882                     l786:
+   459   00087E  EF09  F004         	goto	l844
+   460   000882                     l896:
    461   000882  5001               	movf	main@input^0,w,c
    462                           
    463                           ; Switch size 1, requested type "simple"
@@ -482,74 +482,74 @@ Microchip MPLAB XC8 C Compiler v3.00 (Free license) build 20241204225717 Og1
    468                           ;	Chosen strategy is simple_byte
    469   000884  0A00               	xorlw	0	; case 0
    470   000886  B4D8               	btfsc	status,2,c
-   471   000888  EF0D  F004         	goto	l736
+   471   000888  EF0D  F004         	goto	l846
    472   00088C  0A01               	xorlw	1	; case 1
    473   00088E  B4D8               	btfsc	status,2,c
-   474   000890  EF11  F004         	goto	l738
+   474   000890  EF11  F004         	goto	l848
    475   000894  0A03               	xorlw	3	; case 2
    476   000896  B4D8               	btfsc	status,2,c
-   477   000898  EF0D  F004         	goto	l736
+   477   000898  EF0D  F004         	goto	l846
    478   00089C  0A01               	xorlw	1	; case 3
    479   00089E  B4D8               	btfsc	status,2,c
-   480   0008A0  EF15  F004         	goto	l742
+   480   0008A0  EF15  F004         	goto	l852
    481   0008A4  0A07               	xorlw	7	; case 4
    482   0008A6  B4D8               	btfsc	status,2,c
-   483   0008A8  EF19  F004         	goto	l744
+   483   0008A8  EF19  F004         	goto	l854
    484   0008AC  0A01               	xorlw	1	; case 5
    485   0008AE  B4D8               	btfsc	status,2,c
-   486   0008B0  EF1D  F004         	goto	l746
+   486   0008B0  EF1D  F004         	goto	l856
    487   0008B4  0A03               	xorlw	3	; case 6
    488   0008B6  B4D8               	btfsc	status,2,c
-   489   0008B8  EF21  F004         	goto	l748
+   489   0008B8  EF21  F004         	goto	l858
    490   0008BC  0A01               	xorlw	1	; case 7
    491   0008BE  B4D8               	btfsc	status,2,c
-   492   0008C0  EF0D  F004         	goto	l736
+   492   0008C0  EF0D  F004         	goto	l846
    493   0008C4  0A0F               	xorlw	15	; case 8
    494   0008C6  B4D8               	btfsc	status,2,c
-   495   0008C8  EF25  F004         	goto	l752
+   495   0008C8  EF25  F004         	goto	l862
    496   0008CC  0A01               	xorlw	1	; case 9
    497   0008CE  B4D8               	btfsc	status,2,c
-   498   0008D0  EF15  F004         	goto	l742
+   498   0008D0  EF15  F004         	goto	l852
    499   0008D4  0A03               	xorlw	3	; case 10
    500   0008D6  B4D8               	btfsc	status,2,c
-   501   0008D8  EF0D  F004         	goto	l736
+   501   0008D8  EF0D  F004         	goto	l846
    502   0008DC  0A01               	xorlw	1	; case 11
    503   0008DE  B4D8               	btfsc	status,2,c
-   504   0008E0  EF29  F004         	goto	l758
+   504   0008E0  EF29  F004         	goto	l868
    505   0008E4  0A07               	xorlw	7	; case 12
    506   0008E6  B4D8               	btfsc	status,2,c
-   507   0008E8  EF2D  F004         	goto	l760
+   507   0008E8  EF2D  F004         	goto	l870
    508   0008EC  0A01               	xorlw	1	; case 13
    509   0008EE  B4D8               	btfsc	status,2,c
-   510   0008F0  EF11  F004         	goto	l738
+   510   0008F0  EF11  F004         	goto	l848
    511   0008F4  0A03               	xorlw	3	; case 14
    512   0008F6  B4D8               	btfsc	status,2,c
-   513   0008F8  EF21  F004         	goto	l748
+   513   0008F8  EF21  F004         	goto	l858
    514   0008FC  0A01               	xorlw	1	; case 15
    515   0008FE  B4D8               	btfsc	status,2,c
-   516   000900  EF31  F004         	goto	l766
+   516   000900  EF31  F004         	goto	l876
    517   000904  0A1F               	xorlw	31	; case 16
    518   000906  B4D8               	btfsc	status,2,c
-   519   000908  EF1D  F004         	goto	l746
+   519   000908  EF1D  F004         	goto	l856
    520   00090C  0A01               	xorlw	1	; case 17
    521   00090E  B4D8               	btfsc	status,2,c
-   522   000910  EF2D  F004         	goto	l760
+   522   000910  EF2D  F004         	goto	l870
    523   000914  0A03               	xorlw	3	; case 18
    524   000916  B4D8               	btfsc	status,2,c
-   525   000918  EF29  F004         	goto	l758
+   525   000918  EF29  F004         	goto	l868
    526   00091C  0A01               	xorlw	1	; case 19
    527   00091E  B4D8               	btfsc	status,2,c
-   528   000920  EF35  F004         	goto	l774
+   528   000920  EF35  F004         	goto	l884
    529   000924  0A07               	xorlw	7	; case 20
    530   000926  B4D8               	btfsc	status,2,c
-   531   000928  EF39  F004         	goto	l776
+   531   000928  EF39  F004         	goto	l886
    532   00092C  0A01               	xorlw	1	; case 21
    533   00092E  B4D8               	btfsc	status,2,c
-   534   000930  EF19  F004         	goto	l744
+   534   000930  EF19  F004         	goto	l854
    535   000934  0A03               	xorlw	3	; case 22
    536   000936  B4D8               	btfsc	status,2,c
-   537   000938  EF2D  F004         	goto	l760
-   538   00093C  EF3D  F004         	goto	l782
+   537   000938  EF2D  F004         	goto	l870
+   538   00093C  EF3D  F004         	goto	l892
    539   000940  EFFE  F03F         	goto	start
    540   000944                     __end_of_main:
    541                           	callstack 0
@@ -851,16 +851,16 @@ STACK                0      0       0      0.0%
 DATA                 0      0       1      0.0%
 
 
-Microchip Technology PIC18 Macro Assembler V3.00 build 20241204225717 
-Symbol Table                                                                                   Tue Oct  7 23:28:31 2025
+Microchip Technology PIC18 Macro Assembler V3.10 build 20250813170317 
+Symbol Table                                                                                   Wed Oct 15 11:33:15 2025
 
-                    l730 080E                      l732 0810                      l724 0802  
-                    l742 082A                      l734 0812                      l726 0806  
-                    l760 085A                      l752 084A                      l744 0832  
-                    l736 081A                      l728 0808                      l746 083A  
-                    l738 0822                      l748 0842                      l782 087A  
-                    l774 086A                      l766 0862                      l758 0852  
-                    l776 0872                      l786 0882                     _LATA 0F89  
+                    l840 080E                      l842 0810                      l834 0802  
+                    l852 082A                      l844 0812                      l836 0806  
+                    l870 085A                      l862 084A                      l854 0832  
+                    l846 081A                      l838 0808                      l856 083A  
+                    l848 0822                      l858 0842                      l892 087A  
+                    l884 086A                      l876 0862                      l868 0852  
+                    l886 0872                      l896 0882                     _LATA 0F89  
                    _LATB 0F8A                     _main 0802                     start 7FFC  
            ___param_bank 0000                    ?_main 0001                    _PORTA 0F80  
                   _TRISA 0F92                    _TRISB 0F93                    status 0FD8  

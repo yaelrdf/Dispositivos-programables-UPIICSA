@@ -184,8 +184,8 @@ smallconst 800 801 SMALLCONST 800 0
 cstackCOMRAM 1 1 COMRAM 1 1
 text0 802 94D CODE 802 0
 %locals
-dist/default/production/Frase.X.production.o
-/tmp/xcXmGkLeA/driver_tmp_1.s
+dist/default/production\Frase.X.production.o
+C:\Users\mcmin\AppData\Local\Temp\xcAs3r0.0\driver_tmp_1.s
 515 944 0 CODE 0
 517 944 0 CODE 0
 520 944 0 CODE 0

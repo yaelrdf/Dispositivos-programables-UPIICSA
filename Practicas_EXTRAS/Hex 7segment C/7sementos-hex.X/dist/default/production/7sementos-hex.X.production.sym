@@ -85,12 +85,12 @@ __Linit 7FFC 0 CODE 0
 __Hintcodelo 18 0 CODE 0
 __Lintcodelo 18 0 CODE 0
 __Hrbss 0 0 COMRAM 1
-__end_of_main 914 0 CODE 0
+__end_of_main 924 0 CODE 0
 __Lrbss 0 0 COMRAM 1
 __Htext 0 0 ABS 0
 __Ltext 0 0 ABS 0
 ___heap_lo 0 0 ABS 0
-end_of_initialization 914 0 CODE 0
+end_of_initialization 924 0 CODE 0
 __Hsivt_lo 18 0 CODE 0
 __Lsivt_lo 18 0 CODE 0
 __Hibigdata 0 0 CODE 0
@@ -122,7 +122,7 @@ ___stack_hi 0 0 STACK 2
 main@input 1 0 COMRAM 1
 __Hclrtext 0 0 ABS 0
 __Lclrtext 0 0 ABS 0
-__end_of__initialization 914 0 CODE 0
+__end_of__initialization 924 0 CODE 0
 ___rparam_used 1 0 ABS 0
 __H__absolute__ 0 0 ABS 0
 __L__absolute__ 0 0 ABS 0
@@ -152,7 +152,7 @@ __Hnvbit 0 0 COMRAM 1
 __Lnvbit 0 0 COMRAM 1
 __Hcinit 0 0 ABS 0
 __Lcinit 0 0 ABS 0
-__pcinit 914 0 CODE 0
+__pcinit 924 0 CODE 0
 __ramtop 800 0 RAM 0
 __mediumconst 800 0 SMALLCONST 0
 __Hconst 0 0 CONST 0
@@ -173,27 +173,27 @@ intlevel1 0 0 CODE 0
 intlevel2 0 0 CODE 0
 intlevel3 0 0 CODE 0
 ___inthi_stack_lo 0 0 STACK 2
-start_initialization 914 0 CODE 0
+start_initialization 924 0 CODE 0
 ___intlo_stack_lo 0 0 STACK 2
-__initialization 914 0 CODE 0
+__initialization 924 0 CODE 0
 __activetblptr 2 0 ABS 0
 %segments
 reset_vec 0 3 CODE 0 0
 init 7FFC 7FFF CODE 7FFC 0
 smallconst 800 801 SMALLCONST 800 0
 cstackCOMRAM 1 1 COMRAM 1 1
-text0 802 91D CODE 802 0
+text0 802 92D CODE 802 0
 %locals
-dist/default/production/7sementos-hex.X.production.o
-/tmp/xcXoLLAhd/driver_tmp_1.s
-515 914 0 CODE 0
-517 914 0 CODE 0
-520 914 0 CODE 0
-526 914 0 CODE 0
-529 914 0 CODE 0
-530 916 0 CODE 0
-531 918 0 CODE 0
-532 91A 0 CODE 0
+dist/default/production\7sementos-hex.X.production.o
+C:\Users\mcmin\AppData\Local\Temp\xcAsksw.0\driver_tmp_1.s
+515 924 0 CODE 0
+517 924 0 CODE 0
+520 924 0 CODE 0
+526 924 0 CODE 0
+529 924 0 CODE 0
+530 926 0 CODE 0
+531 928 0 CODE 0
+532 92A 0 CODE 0
 ../../Nombre C/Nombre.X/main.c
 11 802 0 CODE 0
 13 802 0 CODE 0
@@ -216,34 +216,40 @@ dist/default/production/7sementos-hex.X.production.o
 44 83E 0 CODE 0
 47 842 0 CODE 0
 48 846 0 CODE 0
-59 84A 0 CODE 0
-60 84E 0 CODE 0
-67 852 0 CODE 0
-68 856 0 CODE 0
-75 85A 0 CODE 0
-76 85E 0 CODE 0
-83 862 0 CODE 0
-84 866 0 CODE 0
-87 86A 0 CODE 0
-88 86E 0 CODE 0
-99 872 0 CODE 0
-100 876 0 CODE 0
-101 87A 0 CODE 0
-101 87E 0 CODE 0
-101 886 0 CODE 0
-101 88E 0 CODE 0
-101 896 0 CODE 0
-101 89E 0 CODE 0
-101 8A6 0 CODE 0
-101 8AE 0 CODE 0
-101 8B6 0 CODE 0
-101 8BE 0 CODE 0
-101 8C6 0 CODE 0
-101 8CE 0 CODE 0
-101 8D6 0 CODE 0
-101 8DE 0 CODE 0
-101 8E6 0 CODE 0
-101 8EE 0 CODE 0
-101 8F6 0 CODE 0
-101 8FE 0 CODE 0
-101 906 0 CODE 0
+51 84A 0 CODE 0
+52 84E 0 CODE 0
+55 852 0 CODE 0
+56 856 0 CODE 0
+59 85A 0 CODE 0
+60 85E 0 CODE 0
+63 862 0 CODE 0
+64 866 0 CODE 0
+67 86A 0 CODE 0
+68 86E 0 CODE 0
+71 872 0 CODE 0
+72 876 0 CODE 0
+75 87A 0 CODE 0
+76 87E 0 CODE 0
+79 882 0 CODE 0
+80 886 0 CODE 0
+83 88A 0 CODE 0
+84 88E 0 CODE 0
+87 892 0 CODE 0
+88 896 0 CODE 0
+93 89A 0 CODE 0
+93 89E 0 CODE 0
+93 8A6 0 CODE 0
+93 8AE 0 CODE 0
+93 8B6 0 CODE 0
+93 8BE 0 CODE 0
+93 8C6 0 CODE 0
+93 8CE 0 CODE 0
+93 8D6 0 CODE 0
+93 8DE 0 CODE 0
+93 8E6 0 CODE 0
+93 8EE 0 CODE 0
+93 8F6 0 CODE 0
+93 8FE 0 CODE 0
+93 906 0 CODE 0
+93 90E 0 CODE 0
+93 916 0 CODE 0
