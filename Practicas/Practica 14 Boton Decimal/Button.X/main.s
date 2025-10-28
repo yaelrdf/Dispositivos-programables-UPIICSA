@@ -40,6 +40,7 @@ LOOP:
     CALL    GET_COMBINACION ; Call lookup routine (returns pattern in W)
     MOVWF   PORTB           ;Display update
     ;Button check
+    CALL delay_100ms
     GOTO    button
     
 Increment:
@@ -47,19 +48,38 @@ Increment:
     MOVLW   10              ; Limit value
     CPFSLT  counter         ; Compare: Skip next if counter < 10
     CLRF    counter         ; Reset counter to 0 if >= 10
-    RETURN
+    GOTO LOOP
     
 
 button:
     BTFSC PORTE, 3, A ; Skip if RE3 is low
     GOTO button
     ;Incrementar
-    call    Increment    
+    call Increment  
 
-Debounce:
-    btfss   PORTE, 3, A ; Skip next if RE3 is high
-    goto Debounce
-    goto LOOP
+
+delay_100ms:
+    ; Disable Timer0
+    BCF     T0CON, 7        ; TMR0ON bit (bit 7)
+    MOVLW   0b10000101  
+    MOVWF   T0CON
+    MOVLW   0x3C            ; High byte for 100ms
+    MOVWF   TMR0H
+    MOVLW   0xB0            ; Low byte for 100ms
+    MOVWF   TMR0L
+    ; Clear overflow flag
+    BCF     INTCON, 2       ; TMR0IF bit (bit 2)
+    ; Start Timer0
+    BSF     T0CON, 7        ; TMR0ON bit (bit 7)
+delay_wait_100ms:
+    ; Wait for overflow flag
+    BTFSS   INTCON, 2       ; TMR0IF bit (bit 2)
+    GOTO    delay_wait_100ms
+    ; Clear flag and stop timer
+    BCF     INTCON, 2       ; TMR0IF bit (bit 2)
+    BCF     T0CON, 7        ; TMR0ON bit (bit 7)
+    
+    RETURN
         
 #include "DisplayCode.s"
     

@@ -1,0 +1,180 @@
+#include <xc.inc>
+
+PSECT udata_acs
+counter:  DS 1 
+limit:     DS 1
+
+PSECT code
+
+;GLOBAL Color
+;GLOBAL SuperHeroe1
+;GLOBAL Upiicsa
+;GLOBAL Dispositivos
+;GLOBAL SuperHeroe2
+;GLOBAL Deporte
+;GLOBAL Decimal_Asendente
+;GLOBAL Hexadecimal_Desendente
+
+
+Color:
+    MOVF    4, limit       ;Limit
+    MOVF    counter, W      ; Counter to W
+    ANDLW   0x0F            ; Mask lower 4 bits
+    CALL    Colour ; Call lookup routine (returns pattern in W)
+    MOVWF   PORTB           ;Display update
+    CALL    delay_1sec
+    CALL    Counter_increment
+    RETURN
+
+SuperHeroe1:
+    MOVF    6, limit       ;Limit
+    MOVF    counter, W      ; Counter to W
+    ANDLW   0x0F            ; Mask lower 4 bits
+    CALL    Heroes1 ; Call lookup routine (returns pattern in W)
+    MOVWF   PORTB           ;Display update
+    CALL    delay_1sec
+    CALL    Counter_increment
+    RETURN
+
+SuperHeroe2:
+    MOVF    4, limit       ;Limit
+    MOVF    counter, W      ; Counter to W
+    ANDLW   0x0F            ; Mask lower 4 bits
+    CALL    Heroes2 ; Call lookup routine (returns pattern in W)
+    MOVWF   PORTB           ;Display update
+    CALL    delay_1sec
+    CALL    Counter_increment
+    RETURN
+
+Deporte:
+    MOVF    8, limit       ;Limit
+    MOVF    counter, W      ; Counter to W
+    ANDLW   0x0F            ; Mask lower 4 bits
+    CALL    Sport ; Call lookup routine (returns pattern in W)
+    MOVWF   PORTB           ;Display update
+    CALL    delay_1sec
+    CALL    Counter_increment
+    RETURN
+
+Decimal_Asendente:
+    MOVF    10, limit       ;Limit
+    MOVF    counter, W      ; Counter to W
+    ANDLW   0x0F            ; Mask lower 4 bits
+    CALL    Get_number ; Call lookup routine (returns pattern in W)
+    MOVWF   PORTB           ;Display update
+    CALL    delay_1sec
+    CALL    Counter_increment
+    RETURN
+
+Hexadecimal_Desendente:
+    MOVF    15, limit       ;Limit
+    MOVF    counter, W      ; Counter to W
+    ANDLW   0x0F            ; Mask lower 4 bits
+    CALL    Get_number ; Call lookup routine (returns pattern in W)
+    MOVWF   PORTB           ;Display update
+    CALL    delay_1sec
+    DECF    counter, F      ; Increment counter in place
+    MOVLW   limit              ; Limit value
+    CPFSLT  counter         ; Compare: Skip next if counter < 10
+    CLRF    counter         ; Reset counter to 0 if >= 10
+    RETURN
+
+;Lockup tables
+Colour:
+    ADDWF   PCL, F, A
+    RETLW   0xEE    ; A
+    RETLW   0xDB    ; Z
+    RETLW   0x7C    ; U
+    RETLW   0x1C    ; L
+
+Heroes1:
+    ADDWF   PCL, F ,A
+    RETLW   0x3E    ; B
+    RETLW   0xEE    ; A
+    RETLW   0x8D    ; T
+    RETLW   0x9F    ; M
+    RETLW   0xEE    ; A
+    RETLW   0x2A    ; N
+
+Heroes2:
+    ADDWF   PCL, F ,A
+    RETLW   0x8D    ; T
+    RETLW   0x2E    ; H
+    RETLW   0xFD    ; O
+    RETLW   0x0A    ; R
+
+Sport:
+    ADDWF   PCL, F ,A
+    RETLW   0xBE    ; G
+    RETLW   0x0C    ; I
+    RETLW   0x9F    ; M
+    RETLW   0x2A    ; N
+    RETLW   0xEE    ; A
+    RETLW   0xB6    ; S
+    RETLW   0x0C    ; I
+    RETLW   0xEE    ; A
+
+
+Get_number:
+    ;Ajuste para evitar que el program counter se vaya a direcciones no previstas
+    MULLW   2
+    MOVF    PRODL, W, a    
+    MOVLW   HIGH(TABLE)
+    MOVWF   PCLATH, a
+    MOVLW   LOW(TABLE)	    
+    ADDWF   PRODL, W, a     
+    BTFSC   STATUS, 0, a    
+    INCF    PCLATH, F, a    
+    MOVWF   PCL, a    
+
+    
+TABLE:
+    RETLW   0b11111100    ; 0
+    RETLW   0b01100000    ; 1
+    RETLW   0b11011010    ; 2
+    RETLW   0b11110010    ; 3
+    RETLW   0b01100110    ; 4
+    RETLW   0b10110110    ; 5
+    RETLW   0b10111110    ; 6
+    RETLW   0b11100000    ; 7
+    RETLW   0b11111110    ; 8
+    RETLW   0b11100110    ; 9
+    RETLW   0b11101110    ; A
+    RETLW   0b00111110    ; B
+    RETLW   0b10011100    ; C
+    RETLW   0b01111010    ; D
+    RETLW   0b10011110    ; E
+    RETLW   0b10001110    ; F
+
+
+;Global Funtions
+Counter_increment:
+    INCF    counter, F      ; Increment counter in place
+    MOVLW   limit              ; Limit value
+    CPFSLT  counter         ; Compare: Skip next if counter < 10
+    CLRF    counter         ; Reset counter to 0 if >= 10
+    RETURN
+
+;Delay
+delay_1sec:
+    ; Disable Timer0
+    BCF     T0CON, 7        ; TMR0ON bit (bit 7)
+    MOVLW   0b10000101  
+    MOVWF   T0CON
+    MOVLW   0x85            ; High byte
+    MOVWF   TMR0H
+    MOVLW   0xEE            ; Low byte
+    MOVWF   TMR0L
+    ; Clear overflow flag
+    BCF     INTCON, 2       ; TMR0IF bit (bit 2)
+    ; Start Timer0
+    BSF     T0CON, 7        ; TMR0ON bit (bit 7)
+    
+delay_wait:
+    ; Wait for overflow flag
+    BTFSS   INTCON, 2       ; TMR0IF bit (bit 2)
+    GOTO    delay_wait
+    ; Clear flag and stop timer
+    BCF     INTCON, 2       ; TMR0IF bit (bit 2)
+    BCF     T0CON, 7        ; TMR0ON bit (bit 7)
+    RETURN

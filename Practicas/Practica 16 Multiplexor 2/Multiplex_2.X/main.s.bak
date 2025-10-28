@@ -1,0 +1,64 @@
+#include "configbits.s"
+#include <xc.inc>
+
+; Reset vector
+PSECT resetVec,class=CODE,reloc=2
+resetVec:
+    GOTO CONF
+
+PSECT code
+CONF:
+    ;PORTA input
+    CLRF    LATA, 0 
+    MOVLW   0xFF    
+    MOVWF   TRISA, 0
+    
+    ;PORTB Output
+    CLRF    LATB, 0            ; Clear LATB output latch
+    MOVLW   0x00        ; Load W with 0x00 (all outputs)
+    MOVWF   TRISB, 0           ; Set TRISB = 0x00 (all bits as outputs)\
+    BCF  PORTB,5
+    
+    ;Pines digitales
+    MOVLW   0xF        ; Configure all pins as digital (ADCON1 = 0x0F)
+    MOVWF   ADCON1, 0          ; Write to ADCON1
+
+    ; Oscillator config
+    MOVLW   0b01110010      ; IRCF = 111 (8 MHz), SCS = 10 (internal oscillator)
+    MOVWF   OSCCON
+    
+    ; Main Program
+    GOTO    LOOP
+
+
+LOOP:
+    MOVF    PORTA, W, a ;Leer Puerto A y 
+    ANDLW   0x0F
+    CALL    Multiplex ;Llamado a funcion de lookup
+    GOTO LOOP
+
+Multiplex:
+    ;Ajuste para evitar que el program counter se vaya a direcciones no previstas
+    MULLW   2
+    MOVF    PRODL, W, a    
+    MOVLW   HIGH(CASE)
+    MOVWF   PCLATH, a
+    MOVLW   LOW(CASE)	    
+    ADDWF   PRODL, W, a     
+    BTFSC   STATUS, 0, a    
+    INCF    PCLATH, F, a    
+    MOVWF   PCL, a    
+
+CASE:
+    GOTO Color
+    GOTO SuperHeroe1
+    GOTO Upiicsa
+    GOTO Dispositivos
+    GOTO SuperHeroe2
+    GOTO Deporte
+    GOTO Decimal_Asendente
+    GOTO Hexadecimal_Desendente
+
+
+#include "Funtions.s"
+END     resetVec
