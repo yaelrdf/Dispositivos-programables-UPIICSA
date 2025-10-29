@@ -1,0 +1,346 @@
+#include "configbits.s"
+#include <xc.inc>
+
+; Variables
+PSECT udata_acs
+counter:    DS 1 
+limit:      DS 1
+current_func: DS 1  ; Store current function index
+
+; Reset vector
+PSECT resetVec,class=CODE,reloc=2
+resetVec:
+    GOTO    CONF
+
+PSECT code
+CONF:
+    ; PORTA input
+    CLRF    LATA, A 
+    MOVLW   0xFF    
+    MOVWF   TRISA, A
+    
+    ; PORTB Output
+    CLRF    LATB, A         ; Clear LATB output latch
+    MOVLW   0x00            ; Load W with 0x00 (all outputs)
+    MOVWF   TRISB, A        ; Set TRISB = 0x00 (all bits as outputs)
+    CLRF    PORTB, A        ; Clear PORTB
+    
+    ; Pines digitales
+    MOVLW   0x0F            ; Configure all pins as digital (ADCON1 = 0x0F)
+    MOVWF   ADCON1, A       ; Write to ADCON1
+
+    ; Oscillator config
+    MOVLW   0b01110010      ; IRCF = 111 (8 MHz), SCS = 10 (internal oscillator)
+    MOVWF   OSCCON, A
+    
+    ; Initialize variables
+    CLRF    counter, A
+    MOVLW   0xFF
+    MOVWF   current_func, A  ; Initialize to invalid value
+    
+    ; Main Program
+    GOTO    LOOP
+
+LOOP:
+    MOVF    PORTA, W, A     ; Read Puerto A
+    ANDLW   0x07            ; Mask lower 3 bits (0-7 for 8 functions)
+    CPFSEQ  current_func    ; Compare with previous function
+    GOTO    Function_Changed_Main  ; If different, reset counter
+    GOTO    Continue_Loop
+    
+Function_Changed_Main:
+    CLRF    counter, A      ; Reset counter when function changes
+    MOVWF   current_func, A ; Save new function
+    
+Continue_Loop:
+    MOVF    current_func, W, A
+    CALL    Multiplex       ; Call multiplex function
+    GOTO    LOOP
+
+Multiplex:
+    MULLW   2
+    MOVF    PRODL, W, A    
+    MOVLW   HIGH(CASE)
+    MOVWF   PCLATH, A
+    MOVLW   LOW(CASE)	    
+    ADDWF   PRODL, W, A     
+    BTFSC   STATUS, 0, A    
+    INCF    PCLATH, F, A    
+    MOVWF   PCL, A    
+
+CASE:
+    GOTO    Color               ; 000
+    GOTO    SuperHeroe1         ; 001
+    GOTO    Upiicsa             ; 010
+    GOTO    Dispositivos        ; 011
+    GOTO    SuperHeroe2         ; 100
+    GOTO    Deporte             ; 101
+    GOTO    Decimal_Asendente   ; 110
+    GOTO    Hexadecimal_Desendente ; 111
+
+; Common display function - just displays and delays
+Display_Pattern:
+    MOVWF   PORTB           ; Display pattern
+    CALL    delay_1sec
+    RETURN
+
+Color:
+    MOVLW   4               ; Limit = 4
+    MOVWF   limit, A
+Color_Loop:
+    MOVF    counter, W, A   ; Counter to W
+    ANDLW   0x03            ; Mask to stay within 0-3
+    CALL    Get_Colour      ; Get pattern
+    CALL    Display_Pattern ; Display it
+    CALL    Counter_increment
+    GOTO    Color_Loop
+
+SuperHeroe1:
+    MOVLW   6               ; Limit = 6
+    MOVWF   limit, A
+SuperHeroe1_Loop:
+    MOVF    counter, W, A
+    CALL    Get_Heroes1
+    CALL    Display_Pattern
+    CALL    Counter_increment
+    GOTO    SuperHeroe1_Loop
+
+SuperHeroe2:
+    MOVLW   4               ; Limit = 4
+    MOVWF   limit, A
+SuperHeroe2_Loop:
+    MOVF    counter, W, A
+    CALL    Get_Heroes2
+    CALL    Display_Pattern
+    CALL    Counter_increment
+    GOTO    SuperHeroe2_Loop
+
+Deporte:
+    MOVLW   8               ; Limit = 8
+    MOVWF   limit, A
+Deporte_Loop:
+    MOVF    counter, W, A
+    CALL    Get_Sport
+    CALL    Display_Pattern
+    CALL    Counter_increment
+    GOTO    Deporte_Loop
+
+Decimal_Asendente:
+    MOVLW   10              ; Limit = 10
+    MOVWF   limit, A
+Decimal_Loop:
+    MOVF    counter, W, A
+    CALL    Get_number
+    CALL    Display_Pattern
+    CALL    Counter_increment
+    GOTO    Decimal_Loop
+
+Hexadecimal_Desendente:
+    MOVLW   16              ; Limit = 16 (0-F)
+    MOVWF   limit, A
+Hexadecimal_Loop:
+    MOVLW   15              ; Start from 15 (F)
+    MOVF    counter, W, A
+    SUBWF   WREG, W, A      ; W = 15 - counter
+    CALL    Get_number
+    CALL    Display_Pattern
+    CALL    Counter_increment
+    GOTO    Hexadecimal_Loop
+
+Upiicsa:
+    MOVLW   7               ; Limit = 7 (U P I I C S A)
+    MOVWF   limit, A
+Upiicsa_Loop:
+    MOVF    counter, W, A
+    CALL    Get_Upiicsa
+    CALL    Display_Pattern
+    CALL    Counter_increment
+    GOTO    Upiicsa_Loop
+
+Dispositivos:
+    MOVLW   12              ; Limit = 12 (D I S P O S I T I V O S)
+    MOVWF   limit, A
+Dispositivos_Loop:
+    MOVF    counter, W, A
+    CALL    Get_Dispositivos
+    CALL    Display_Pattern
+    CALL    Counter_increment
+    GOTO    Dispositivos_Loop
+
+; Lookup tables
+Get_Colour:
+    MULLW   2
+    MOVF    PRODL, W, A    
+    MOVLW   HIGH(Colour_Table)
+    MOVWF   PCLATH, A
+    MOVLW   LOW(Colour_Table)	    
+    ADDWF   PRODL, W, A     
+    BTFSC   STATUS, 0, A    
+    INCF    PCLATH, F, A    
+    MOVWF   PCL, A   
+
+Colour_Table:
+    RETLW   0xEE    ; A
+    RETLW   0xDB    ; Z
+    RETLW   0x7C    ; U
+    RETLW   0x1C    ; L
+
+Get_Heroes1:
+    MULLW   2
+    MOVF    PRODL, W, A    
+    MOVLW   HIGH(Heroes1_Table)
+    MOVWF   PCLATH, A
+    MOVLW   LOW(Heroes1_Table)	    
+    ADDWF   PRODL, W, A     
+    BTFSC   STATUS, 0, A    
+    INCF    PCLATH, F, A    
+    MOVWF   PCL, A   
+
+Heroes1_Table:
+    RETLW   0x3E    ; B
+    RETLW   0xEE    ; A
+    RETLW   0x8D    ; T
+    RETLW   0x9F    ; M
+    RETLW   0xEE    ; A
+    RETLW   0x2A    ; N
+
+Get_Heroes2:
+    MULLW   2
+    MOVF    PRODL, W, A    
+    MOVLW   HIGH(Heroes2_Table)
+    MOVWF   PCLATH, A
+    MOVLW   LOW(Heroes2_Table)	    
+    ADDWF   PRODL, W, A     
+    BTFSC   STATUS, 0, A    
+    INCF    PCLATH, F, A    
+    MOVWF   PCL, A 
+
+Heroes2_Table:
+    RETLW   0x8D    ; T
+    RETLW   0x2E    ; H
+    RETLW   0xFD    ; O
+    RETLW   0x0A    ; R
+
+Get_Sport:
+    MULLW   2
+    MOVF    PRODL, W, A    
+    MOVLW   HIGH(Sport_Table)
+    MOVWF   PCLATH, A
+    MOVLW   LOW(Sport_Table)	    
+    ADDWF   PRODL, W, A     
+    BTFSC   STATUS, 0, A    
+    INCF    PCLATH, F, A    
+    MOVWF   PCL, A 
+
+Sport_Table:
+    RETLW   0xBE    ; G
+    RETLW   0x0C    ; I
+    RETLW   0x9F    ; M
+    RETLW   0x2A    ; N
+    RETLW   0xEE    ; A
+    RETLW   0xB6    ; S
+    RETLW   0x0C    ; I
+    RETLW   0xEE    ; A
+
+Get_Upiicsa:
+    MULLW   2
+    MOVF    PRODL, W, A    
+    MOVLW   HIGH(Upiicsa_Table)
+    MOVWF   PCLATH, A
+    MOVLW   LOW(Upiicsa_Table)	    
+    ADDWF   PRODL, W, A     
+    BTFSC   STATUS, 0, A    
+    INCF    PCLATH, F, A    
+    MOVWF   PCL, A 
+
+Upiicsa_Table:
+    RETLW   0x7C    ; U
+    RETLW   0xCE    ; P
+    RETLW   0x0C    ; I
+    RETLW   0x0C    ; I
+    RETLW   0x9C    ; C
+    RETLW   0xB6    ; S
+    RETLW   0xEE    ; A
+
+Get_Dispositivos:
+    MULLW   2
+    MOVF    PRODL, W, A    
+    MOVLW   HIGH(Dispositivos_Table)
+    MOVWF   PCLATH, A
+    MOVLW   LOW(Dispositivos_Table)	    
+    ADDWF   PRODL, W, A     
+    BTFSC   STATUS, 0, A    
+    INCF    PCLATH, F, A    
+    MOVWF   PCL, A 
+
+Dispositivos_Table:
+    RETLW   0x7A    ; D
+    RETLW   0x0C    ; I
+    RETLW   0xB6    ; S
+    RETLW   0xCE    ; P
+    RETLW   0xFD    ; O
+    RETLW   0xB6    ; S
+    RETLW   0x0C    ; I
+    RETLW   0x8D    ; T
+    RETLW   0x0C    ; I
+    RETLW   0x38    ; V
+    RETLW   0xFD    ; O
+    RETLW   0xB6    ; S
+
+Get_number:
+    MULLW   2
+    MOVF    PRODL, W, A    
+    MOVLW   HIGH(Number_Table)
+    MOVWF   PCLATH, A
+    MOVLW   LOW(Number_Table)	    
+    ADDWF   PRODL, W, A     
+    BTFSC   STATUS, 0, A    
+    INCF    PCLATH, F, A    
+    MOVWF   PCL, A    
+
+Number_Table:
+    RETLW   0b11111100    ; 0
+    RETLW   0b01100000    ; 1
+    RETLW   0b11011010    ; 2
+    RETLW   0b11110010    ; 3
+    RETLW   0b01100110    ; 4
+    RETLW   0b10110110    ; 5
+    RETLW   0b10111110    ; 6
+    RETLW   0b11100000    ; 7
+    RETLW   0b11111110    ; 8
+    RETLW   0b11100110    ; 9
+    RETLW   0b11101110    ; A
+    RETLW   0b00111110    ; B
+    RETLW   0b10011100    ; C
+    RETLW   0b01111010    ; D
+    RETLW   0b10011110    ; E
+    RETLW   0b10001110    ; F
+
+; Global Functions
+Counter_increment:
+    INCF    counter, F, A   ; Increment counter
+    MOVF    limit, W, A     ; Get limit
+    CPFSLT  counter, A      ; Skip if counter < limit
+    CLRF    counter, A      ; Reset if >= limit
+    RETURN
+
+; Delay - approximately 1 second at 8MHz
+delay_1sec:
+    BCF     T0CON, 7, A     ; Stop Timer0
+    MOVLW   0b10000101      ; 16-bit mode, prescaler 1:64
+    MOVWF   T0CON, A
+    MOVLW   0x85            ; High byte for ~1 sec
+    MOVWF   TMR0H, A
+    MOVLW   0xEE            ; Low byte
+    MOVWF   TMR0L, A
+    BCF     INTCON, 2, A    ; Clear overflow flag
+    BSF     T0CON, 7, A     ; Start Timer0
+    
+delay_wait:
+    BTFSS   INTCON, 2, A    ; Wait for overflow
+    GOTO    delay_wait
+    BCF     INTCON, 2, A    ; Clear flag
+    BCF     T0CON, 7, A     ; Stop timer
+    RETURN
+
+END     resetVec

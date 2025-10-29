@@ -21,7 +21,7 @@ CONF:
     
     ; PORTB Output
     CLRF    LATB, A
-    CLRF    TRISB, A        ; All outputs
+    CLRF    TRISB, A        
     CLRF    PORTB, A
     
     ; All pins digital
@@ -35,20 +35,19 @@ CONF:
     ; Initialize variables
     CLRF    counter, A
     MOVLW   0xFF
-    MOVWF   last_porta, A    ; Invalid initial value
+    MOVWF   last_porta, A 
     
-    GOTO    MAIN_LOOP
+    GOTO    LOOP
 
-MAIN_LOOP:
-    ; Read PORTA and mask to 3 bits
+LOOP:
+    ;MASK PortA
     MOVF    PORTA, W, A
     ANDLW   0x07
-    
-    ; Check if PORTA changed
+    ; PORTA Cambios
     CPFSEQ  last_porta, A
     GOTO    PORTA_CHANGED
     
-    ; PORTA same, continue with current function
+    ;Si es lo mismo continua
     GOTO    RUN_FUNCTION
     
 PORTA_CHANGED:
@@ -61,22 +60,14 @@ RUN_FUNCTION:
     MOVF    last_porta, W, A
     CALL    SELECT_FUNCTION
     
-    ; Display the pattern returned in W
+    ;Display
     MOVWF   PORTB, A
-    
     ; Delay
     CALL    DELAY_1SEC
-    
-    ; Increment counter with wraparound
     CALL    INCREMENT_COUNTER
-    
-    GOTO    MAIN_LOOP
+    GOTO    LOOP
 
-;==============================================
-; SELECT_FUNCTION - Jump to appropriate function
-; Input: W = function number (0-7)
-; Output: W = display pattern
-;==============================================
+;;Select
 SELECT_FUNCTION:
     MULLW   2
     MOVF    PRODL, W, A    
@@ -99,7 +90,7 @@ FUNCTION_TABLE:
     GOTO    FUNC_7_HEX_DESC
 
 ;==============================================
-; Function 0: COLOR (4 patterns)
+; Function 0: COLOR
 ;==============================================
 FUNC_0_COLOR:
     MOVLW   4
@@ -126,10 +117,10 @@ COLOR_TABLE:
     RETLW   0x1C    ; L
 
 ;==============================================
-; Function 1: SUPERHEROE1 - BATMAN (6 patterns)
+; Function 1: SUPERHEROE1 
 ;==============================================
 FUNC_1_SUPERHEROE1:
-    MOVLW   6
+    MOVLW   8
     MOVWF   limit, A
     MOVF    counter, W, A
     CALL    GET_HEROES1_PATTERN
@@ -147,15 +138,17 @@ GET_HEROES1_PATTERN:
     MOVWF   PCL, A
 
 HEROES1_TABLE:
-    RETLW   0x3E    ; B
-    RETLW   0xEE    ; A
-    RETLW   0x8D    ; T
+    RETLW   0x0C    ; I
+    RETLW   0x0A    ; R
+    RETLW   0xFD    ; O
+    RETLW   0x2A    ; N
+    RETLW   0x02    ; -
     RETLW   0x9F    ; M
     RETLW   0xEE    ; A
     RETLW   0x2A    ; N
 
 ;==============================================
-; Function 2: UPIICSA (7 patterns)
+; Function 2: UPIICSA
 ;==============================================
 FUNC_2_UPIICSA:
     MOVLW   7
@@ -185,7 +178,7 @@ UPIICSA_TABLE:
     RETLW   0xEE    ; A
 
 ;==============================================
-; Function 3: DISPOSITIVOS (12 patterns)
+; Function 3: DISPOSITIVOS
 ;==============================================
 FUNC_3_DISPOSITIVOS:
     MOVLW   12
@@ -220,7 +213,7 @@ DISPOSITIVOS_TABLE:
     RETLW   0xB6    ; S
 
 ;==============================================
-; Function 4: SUPERHEROE2 - THOR (4 patterns)
+; Function 4: SUPERHEROE2
 ;==============================================
 FUNC_4_SUPERHEROE2:
     MOVLW   4
@@ -230,7 +223,7 @@ FUNC_4_SUPERHEROE2:
     RETURN
 
 GET_HEROES2_PATTERN:
-    MULLW   2
+    MULLW   10
     MOVF    PRODL, W, A    
     MOVLW   HIGH(HEROES2_TABLE)
     MOVWF   PCLATH, A
@@ -241,13 +234,24 @@ GET_HEROES2_PATTERN:
     MOVWF   PCL, A
 
 HEROES2_TABLE:
-    RETLW   0x8D    ; T
-    RETLW   0x2E    ; H
-    RETLW   0xFD    ; O
+    RETLW   0xB6    ; S
+    RETLW   0xCE    ; P
+    RETLW   0x0C    ; I
+    RETLW   0x7A    ; D
+    RETLW   0x9E    ; E
     RETLW   0x0A    ; R
+    RETLW   0x02    ; -
+    RETLW   0x9F    ; M
+    RETLW   0xEE    ; A
+    RETLW   0x2A    ; N
+
+;jsjsjsjsjs
+;.... --- .-.. .- / ... --- -.-- / -.-- .- . .-.. --..-- / . ... -.-. .-. .. -... .. . -. -.. 
+;--- / .--. .- .-. .- / -... . - ... .- -... . .-.-.- / -- . / --. ..- ... - .- .-. .. .- /
+; .... .- -.-. . .-. - . / ... .- -... . .-. / --.- ..- . / .-.-.- / .-.-.- / - . / .- -- ---
 
 ;==============================================
-; Function 5: DEPORTE - GIMNASIA (8 patterns)
+; Function 5: DEPORTE
 ;==============================================
 FUNC_5_DEPORTE:
     MOVLW   8
@@ -268,14 +272,14 @@ GET_DEPORTE_PATTERN:
     MOVWF   PCL, A
 
 DEPORTE_TABLE:
-    RETLW   0xBE    ; G
-    RETLW   0x0C    ; I
-    RETLW   0x9F    ; M
     RETLW   0x2A    ; N
     RETLW   0xEE    ; A
-    RETLW   0xB6    ; S
-    RETLW   0x0C    ; I
+    RETLW   0x8D    ; T
     RETLW   0xEE    ; A
+    RETLW   0x9C    ; C
+    RETLW   0x0C    ; I
+    RETLW   0xFD    ; O
+    RETLW   0x2A    ; N
 
 ;==============================================
 ; Function 6: Decimal Ascendente 0-9 (10 patterns)
@@ -317,7 +321,7 @@ NUMBER_TABLE:
     RETLW   0b10001110    ; F
 
 ;==============================================
-; Function 7: Hexadecimal Descendente F-0 (16 patterns)
+; Function 7: Hexadecimal Descendente
 ;==============================================
 FUNC_7_HEX_DESC:
     MOVLW   16
@@ -326,30 +330,30 @@ FUNC_7_HEX_DESC:
     MOVLW   15
     MOVF    counter, W, A
     SUBWF   WREG, W, A
-    CALL    GET_NUMBER_PATTERN  ; Reuse number table
+    CALL    GET_NUMBER_PATTERN  
     RETURN
 
 ;==============================================
-; INCREMENT_COUNTER - Increment with wraparound
+; INCREMENT_COUNTER
 ;==============================================
 INCREMENT_COUNTER:
     INCF    counter, F, A
     MOVF    counter, W, A
     CPFSLT  limit, A        ; Skip if limit < counter
-    RETURN                  ; Counter still valid
+    RETURN                  
     CLRF    counter, A      ; Reset counter
     RETURN
 
 ;==============================================
-; DELAY_1SEC - Approximately 1 second delay
+; DELAY_1SEC
 ;==============================================
 DELAY_1SEC:
     BCF     T0CON, 7, A     ; Stop Timer0
     MOVLW   0b10000101      ; 16-bit, prescaler 1:64
     MOVWF   T0CON, A
-    MOVLW   0x85            ; Preload high byte
+    MOVLW   0x85            
     MOVWF   TMR0H, A
-    MOVLW   0xEE            ; Preload low byte
+    MOVLW   0xEE            
     MOVWF   TMR0L, A
     BCF     INTCON, 2, A    ; Clear overflow flag
     BSF     T0CON, 7, A     ; Start Timer0
