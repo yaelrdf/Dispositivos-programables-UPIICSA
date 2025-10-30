@@ -51,7 +51,7 @@ LOOP:
     CALL delay_1ms
     
     ; Toggle RB2 every 1ms
-    BTG PORTB, 2, A
+    BTG PORTB, 1, A
     
     ; Decrement 16-bit counter (1000ms)
     MOVF counter_1s_low, W, A
