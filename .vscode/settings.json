@@ -1,0 +1,6 @@
+{
+    "mplab.mplab-importer.ignorePatterns": [
+        "Microchip-University/Microcontrollers 101/Led-Blink.X/nbproject/configurations.xml",
+        "Microchip-University/Microcontrollers 101/UART-led.X/nbproject/configurations.xml"
+    ]
+}

@@ -5995,15 +5995,14 @@ void main()
     OSCCON=0x72;
     TRISB=0x00;
     LATA=0x00;
-
-    ADCON1 = 0x0F;
-    TRISA=0xFF;
-    LATB=0x00;
+    TRISD=0x00;
 
     while(1){
+        LATD= 0x00;
         LATB = 0xFF;
         MSdelay (500);
         LATB = 0x00;
+        LATD = 0XFF;
         MSdelay (500);
     }
 }

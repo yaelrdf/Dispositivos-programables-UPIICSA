@@ -35,18 +35,18 @@
 [v _LATA LATA `VEuc  1 e 1 @3977 ]
 "3071
 [v _LATB LATB `VEuc  1 e 1 @3978 ]
-"3425
-[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"3261
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
 "3623
 [v _TRISB TRISB `VEuc  1 e 1 @3987 ]
-"6579
-[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"3999
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
 "7984
 [v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
 "18 /home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Practicas_EXTRAS/C-Test/CTest.X/main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"34
+"33
 } 0
 "11
 [v _MSdelay MSdelay `(v  1 e 1 0 ]

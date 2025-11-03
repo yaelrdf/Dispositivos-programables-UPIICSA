@@ -9,12 +9,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "2971
 [; ;/opt/microchip/mplabx/v6.25/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8/pic/include/proc/pic18f4550.h: 2971: extern volatile unsigned char LATA __attribute__((address(0xF89)));
 [v _LATA `Vuc ~T0 @X0 0 e@3977 ]
-"6579
-[; ;/opt/microchip/mplabx/v6.25/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8/pic/include/proc/pic18f4550.h: 6579: extern volatile unsigned char ADCON1 __attribute__((address(0xFC1)));
-[v _ADCON1 `Vuc ~T0 @X0 0 e@4033 ]
-"3425
-[; ;/opt/microchip/mplabx/v6.25/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8/pic/include/proc/pic18f4550.h: 3425: extern volatile unsigned char TRISA __attribute__((address(0xF92)));
-[v _TRISA `Vuc ~T0 @X0 0 e@3986 ]
+"3999
+[; ;/opt/microchip/mplabx/v6.25/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8/pic/include/proc/pic18f4550.h: 3999: extern volatile unsigned char TRISD __attribute__((address(0xF95)));
+[v _TRISD `Vuc ~T0 @X0 0 e@3989 ]
+"3261
+[; ;/opt/microchip/mplabx/v6.25/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8/pic/include/proc/pic18f4550.h: 3261: extern volatile unsigned char LATD __attribute__((address(0xF8C)));
+[v _LATD `Vuc ~T0 @X0 0 e@3980 ]
 "3071
 [; ;/opt/microchip/mplabx/v6.25/packs/Microchip/PIC18Fxxxx_DFP/1.7.171/xc8/pic/include/proc/pic18f4550.h: 3071: extern volatile unsigned char LATB __attribute__((address(0xF8A)));
 [v _LATB `Vuc ~T0 @X0 0 e@3978 ]
@@ -665,38 +665,38 @@ Version 4.0 HI-TECH Software Intermediate Code
 "22
 [; ;main.c: 22:     LATA=0x00;
 [e = _LATA -> -> 0 `i `uc ]
-"24
-[; ;main.c: 24:     ADCON1 = 0x0F;
-[e = _ADCON1 -> -> 15 `i `uc ]
+"23
+[; ;main.c: 23:     TRISD=0x00;
+[e = _TRISD -> -> 0 `i `uc ]
 "25
-[; ;main.c: 25:     TRISA=0xFF;
-[e = _TRISA -> -> 255 `i `uc ]
-"26
-[; ;main.c: 26:     LATB=0x00;
-[e = _LATB -> -> 0 `i `uc ]
-"28
-[; ;main.c: 28:     while(1){
+[; ;main.c: 25:     while(1){
 [e :U 401 ]
 {
-"29
-[; ;main.c: 29:         LATB = 0xFF;
+"26
+[; ;main.c: 26:         LATD= 0x00;
+[e = _LATD -> -> 0 `i `uc ]
+"27
+[; ;main.c: 27:         LATB = 0xFF;
 [e = _LATB -> -> 255 `i `uc ]
-"30
-[; ;main.c: 30:         MSdelay (500);
+"28
+[; ;main.c: 28:         MSdelay (500);
 [e ( _MSdelay (1 -> -> 500 `i `ui ]
-"31
-[; ;main.c: 31:         LATB = 0x00;
+"29
+[; ;main.c: 29:         LATB = 0x00;
 [e = _LATB -> -> 0 `i `uc ]
-"32
-[; ;main.c: 32:         MSdelay (500);
+"30
+[; ;main.c: 30:         LATD = 0XFF;
+[e = _LATD -> -> 255 `i `uc ]
+"31
+[; ;main.c: 31:         MSdelay (500);
 [e ( _MSdelay (1 -> -> 500 `i `ui ]
-"33
-[; ;main.c: 33:     }
+"32
+[; ;main.c: 32:     }
 }
 [e :U 400 ]
 [e $U 401  ]
 [e :U 402 ]
-"34
-[; ;main.c: 34: }
+"33
+[; ;main.c: 33: }
 [e :UE 399 ]
 }

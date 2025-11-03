@@ -20,15 +20,14 @@ void main()
     OSCCON=0x72;                /* Use internal oscillator of 8MHz Frequency */
     TRISB=0x00;                 /* Set direction of PORTB as OUTPUT to which LED is connected */
     LATA=0x00;
-    //Input
-    ADCON1 = 0x0F;              // All PORTA pins as digital
-    TRISA=0xFF;
-    LATB=0x00;
+    TRISD=0x00;                 /* Set direction of PORTB as OUTPUT to which LED is connected */
             
     while(1){
-        LATB = 0xFF;            /* Turn ON LED for 500 ms */
+        LATD= 0x00;
+        LATB = 0xFF;/* Turn ON LED for 500 ms */
         MSdelay (500);
-        LATB = 0x00;            /* Turn OFF LED for 500 ms */
+        LATB = 0x00;
+        LATD = 0XFF;/* Turn OFF LED for 500 ms */
         MSdelay (500);
     }
 }
