@@ -12,6 +12,7 @@ Repositorio para dispositivos programables **en construccion**
 - [Boletin informativo "Descontinuacion de PicKit3"](https://www.microchip.com/en-us/about/media-center/blog/2024/discontinued-ide-support-for-gen3-tools)
 - [Matriz de compatibilidad programadores/PIC](https://www.microchip.com/content/dam/mchp/documents/DEV/ProductDocuments/SupportingCollateral/Device_Support.pdf)
 - [Academa de microchip cursos introductorios **pocos en ensablador**](https://mu.microchip.com/page/all-courses)
+- [PicSimLab para simulaciones de PIC](https://github.com/lcgamboa/picsimlab)
 
 ## Indice
 - [Microchip University](/index/microchip-uni.md)
