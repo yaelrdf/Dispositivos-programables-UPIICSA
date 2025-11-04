@@ -51,7 +51,7 @@ LOOP:
     CALL delay_1ms
     
     ; Toggle RB2 every 1ms
-    BTG PORTB, 1, A
+    BTG PORTB, 2, A
     
     ; Decrement 16-bit counter (1000ms)
     MOVF counter_1s_low, W, A
@@ -66,7 +66,7 @@ LOOP:
     GOTO dec_high_byte
     
     ; Both bytes zero - 1 second reached
-    BTG PORTB, 3, A          ; Toggle RB4
+    BTG PORTB, 4, A          ; Toggle RB4
     
     ; Reset 1-second counter
     MOVLW LOW(1000)
@@ -80,7 +80,7 @@ LOOP:
     GOTO LOOP
     
     ; 3 seconds reached
-    BTG PORTB, 4, A
+    BTG PORTB, 5, A
     MOVLW 3
     MOVWF counter_3s, A
     GOTO LOOP

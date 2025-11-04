@@ -169,7 +169,7 @@ FUNC_6_DECIMAL_ASC:
     RETURN
 
 ;==============================================
-; Function 7: Hexadecimal Descendente F-0 
+; Function 7: Hexadecimal Descendente F-0 `
 ;==============================================
 FUNC_7_HEX_DESC:
     MOVLW   15
