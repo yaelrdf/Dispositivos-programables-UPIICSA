@@ -35,3 +35,25 @@ TABLE:
     RETLW   0b01111010    ; D
     RETLW   0b10011110    ; E
     RETLW   0b10001110    ; F
+    
+
+GET_NUMBER_DESC:
+    MULLW   2
+    MOVF    PRODL, W, A    
+    MOVLW   HIGH(NUMBER_TABLE_DESC)
+    MOVWF   PCLATH, A
+    MOVLW   LOW(NUMBER_TABLE_DESC)	    
+    ADDWF   PRODL, W, A     
+    BTFSC   STATUS, 0, A    
+    INCF    PCLATH, F, A    
+    MOVWF   PCL, A
+    
+NUMBER_TABLE_DESC:
+    RETLW   0xE0    ; 7
+    RETLW   0xBE    ; 6
+    RETLW   0xB6    ; 5
+    RETLW   0x66    ; 4
+    RETLW   0xF2    ; 3
+    RETLW   0xDA    ; 2
+    RETLW   0x60    ; 1
+    RETLW   0b11111100    ; 0
