@@ -31,7 +31,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>Simulator</platformTool>
         <languageToolchain>pic-as</languageToolchain>
-        <languageToolchainVersion>3.0</languageToolchainVersion>
+        <languageToolchainVersion>3.10</languageToolchainVersion>
         <platform>2</platform>
       </toolsSet>
       <packs>
@@ -68,6 +68,10 @@
         <property key="W0012_CORE_STACK_OVERFLOW_RESET" value="report"/>
         <property key="periphADC1.minTacq" value="5"/>
       </Simulator>
+      <Tool>
+        <property key="W0012_CORE_STACK_OVERFLOW_RESET" value="report"/>
+        <property key="periphADC1.minTacq" value="5"/>
+      </Tool>
       <pic-as-assembler>
         <property key="fmax-errors" value="20"/>
         <property key="list-custom-assembler-options" value=""/>

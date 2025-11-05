@@ -19,11 +19,11 @@ GET_COMBINACION:
 
     
 TABLE:
+    RETLW   0xE0    ; 7
+    RETLW   0xBE    ; 6
+    RETLW   0xB6    ; 5
+    RETLW   0x66    ; 4
+    RETLW   0xF2    ; 3
+    RETLW   0xDA    ; 2
+    RETLW   0x60    ; 1
     RETLW   0b11111100    ; 0
-    RETLW   0b01100000    ; 1
-    RETLW   0b11011010    ; 2
-    RETLW   0b11110010    ; 3
-    RETLW   0b01100110    ; 4
-    RETLW   0b10110110    ; 5
-    RETLW   0b10111110    ; 6
-    RETLW   0b11100000    ; 7

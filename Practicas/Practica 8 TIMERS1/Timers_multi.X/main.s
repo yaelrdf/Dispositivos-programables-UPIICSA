@@ -21,8 +21,8 @@ CONF:
     
     ; Wait for oscillator to be stable (optional but recommended)
 wait_osc_stable:
-    BTFSS OSCCON, 2, A      ; Check IOFS bit (Internal Oscillator Frequency Stable)
-    GOTO wait_osc_stable
+    ;BTFSS OSCCON, 2, A      ; Check IOFS bit (Internal Oscillator Frequency Stable)
+    ;GOTO wait_osc_stable
     
     ; Configure PORTA as input
     CLRF LATA, 0

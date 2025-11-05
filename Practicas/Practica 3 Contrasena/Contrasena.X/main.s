@@ -41,4 +41,3 @@ NO_IGUAL:
     GOTO LOOP
 
 END resetVec
-
