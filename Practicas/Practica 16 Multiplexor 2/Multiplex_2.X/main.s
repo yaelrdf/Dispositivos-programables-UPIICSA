@@ -122,7 +122,7 @@ FUNC_1_SUPERHEROE1:
 ; Function 2: UPIICSA (7 patterns)
 ;==============================================
 FUNC_2_UPIICSA:
-    MOVLW   4
+    MOVLW   6
     MOVWF   limit, A
     MOVF    counter, W, A
     CALL    GET_UPIICSA_PATTERN

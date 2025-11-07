@@ -1,25 +1,17 @@
 import os
 import logging
 import asyncio
-import sys
-import subprocess
 from pathlib import Path
 from nicegui import ui, app
 import uuid
 from typing import Dict
-from concurrent.futures import ThreadPoolExecutor
 
 # ============================================
 # CONFIGURATION - Adjust colors here
 # ============================================
 HEADER_COLOR = '#10b981'  # Mint green for header
 BUTTON_COLOR = '#10b981'  # Mint green for buttons
-
-# Auto-detect pk2cmd executable based on platform
-if sys.platform == 'win32':
-    PK2CMD_PATH = './pk2cmd.exe'
-else:
-    PK2CMD_PATH = './pk2cmd'
+PK2CMD_PATH = './pk2cmd.exe'  # Path to pk2cmd executable
 
 # ============================================
 # LOGGING CONFIGURATION
@@ -31,7 +23,6 @@ logging.basicConfig(
     level=logging.INFO
 )
 logger = logging.getLogger()
-logger.info(f"Platform: {sys.platform}, Using pk2cmd path: {PK2CMD_PATH}")
 
 # ============================================
 # GLOBAL STATE
@@ -41,9 +32,6 @@ programmer_lock = asyncio.Lock()
 
 # Track uploaded files by client connection ID
 uploaded_files: Dict[str, Path] = {}
-
-# Thread pool for subprocess execution
-executor = ThreadPoolExecutor(max_workers=1)
 
 # ============================================
 # FILE MANAGER
@@ -100,108 +88,53 @@ class Programmer:
     def __init__(self):
         self.last_output = ""
     
-    def _run_subprocess(self, hex_file_path: Path) -> dict:
+    async def program(self, hex_file_path: Path) -> dict:
         """
-        Run pk2cmd in a blocking manner (to be executed in thread pool)
+        Program the PIC with the given hex file
         Returns: dict with 'success' (bool) and 'output' (str)
         """
-        # Convert path to string and normalize for the platform
-        hex_file_str = str(hex_file_path.resolve())
+        global programmer_busy
         
-        # Build command as a list
-        command = [
-            PK2CMD_PATH,
-            '-B.',
-            '-P',
-            f'-F{hex_file_str}',
-            '-M',
-            '-Y'
-        ]
-        
-        logger.info(f"Executing command: {' '.join(command)}")
-        logger.info(f"Hex file path: {hex_file_str}")
-        logger.info(f"Hex file exists: {hex_file_path.exists()}")
+        # Build command
+        command = f'{PK2CMD_PATH} -B. -P -F"{hex_file_path}" -M -Y'
+        logger.info(f"Starting programming with command: {command}")
         
         try:
-            # Run subprocess with timeout
-            result = subprocess.run(
+            # Execute command asynchronously
+            process = await asyncio.create_subprocess_shell(
                 command,
-                stdout=subprocess.PIPE,
-                stderr=subprocess.PIPE,
-                timeout=60,
-                cwd=os.getcwd(),
-                text=True,
-                encoding='utf-8',
-                errors='replace'
+                stdout=asyncio.subprocess.PIPE,
+                stderr=asyncio.subprocess.PIPE
             )
             
-            # Combine stdout and stderr
-            output = result.stdout + result.stderr
+            stdout, stderr = await process.communicate()
+            output = stdout.decode() + stderr.decode()
+            self.last_output = output
             
-            logger.info(f"Command completed with return code: {result.returncode}")
-            logger.info(f"STDOUT: {result.stdout}")
-            logger.info(f"STDERR: {result.stderr}")
+            logger.info(f"Programming completed with return code: {process.returncode}")
+            logger.info(f"Output: {output}")
             
-            # Determine success
-            success = result.returncode == 0 and "Failed" not in output
+            # Determine success based on output and return code
+            success = process.returncode == 0 and "Failed" not in output
             
             if success:
                 logger.info("Programming succeeded")
             else:
-                logger.error(f"Programming failed with code {result.returncode}")
+                logger.error("Programming failed")
             
             return {
                 'success': success,
-                'output': output if output else f"Command completed with code {result.returncode} but no output"
+                'output': output
             }
             
-        except subprocess.TimeoutExpired:
-            error_msg = "Programming timeout after 60 seconds"
-            logger.error(error_msg)
-            return {
-                'success': False,
-                'output': error_msg
-            }
-        except FileNotFoundError as e:
-            error_msg = f"pk2cmd executable not found at '{PK2CMD_PATH}'. Error: {str(e)}"
-            logger.error(error_msg)
-            return {
-                'success': False,
-                'output': error_msg
-            }
-        except PermissionError as e:
-            error_msg = f"Permission denied executing pk2cmd: {str(e)}"
-            logger.error(error_msg)
-            return {
-                'success': False,
-                'output': error_msg
-            }
         except Exception as e:
-            error_msg = f"Error executing pk2cmd: {type(e).__name__}: {str(e)}"
+            error_msg = f"Error executing pk2cmd: {str(e)}"
             logger.error(error_msg)
-            logger.exception("Full exception details:")
+            self.last_output = error_msg
             return {
                 'success': False,
                 'output': error_msg
             }
-    
-    async def program(self, hex_file_path: Path) -> dict:
-        """
-        Program the PIC with the given hex file (async wrapper)
-        Returns: dict with 'success' (bool) and 'output' (str)
-        """
-        logger.info(f"Starting programming for file: {hex_file_path}")
-        
-        # Run the blocking subprocess in a thread pool
-        loop = asyncio.get_event_loop()
-        result = await loop.run_in_executor(
-            executor,
-            self._run_subprocess,
-            hex_file_path
-        )
-        
-        self.last_output = result['output']
-        return result
     
     def get_last_output(self) -> str:
         """Get the output from the last programming operation"""
