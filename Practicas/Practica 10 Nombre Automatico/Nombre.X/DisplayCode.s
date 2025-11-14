@@ -29,7 +29,7 @@ TABLE:
     RETLW   0x1C    ; L
     RETLW   0x7A    ; D
     RETLW   0xEE    ; A
-    RETLW   0xAA    ; Ñ
+    RETLW   0xAA    ; N
     RETLW   0xEE    ; A
     RETLW   0x02    ; -
     RETLW   0x8E    ; F

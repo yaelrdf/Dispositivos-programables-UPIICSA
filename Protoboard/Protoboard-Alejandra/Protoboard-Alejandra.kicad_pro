@@ -397,7 +397,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "/home/yaelrdf/Documents/Dispositivos-programables-UPIICSA/Protoboard/Protoboard-Alejandra/",
+    "plot_directory": "./",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -416,6 +416,14 @@
     [
       "3fe25c38-7c51-495b-8cf2-9227c9223cd5",
       "LCD Display"
+    ],
+    [
+      "0785ae63-484d-4848-9566-6b933d6c4362",
+      "Display 7 segmentos"
+    ],
+    [
+      "7033c723-333e-4ea7-b558-d5c0311355ac",
+      "Dual display"
     ]
   ],
   "text_variables": {}

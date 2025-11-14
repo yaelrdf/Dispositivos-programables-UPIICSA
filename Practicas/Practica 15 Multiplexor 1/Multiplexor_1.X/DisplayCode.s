@@ -1,21 +1,17 @@
 #include <xc.inc>
-    
 PSECT code
 
-;GLOBAL GET_COMBINACION      ; Make function accessible from main file
-
 GET_COMBINACION:
-    ; Simple and reliable approach - use computed GOTO with fixed table
-    MULLW   2               ; Multiply by 2 (each GOTO is 2 bytes)
-    MOVF    PRODL, W, a     ; Get low byte of offset
-    ; Load the high byte of table base address
+    ;Funcion para lookup table
+    MULLW   2               
+    MOVF    PRODL, W, a     
     MOVLW   HIGH(TABLE)
     MOVWF   PCLATH, a
-    MOVLW   LOW(TABLE)	    ; Load low byte of table base address
-    ADDWF   PRODL, W, a     ; Add offset to table base low byte
-    BTFSC   STATUS, 0, a    ; Check for carry
-    INCF    PCLATH, F, a    ; Adjust high byte if carry
-    MOVWF   PCL, a          ; Jump to the table entry
+    MOVLW   LOW(TABLE)	    
+    ADDWF   PRODL, W, a     
+    BTFSC   STATUS, 0, a    
+    INCF    PCLATH, F, a    
+    MOVWF   PCL, a          
 
     
 TABLE:

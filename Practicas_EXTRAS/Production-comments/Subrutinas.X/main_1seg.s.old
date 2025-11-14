@@ -1,0 +1,65 @@
+#include "configbits.s"
+#include <xc.inc>
+    PSECT code
+
+    GLOBAL CON, CONS, CONS1
+    CON    EQU 0x0D    ; Contador para el loop principal
+    CONS   EQU 0x0F    ; Contador de 1ms
+    CONS1  EQU 0x10    ; Contador de 1seg
+
+;Programa principal
+    ORG 0x20
+INICIO:
+    ;Inicializacion de variables
+    CLRF    CON, a
+    CLRF    CONS, a
+    CLRF    CONS1, a
+    
+    ;Configuracion de puertos
+    MOVLW   0x00
+    MOVWF   TRISB, a   ;PortB como output
+    CLRF    PORTB, a   ;Limpiar PortB
+
+MAIN:
+    ;Contador a PortB
+    MOVF    CON, W, a
+    MOVWF   PORTB, a
+    
+    ;LLamar al delay
+    CALL    RET_1S
+    
+    ; Incrementar contador
+    INCF    CON, F, a
+    
+    ; Bucle
+    GOTO    MAIN
+
+; Subrutina para delay de 1 segundo
+RET_1S:
+    MOVLW   3          ; 1000ms = 3 * 256 + 232ms
+    MOVWF   CONS1, a
+OUTER_1S:
+    ; LLamar al delay de 1ms 232 veces
+    MOVLW   232        ; 232ms
+    MOVWF   CONS, a
+INNER_1S:
+    CALL    RET_1MS
+    DECFSZ  CONS, F, a
+    GOTO    INNER_1S
+    
+    DECFSZ  CONS1, F, a
+    GOTO    OUTER_1S
+    RETURN
+
+; Subrutina de 1ms
+RET_1MS:
+    MOVLW   198        ;Contar desde 198
+    MOVWF   CONS, a
+BUCLE:
+    NOP
+    DECFSZ  CONS, F, a
+    GOTO    BUCLE
+    RETURN
+
+    END
+    

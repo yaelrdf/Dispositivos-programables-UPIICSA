@@ -6287,6 +6287,48 @@
 		)
 	)
 	(sheet
+		(at 464.82 7.62)
+		(size 151.13 116.84)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "0785ae63-484d-4848-9566-6b933d6c4362")
+		(property "Sheetname" "Display 7 segmentos"
+			(at 464.82 6.9084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "untitled.kicad_sch"
+			(at 464.82 125.0446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Protoboard-Alejandra"
+				(path "/901f2ecb-0de8-4d14-a7e8-fe0a73fdd84c"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 308.61 10.16)
 		(size 140.97 116.84)
 		(exclude_from_sim no)
@@ -6324,6 +6366,48 @@
 			(project "Protoboard-Alejandra"
 				(path "/901f2ecb-0de8-4d14-a7e8-fe0a73fdd84c"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 643.89 7.62)
+		(size 140.97 115.57)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7033c723-333e-4ea7-b558-d5c0311355ac")
+		(property "Sheetname" "Dual display"
+			(at 643.89 6.9084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "untitled.kicad_sch"
+			(at 643.89 123.7746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Protoboard-Alejandra"
+				(path "/901f2ecb-0de8-4d14-a7e8-fe0a73fdd84c"
+					(page "4")
 				)
 			)
 		)
