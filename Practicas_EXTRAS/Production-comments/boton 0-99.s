@@ -1,10 +1,10 @@
 #include "configbits.s"
-#include <xc.inc>
+`#include <xc.inc>
 
 ; Reset vector
 PSECT resetVec,class=CODE,reloc=2
 resetVec:
-    GOTO CONF
+    GOTO CONF`
     
 PSECT udata_acs
     counter:  DS 1
