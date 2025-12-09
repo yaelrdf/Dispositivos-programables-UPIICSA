@@ -3,6 +3,9 @@
 Repositorio para dispositivos programables **en construccion**
 
 > [!WARNING]
+> Esta terminantemente prohibida la venta de cualquier contenido, "codigo" o programa en este repositorio, consulte parte inferior para mas informacion.
+
+> [!WARNING]
 > Es requerido que algunos programadores PicKit3, obtengan actualizaciones de firmware, para su correcto funcionamiento. Se recomienda el software [PicKitMinus](https://github.com/jaka-fi/PICkitminus) para el uso de todos los programadores (PicKit2, PicKit3, DsPic)
 
 > [!IMPORTANT]
@@ -18,6 +21,7 @@ Repositorio para dispositivos programables **en construccion**
 - [Microchip University](/index/microchip-uni.md)
 - [Esquemas y protoboards](/Protoboard/protoboard.md)
 - [Practicas-Alejandra](/Practicas/index.md)
+- [LCD-Arduino para X8C](/index/LCD-x8c.md)
 ---
 ### Licencias y uso de codigo
 Repositorio bajo licencia GPL V3 /
