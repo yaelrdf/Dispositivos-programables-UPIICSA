@@ -20,6 +20,8 @@
       <itemPath>Keypad.c</itemPath>
       <itemPath>keypad.h</itemPath>
       <itemPath>main.c</itemPath>
+      <itemPath>lcd.c</itemPath>
+      <itemPath>lcd.h</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
