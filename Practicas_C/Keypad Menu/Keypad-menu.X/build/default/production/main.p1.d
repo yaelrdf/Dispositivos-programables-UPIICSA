@@ -1,4 +1,5 @@
 build/default/production/main.p1:  \
 main.c  \
 lcd.h  \
-keypad.h 
+keypad.h  \
+config_bits.h 

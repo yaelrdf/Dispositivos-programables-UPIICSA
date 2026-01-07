@@ -3591,3 +3591,2327 @@ Operation Succeeded
 2025-12-17 20:42:35,758 - INFO - Client connected with ID: 911ea381-89ab-4b67-85db-e8541c179ee9
 2025-12-17 20:42:39,175 - INFO - 1 change detected
 2025-12-17 20:42:39,602 - INFO - 1 change detected
+2025-12-19 06:55:26,869 - INFO - Platform: win32, Using pk2cmd path: ./pk2cmd.exe
+2025-12-19 06:55:32,023 - INFO - Platform: win32, Using pk2cmd path: ./pk2cmd.exe
+2025-12-19 06:55:32,107 - INFO - 1 change detected
+2025-12-19 06:55:33,960 - INFO - Client connected with ID: 606e1326-6f77-4799-8447-d127d13c67ed
+2025-12-19 06:56:03,966 - INFO - Upload event triggered for client 606e1326-6f77-4799-8447-d127d13c67ed
+2025-12-19 06:56:03,967 - INFO - Uploading file: menu.X.production.hex
+2025-12-19 06:56:03,967 - INFO - File content length: 20766 bytes
+2025-12-19 06:56:03,970 - INFO - File uploaded for client 606e1326-6f77-4799-8447-d127d13c67ed: menu.X.production.hex -> uploads\606e1326-6f77-4799-8447-d127d13c67ed.hex
+2025-12-19 06:56:03,971 - INFO - Client 606e1326-6f77-4799-8447-d127d13c67ed successfully uploaded: menu.X.production.hex to uploads\606e1326-6f77-4799-8447-d127d13c67ed.hex
+2025-12-19 06:56:04,260 - INFO - 1 change detected
+2025-12-19 06:56:58,205 - INFO - Client connected with ID: 0f0686f4-ceb2-4ccf-82ec-77a539cdf000
+2025-12-19 06:57:13,034 - INFO - Upload event triggered for client 0f0686f4-ceb2-4ccf-82ec-77a539cdf000
+2025-12-19 06:57:13,035 - INFO - Uploading file: menu.X.production.hex
+2025-12-19 06:57:13,035 - INFO - File content length: 20766 bytes
+2025-12-19 06:57:13,037 - INFO - File uploaded for client 0f0686f4-ceb2-4ccf-82ec-77a539cdf000: menu.X.production.hex -> uploads\0f0686f4-ceb2-4ccf-82ec-77a539cdf000.hex
+2025-12-19 06:57:13,037 - INFO - Client 0f0686f4-ceb2-4ccf-82ec-77a539cdf000 successfully uploaded: menu.X.production.hex to uploads\0f0686f4-ceb2-4ccf-82ec-77a539cdf000.hex
+2025-12-19 06:57:13,347 - INFO - 1 change detected
+2025-12-19 06:57:23,156 - INFO - Client 0f0686f4-ceb2-4ccf-82ec-77a539cdf000 started programming
+2025-12-19 06:57:23,157 - INFO - Starting programming for file: uploads\0f0686f4-ceb2-4ccf-82ec-77a539cdf000.hex
+2025-12-19 06:57:23,161 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\0f0686f4-ceb2-4ccf-82ec-77a539cdf000.hex -M -Y
+2025-12-19 06:57:23,162 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\0f0686f4-ceb2-4ccf-82ec-77a539cdf000.hex
+2025-12-19 06:57:23,162 - INFO - Hex file exists: True
+2025-12-19 06:57:23,599 - INFO - Command completed with return code: 10
+2025-12-19 06:57:23,599 - INFO - STDOUT: No PICkit 2, 3 or PKOB found.
+
+
+2025-12-19 06:57:23,600 - INFO - STDERR: 
+2025-12-19 06:57:23,600 - ERROR - Programming failed with code 10
+2025-12-19 06:57:23,601 - INFO - Client 0f0686f4-ceb2-4ccf-82ec-77a539cdf000 finished programming
+2025-12-19 06:57:29,406 - INFO - Client 0f0686f4-ceb2-4ccf-82ec-77a539cdf000 started programming
+2025-12-19 06:57:29,406 - INFO - Starting programming for file: uploads\0f0686f4-ceb2-4ccf-82ec-77a539cdf000.hex
+2025-12-19 06:57:29,409 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\0f0686f4-ceb2-4ccf-82ec-77a539cdf000.hex -M -Y
+2025-12-19 06:57:29,409 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\0f0686f4-ceb2-4ccf-82ec-77a539cdf000.hex
+2025-12-19 06:57:29,409 - INFO - Hex file exists: True
+2025-12-19 06:57:29,465 - INFO - Command completed with return code: 10
+2025-12-19 06:57:29,465 - INFO - STDOUT: No PICkit 2, 3 or PKOB found.
+
+
+2025-12-19 06:57:29,465 - INFO - STDERR: 
+2025-12-19 06:57:29,465 - ERROR - Programming failed with code 10
+2025-12-19 06:57:29,466 - INFO - Client 0f0686f4-ceb2-4ccf-82ec-77a539cdf000 finished programming
+2025-12-19 06:57:34,734 - INFO - Client 0f0686f4-ceb2-4ccf-82ec-77a539cdf000 opened logs
+2025-12-19 06:57:44,228 - INFO - Client 0f0686f4-ceb2-4ccf-82ec-77a539cdf000 started programming
+2025-12-19 06:57:44,229 - INFO - Starting programming for file: uploads\0f0686f4-ceb2-4ccf-82ec-77a539cdf000.hex
+2025-12-19 06:57:44,231 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\0f0686f4-ceb2-4ccf-82ec-77a539cdf000.hex -M -Y
+2025-12-19 06:57:44,231 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\0f0686f4-ceb2-4ccf-82ec-77a539cdf000.hex
+2025-12-19 06:57:44,232 - INFO - Hex file exists: True
+2025-12-19 06:57:44,287 - INFO - Command completed with return code: 10
+2025-12-19 06:57:44,288 - INFO - STDOUT: No PICkit 2, 3 or PKOB found.
+
+
+2025-12-19 06:57:44,288 - INFO - STDERR: 
+2025-12-19 06:57:44,288 - ERROR - Programming failed with code 10
+2025-12-19 06:57:44,289 - INFO - Client 0f0686f4-ceb2-4ccf-82ec-77a539cdf000 finished programming
+2025-12-19 06:57:45,878 - INFO - Client 0f0686f4-ceb2-4ccf-82ec-77a539cdf000 opened logs
+2025-12-19 06:58:02,220 - INFO - Client 0f0686f4-ceb2-4ccf-82ec-77a539cdf000 started programming
+2025-12-19 06:58:02,220 - INFO - Starting programming for file: uploads\0f0686f4-ceb2-4ccf-82ec-77a539cdf000.hex
+2025-12-19 06:58:02,222 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\0f0686f4-ceb2-4ccf-82ec-77a539cdf000.hex -M -Y
+2025-12-19 06:58:02,222 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\0f0686f4-ceb2-4ccf-82ec-77a539cdf000.hex
+2025-12-19 06:58:02,223 - INFO - Hex file exists: True
+2025-12-19 06:58:13,709 - INFO - Command completed with return code: 0
+2025-12-19 06:58:13,709 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 06:58:07
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 06:58:07
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 06:58:13,710 - INFO - STDERR: 
+2025-12-19 06:58:13,710 - INFO - Programming succeeded
+2025-12-19 06:58:13,710 - INFO - Client 0f0686f4-ceb2-4ccf-82ec-77a539cdf000 finished programming
+2025-12-19 07:01:46,856 - INFO - Client connected with ID: 36173283-3362-42bf-a38c-ccfa1d67d0f0
+2025-12-19 07:06:46,753 - INFO - 2 changes detected
+2025-12-19 07:07:19,344 - INFO - 1 change detected
+2025-12-19 07:07:31,706 - INFO - 1 change detected
+2025-12-19 07:09:13,342 - INFO - Upload event triggered for client 36173283-3362-42bf-a38c-ccfa1d67d0f0
+2025-12-19 07:09:13,342 - INFO - Uploading file: menu.X.production.hex
+2025-12-19 07:09:13,343 - INFO - File content length: 18837 bytes
+2025-12-19 07:09:13,345 - INFO - File uploaded for client 36173283-3362-42bf-a38c-ccfa1d67d0f0: menu.X.production.hex -> uploads\36173283-3362-42bf-a38c-ccfa1d67d0f0.hex
+2025-12-19 07:09:13,345 - INFO - Client 36173283-3362-42bf-a38c-ccfa1d67d0f0 successfully uploaded: menu.X.production.hex to uploads\36173283-3362-42bf-a38c-ccfa1d67d0f0.hex
+2025-12-19 07:09:13,433 - INFO - 1 change detected
+2025-12-19 07:09:17,535 - INFO - Client 36173283-3362-42bf-a38c-ccfa1d67d0f0 started programming
+2025-12-19 07:09:17,536 - INFO - Starting programming for file: uploads\36173283-3362-42bf-a38c-ccfa1d67d0f0.hex
+2025-12-19 07:09:17,538 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\36173283-3362-42bf-a38c-ccfa1d67d0f0.hex -M -Y
+2025-12-19 07:09:17,538 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\36173283-3362-42bf-a38c-ccfa1d67d0f0.hex
+2025-12-19 07:09:17,538 - INFO - Hex file exists: True
+2025-12-19 07:09:28,928 - INFO - Command completed with return code: 0
+2025-12-19 07:09:28,929 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 07:09:23
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 07:09:23
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 07:09:28,929 - INFO - STDERR: 
+2025-12-19 07:09:28,929 - INFO - Programming succeeded
+2025-12-19 07:09:28,930 - INFO - Client 36173283-3362-42bf-a38c-ccfa1d67d0f0 finished programming
+2025-12-19 07:09:39,461 - INFO - 1 change detected
+2025-12-19 07:10:47,142 - INFO - Upload event triggered for client 36173283-3362-42bf-a38c-ccfa1d67d0f0
+2025-12-19 07:10:47,142 - INFO - Uploading file: menu.X.production.hex
+2025-12-19 07:10:47,143 - INFO - File content length: 18849 bytes
+2025-12-19 07:10:47,144 - INFO - Overwriting existing file for client 36173283-3362-42bf-a38c-ccfa1d67d0f0
+2025-12-19 07:10:47,146 - INFO - File uploaded for client 36173283-3362-42bf-a38c-ccfa1d67d0f0: menu.X.production.hex -> uploads\36173283-3362-42bf-a38c-ccfa1d67d0f0.hex
+2025-12-19 07:10:47,146 - INFO - Client 36173283-3362-42bf-a38c-ccfa1d67d0f0 successfully uploaded: menu.X.production.hex to uploads\36173283-3362-42bf-a38c-ccfa1d67d0f0.hex
+2025-12-19 07:10:47,235 - INFO - 3 changes detected
+2025-12-19 07:10:49,745 - INFO - Client 36173283-3362-42bf-a38c-ccfa1d67d0f0 started programming
+2025-12-19 07:10:49,745 - INFO - Starting programming for file: uploads\36173283-3362-42bf-a38c-ccfa1d67d0f0.hex
+2025-12-19 07:10:49,747 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\36173283-3362-42bf-a38c-ccfa1d67d0f0.hex -M -Y
+2025-12-19 07:10:49,747 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\36173283-3362-42bf-a38c-ccfa1d67d0f0.hex
+2025-12-19 07:10:49,747 - INFO - Hex file exists: True
+2025-12-19 07:11:01,125 - INFO - Command completed with return code: 0
+2025-12-19 07:11:01,126 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 07:10:55
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 07:10:55
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 07:11:01,126 - INFO - STDERR: 
+2025-12-19 07:11:01,126 - INFO - Programming succeeded
+2025-12-19 07:11:01,127 - INFO - Client 36173283-3362-42bf-a38c-ccfa1d67d0f0 finished programming
+2025-12-19 07:12:32,791 - INFO - Upload event triggered for client 36173283-3362-42bf-a38c-ccfa1d67d0f0
+2025-12-19 07:12:32,791 - INFO - Uploading file: menu.X.production.hex
+2025-12-19 07:12:32,791 - INFO - File content length: 18849 bytes
+2025-12-19 07:12:32,792 - INFO - Overwriting existing file for client 36173283-3362-42bf-a38c-ccfa1d67d0f0
+2025-12-19 07:12:32,794 - INFO - File uploaded for client 36173283-3362-42bf-a38c-ccfa1d67d0f0: menu.X.production.hex -> uploads\36173283-3362-42bf-a38c-ccfa1d67d0f0.hex
+2025-12-19 07:12:32,795 - INFO - Client 36173283-3362-42bf-a38c-ccfa1d67d0f0 successfully uploaded: menu.X.production.hex to uploads\36173283-3362-42bf-a38c-ccfa1d67d0f0.hex
+2025-12-19 07:12:32,850 - INFO - 3 changes detected
+2025-12-19 07:12:34,326 - INFO - 1 change detected
+2025-12-19 07:12:45,851 - INFO - Client 36173283-3362-42bf-a38c-ccfa1d67d0f0 started programming
+2025-12-19 07:12:45,852 - INFO - Starting programming for file: uploads\36173283-3362-42bf-a38c-ccfa1d67d0f0.hex
+2025-12-19 07:12:45,854 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\36173283-3362-42bf-a38c-ccfa1d67d0f0.hex -M -Y
+2025-12-19 07:12:45,854 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\36173283-3362-42bf-a38c-ccfa1d67d0f0.hex
+2025-12-19 07:12:45,854 - INFO - Hex file exists: True
+2025-12-19 07:12:57,248 - INFO - Command completed with return code: 0
+2025-12-19 07:12:57,249 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 07:12:51
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 07:12:51
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 07:12:57,249 - INFO - STDERR: 
+2025-12-19 07:12:57,249 - INFO - Programming succeeded
+2025-12-19 07:12:57,250 - INFO - Client 36173283-3362-42bf-a38c-ccfa1d67d0f0 finished programming
+2025-12-19 07:13:04,807 - INFO - Client connected with ID: 95c7b9c2-34ac-4421-96c5-e5221f9f55fb
+2025-12-19 07:13:07,090 - INFO - Client connected with ID: e5546092-4e47-420b-af4c-1cecdd57e14e
+2025-12-19 07:13:09,932 - INFO - Client connected with ID: 14af3577-c423-43f7-a2a4-72f2e1ad9253
+2025-12-19 07:13:50,858 - INFO - Upload event triggered for client 14af3577-c423-43f7-a2a4-72f2e1ad9253
+2025-12-19 07:13:50,858 - INFO - Uploading file: LDC-test.X.production.hex
+2025-12-19 07:13:50,858 - INFO - File content length: 5005 bytes
+2025-12-19 07:13:50,861 - INFO - File uploaded for client 14af3577-c423-43f7-a2a4-72f2e1ad9253: LDC-test.X.production.hex -> uploads\14af3577-c423-43f7-a2a4-72f2e1ad9253.hex
+2025-12-19 07:13:50,861 - INFO - Client 14af3577-c423-43f7-a2a4-72f2e1ad9253 successfully uploaded: LDC-test.X.production.hex to uploads\14af3577-c423-43f7-a2a4-72f2e1ad9253.hex
+2025-12-19 07:13:50,960 - INFO - 1 change detected
+2025-12-19 07:13:55,908 - WARNING - http://localhost:8181/_nicegui/auto/static/de934114aa3f61e93afef31cbec5021f/Programer.png not found
+2025-12-19 07:14:01,102 - INFO - Client 14af3577-c423-43f7-a2a4-72f2e1ad9253 started programming
+2025-12-19 07:14:01,102 - INFO - Starting programming for file: uploads\14af3577-c423-43f7-a2a4-72f2e1ad9253.hex
+2025-12-19 07:14:01,118 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\14af3577-c423-43f7-a2a4-72f2e1ad9253.hex -M -Y
+2025-12-19 07:14:01,118 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\14af3577-c423-43f7-a2a4-72f2e1ad9253.hex
+2025-12-19 07:14:01,119 - INFO - Hex file exists: True
+2025-12-19 07:14:11,123 - INFO - Command completed with return code: 0
+2025-12-19 07:14:11,123 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 07:14:06
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 07:14:06
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 07:14:11,123 - INFO - STDERR: 
+2025-12-19 07:14:11,123 - INFO - Programming succeeded
+2025-12-19 07:14:11,124 - INFO - Client 14af3577-c423-43f7-a2a4-72f2e1ad9253 finished programming
+2025-12-19 07:16:06,388 - INFO - 1 change detected
+2025-12-19 07:18:12,277 - INFO - Upload event triggered for client 36173283-3362-42bf-a38c-ccfa1d67d0f0
+2025-12-19 07:18:12,277 - INFO - Uploading file: Porta-portb.X.production.hex
+2025-12-19 07:18:12,278 - INFO - File content length: 240 bytes
+2025-12-19 07:18:12,279 - INFO - Overwriting existing file for client 36173283-3362-42bf-a38c-ccfa1d67d0f0
+2025-12-19 07:18:12,281 - INFO - File uploaded for client 36173283-3362-42bf-a38c-ccfa1d67d0f0: Porta-portb.X.production.hex -> uploads\36173283-3362-42bf-a38c-ccfa1d67d0f0.hex
+2025-12-19 07:18:12,282 - INFO - Client 36173283-3362-42bf-a38c-ccfa1d67d0f0 successfully uploaded: Porta-portb.X.production.hex to uploads\36173283-3362-42bf-a38c-ccfa1d67d0f0.hex
+2025-12-19 07:18:12,361 - INFO - 3 changes detected
+2025-12-19 07:18:16,286 - INFO - Client 36173283-3362-42bf-a38c-ccfa1d67d0f0 started programming
+2025-12-19 07:18:16,286 - INFO - Starting programming for file: uploads\36173283-3362-42bf-a38c-ccfa1d67d0f0.hex
+2025-12-19 07:18:16,289 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\36173283-3362-42bf-a38c-ccfa1d67d0f0.hex -M -Y
+2025-12-19 07:18:16,289 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\36173283-3362-42bf-a38c-ccfa1d67d0f0.hex
+2025-12-19 07:18:16,289 - INFO - Hex file exists: True
+2025-12-19 07:18:25,802 - INFO - Command completed with return code: 0
+2025-12-19 07:18:25,803 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 07:18:21
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 07:18:21
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 07:18:25,803 - INFO - STDERR: 
+2025-12-19 07:18:25,803 - INFO - Programming succeeded
+2025-12-19 07:18:25,804 - INFO - Client 36173283-3362-42bf-a38c-ccfa1d67d0f0 finished programming
+2025-12-19 07:27:02,338 - INFO - Client connected with ID: 2179b2c9-05ad-424f-8f84-2cb521c3c364
+2025-12-19 07:28:14,321 - INFO - Client connected with ID: c5045b8b-4e59-4ad3-aa0d-7c580aa9d4f8
+2025-12-19 07:28:20,166 - INFO - Client connected with ID: 93411467-e20c-4724-840d-0b6db962217e
+2025-12-19 07:28:51,848 - WARNING - http://10.218.234.30:8181/_nicegui/client/94f873e9-10a0-4e5b-a300-fd2bba7dbd27/upload/47 not found
+2025-12-19 07:28:54,023 - INFO - Client connected with ID: 655a0f92-0c59-4bb4-92b8-2aaff6332714
+2025-12-19 07:28:58,729 - INFO - Upload event triggered for client 655a0f92-0c59-4bb4-92b8-2aaff6332714
+2025-12-19 07:28:58,729 - INFO - Uploading file: PortA-PortB.X.production.hex
+2025-12-19 07:28:58,729 - INFO - File content length: 195 bytes
+2025-12-19 07:28:58,731 - INFO - File uploaded for client 655a0f92-0c59-4bb4-92b8-2aaff6332714: PortA-PortB.X.production.hex -> uploads\655a0f92-0c59-4bb4-92b8-2aaff6332714.hex
+2025-12-19 07:28:58,731 - INFO - Client 655a0f92-0c59-4bb4-92b8-2aaff6332714 successfully uploaded: PortA-PortB.X.production.hex to uploads\655a0f92-0c59-4bb4-92b8-2aaff6332714.hex
+2025-12-19 07:28:58,803 - INFO - 1 change detected
+2025-12-19 07:29:02,504 - INFO - Client 655a0f92-0c59-4bb4-92b8-2aaff6332714 started programming
+2025-12-19 07:29:02,506 - INFO - Starting programming for file: uploads\655a0f92-0c59-4bb4-92b8-2aaff6332714.hex
+2025-12-19 07:29:02,508 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\655a0f92-0c59-4bb4-92b8-2aaff6332714.hex -M -Y
+2025-12-19 07:29:02,508 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\655a0f92-0c59-4bb4-92b8-2aaff6332714.hex
+2025-12-19 07:29:02,509 - INFO - Hex file exists: True
+2025-12-19 07:29:12,051 - INFO - Command completed with return code: 0
+2025-12-19 07:29:12,051 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 07:29:08
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 07:29:08
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 07:29:12,051 - INFO - STDERR: 
+2025-12-19 07:29:12,051 - INFO - Programming succeeded
+2025-12-19 07:29:12,052 - INFO - Client 655a0f92-0c59-4bb4-92b8-2aaff6332714 finished programming
+2025-12-19 07:30:10,531 - INFO - Client connected with ID: bc8cb026-f9ee-4267-84a1-bf75646fdf4f
+2025-12-19 07:30:47,295 - INFO - 1 change detected
+2025-12-19 07:44:21,788 - INFO - Client connected with ID: fcf6bcef-cc05-4086-8916-3229647f04b3
+2025-12-19 07:50:16,471 - INFO - Client connected with ID: 486db312-783c-4c9f-8717-300a6ea2cbbf
+2025-12-19 07:50:28,954 - INFO - Upload event triggered for client 486db312-783c-4c9f-8717-300a6ea2cbbf
+2025-12-19 07:50:28,954 - INFO - Uploading file: Pares_Impares.X.production.hex
+2025-12-19 07:50:28,955 - INFO - File content length: 269 bytes
+2025-12-19 07:50:28,957 - INFO - File uploaded for client 486db312-783c-4c9f-8717-300a6ea2cbbf: Pares_Impares.X.production.hex -> uploads\486db312-783c-4c9f-8717-300a6ea2cbbf.hex
+2025-12-19 07:50:28,957 - INFO - Client 486db312-783c-4c9f-8717-300a6ea2cbbf successfully uploaded: Pares_Impares.X.production.hex to uploads\486db312-783c-4c9f-8717-300a6ea2cbbf.hex
+2025-12-19 07:50:29,044 - INFO - 1 change detected
+2025-12-19 07:51:11,907 - INFO - Client connected with ID: 9441c2e4-7834-4295-80bb-7e0ca34b06e4
+2025-12-19 07:51:31,962 - INFO - Client connected with ID: 86e52bc1-7632-48e4-9cba-ab0b173cb9ca
+2025-12-19 07:51:39,371 - INFO - Upload event triggered for client 86e52bc1-7632-48e4-9cba-ab0b173cb9ca
+2025-12-19 07:51:39,371 - INFO - Uploading file: Pares_Impares.X.production.hex
+2025-12-19 07:51:39,371 - INFO - File content length: 269 bytes
+2025-12-19 07:51:39,374 - INFO - File uploaded for client 86e52bc1-7632-48e4-9cba-ab0b173cb9ca: Pares_Impares.X.production.hex -> uploads\86e52bc1-7632-48e4-9cba-ab0b173cb9ca.hex
+2025-12-19 07:51:39,374 - INFO - Client 86e52bc1-7632-48e4-9cba-ab0b173cb9ca successfully uploaded: Pares_Impares.X.production.hex to uploads\86e52bc1-7632-48e4-9cba-ab0b173cb9ca.hex
+2025-12-19 07:51:39,463 - INFO - 2 changes detected
+2025-12-19 07:51:41,034 - INFO - Client 86e52bc1-7632-48e4-9cba-ab0b173cb9ca started programming
+2025-12-19 07:51:41,035 - INFO - Starting programming for file: uploads\86e52bc1-7632-48e4-9cba-ab0b173cb9ca.hex
+2025-12-19 07:51:41,036 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\86e52bc1-7632-48e4-9cba-ab0b173cb9ca.hex -M -Y
+2025-12-19 07:51:41,036 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\86e52bc1-7632-48e4-9cba-ab0b173cb9ca.hex
+2025-12-19 07:51:41,037 - INFO - Hex file exists: True
+2025-12-19 07:51:50,810 - INFO - Command completed with return code: 0
+2025-12-19 07:51:50,810 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 07:51:46
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 07:51:46
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 07:51:50,810 - INFO - STDERR: 
+2025-12-19 07:51:50,810 - INFO - Programming succeeded
+2025-12-19 07:51:50,811 - INFO - Client 86e52bc1-7632-48e4-9cba-ab0b173cb9ca finished programming
+2025-12-19 07:53:18,243 - INFO - Client connected with ID: c41ff48c-0c58-471f-989f-7ec1bf5b6949
+2025-12-19 07:53:18,374 - INFO - Client connected with ID: 0afcd8d8-3f6c-4b23-ab4b-231487c1ae56
+2025-12-19 07:53:19,533 - INFO - Client connected with ID: 5ad78ec2-ae19-4308-a0b3-23d4bc362457
+2025-12-19 07:53:35,519 - INFO - Platform: win32, Using pk2cmd path: ./pk2cmd.exe
+2025-12-19 07:53:39,788 - INFO - Platform: win32, Using pk2cmd path: ./pk2cmd.exe
+2025-12-19 07:53:39,884 - INFO - 1 change detected
+2025-12-19 07:53:42,557 - INFO - Client connected with ID: b4499f1f-dd6f-4f18-b39f-28d5c364313d
+2025-12-19 07:53:42,595 - WARNING - http://10.218.234.30:8181/_nicegui/client/d8c1df11-1519-4ef0-a1d8-3728a2c42a6d/upload/47 not found
+2025-12-19 07:53:42,936 - WARNING - http://10.218.234.30:8181/_nicegui/client/2f8adb1d-9902-4309-ab52-18eb71b5fe9c/upload/47 not found
+2025-12-19 07:53:43,948 - INFO - Client connected with ID: 4431944a-f8e9-4a04-8ff6-d0f701bcf6d2
+2025-12-19 07:53:43,964 - INFO - Client connected with ID: 68e61046-8af0-4691-bdb3-87c2c2ea9bda
+2025-12-19 07:53:51,104 - INFO - Upload event triggered for client 4431944a-f8e9-4a04-8ff6-d0f701bcf6d2
+2025-12-19 07:53:51,104 - INFO - Uploading file: Caracter_misa.X.production.hex
+2025-12-19 07:53:51,104 - INFO - File content length: 2216 bytes
+2025-12-19 07:53:51,106 - INFO - File uploaded for client 4431944a-f8e9-4a04-8ff6-d0f701bcf6d2: Caracter_misa.X.production.hex -> uploads\4431944a-f8e9-4a04-8ff6-d0f701bcf6d2.hex
+2025-12-19 07:53:51,106 - INFO - Client 4431944a-f8e9-4a04-8ff6-d0f701bcf6d2 successfully uploaded: Caracter_misa.X.production.hex to uploads\4431944a-f8e9-4a04-8ff6-d0f701bcf6d2.hex
+2025-12-19 07:53:51,159 - INFO - 1 change detected
+2025-12-19 07:53:54,032 - INFO - Upload event triggered for client 68e61046-8af0-4691-bdb3-87c2c2ea9bda
+2025-12-19 07:53:54,032 - INFO - Uploading file: pares_impares.X.production.hex
+2025-12-19 07:53:54,032 - INFO - File content length: 379 bytes
+2025-12-19 07:53:54,034 - INFO - File uploaded for client 68e61046-8af0-4691-bdb3-87c2c2ea9bda: pares_impares.X.production.hex -> uploads\68e61046-8af0-4691-bdb3-87c2c2ea9bda.hex
+2025-12-19 07:53:54,034 - INFO - Client 68e61046-8af0-4691-bdb3-87c2c2ea9bda successfully uploaded: pares_impares.X.production.hex to uploads\68e61046-8af0-4691-bdb3-87c2c2ea9bda.hex
+2025-12-19 07:53:54,091 - INFO - 2 changes detected
+2025-12-19 07:53:58,035 - INFO - Client 68e61046-8af0-4691-bdb3-87c2c2ea9bda started programming
+2025-12-19 07:53:58,035 - INFO - Starting programming for file: uploads\68e61046-8af0-4691-bdb3-87c2c2ea9bda.hex
+2025-12-19 07:53:58,038 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\68e61046-8af0-4691-bdb3-87c2c2ea9bda.hex -M -Y
+2025-12-19 07:53:58,038 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\68e61046-8af0-4691-bdb3-87c2c2ea9bda.hex
+2025-12-19 07:53:58,039 - INFO - Hex file exists: True
+2025-12-19 07:54:07,590 - INFO - Command completed with return code: 0
+2025-12-19 07:54:07,590 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 07:54:03
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 07:54:03
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 07:54:07,590 - INFO - STDERR: 
+2025-12-19 07:54:07,591 - INFO - Programming succeeded
+2025-12-19 07:54:07,591 - INFO - Client 68e61046-8af0-4691-bdb3-87c2c2ea9bda finished programming
+2025-12-19 07:54:07,615 - INFO - Client connected with ID: 0f8e494b-177e-4c1a-b1ff-e89aba0a6046
+2025-12-19 07:54:30,336 - INFO - Client 4431944a-f8e9-4a04-8ff6-d0f701bcf6d2 started programming
+2025-12-19 07:54:30,336 - INFO - Starting programming for file: uploads\4431944a-f8e9-4a04-8ff6-d0f701bcf6d2.hex
+2025-12-19 07:54:30,337 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\4431944a-f8e9-4a04-8ff6-d0f701bcf6d2.hex -M -Y
+2025-12-19 07:54:30,337 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\4431944a-f8e9-4a04-8ff6-d0f701bcf6d2.hex
+2025-12-19 07:54:30,338 - INFO - Hex file exists: True
+2025-12-19 07:54:40,027 - INFO - Command completed with return code: 0
+2025-12-19 07:54:40,027 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 07:54:35
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 07:54:35
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 07:54:40,027 - INFO - STDERR: 
+2025-12-19 07:54:40,028 - INFO - Programming succeeded
+2025-12-19 07:54:40,028 - INFO - Client 4431944a-f8e9-4a04-8ff6-d0f701bcf6d2 finished programming
+2025-12-19 07:55:16,193 - INFO - Client connected with ID: 845d9608-5fa9-4cf4-8d1f-74db28881676
+2025-12-19 08:00:06,854 - INFO - Client connected with ID: c77d939f-5551-4076-8065-c6e084a5c725
+2025-12-19 08:00:20,538 - INFO - Client connected with ID: 69cdf3ca-db95-4f60-8c65-8ed9879bf512
+2025-12-19 08:00:22,152 - INFO - Upload event triggered for client c77d939f-5551-4076-8065-c6e084a5c725
+2025-12-19 08:00:22,153 - INFO - Uploading file: 4-BITS.X.production.hex
+2025-12-19 08:00:22,153 - INFO - File content length: 273 bytes
+2025-12-19 08:00:22,154 - INFO - File uploaded for client c77d939f-5551-4076-8065-c6e084a5c725: 4-BITS.X.production.hex -> uploads\c77d939f-5551-4076-8065-c6e084a5c725.hex
+2025-12-19 08:00:22,155 - INFO - Client c77d939f-5551-4076-8065-c6e084a5c725 successfully uploaded: 4-BITS.X.production.hex to uploads\c77d939f-5551-4076-8065-c6e084a5c725.hex
+2025-12-19 08:00:22,255 - INFO - 1 change detected
+2025-12-19 08:00:25,153 - INFO - Client c77d939f-5551-4076-8065-c6e084a5c725 started programming
+2025-12-19 08:00:25,153 - INFO - Starting programming for file: uploads\c77d939f-5551-4076-8065-c6e084a5c725.hex
+2025-12-19 08:00:25,156 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\c77d939f-5551-4076-8065-c6e084a5c725.hex -M -Y
+2025-12-19 08:00:25,156 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\c77d939f-5551-4076-8065-c6e084a5c725.hex
+2025-12-19 08:00:25,156 - INFO - Hex file exists: True
+2025-12-19 08:00:33,601 - INFO - Upload event triggered for client 69cdf3ca-db95-4f60-8c65-8ed9879bf512
+2025-12-19 08:00:33,602 - INFO - Uploading file: 4_bits.X.production.hex
+2025-12-19 08:00:33,602 - INFO - File content length: 281 bytes
+2025-12-19 08:00:33,604 - INFO - File uploaded for client 69cdf3ca-db95-4f60-8c65-8ed9879bf512: 4_bits.X.production.hex -> uploads\69cdf3ca-db95-4f60-8c65-8ed9879bf512.hex
+2025-12-19 08:00:33,604 - INFO - Client 69cdf3ca-db95-4f60-8c65-8ed9879bf512 successfully uploaded: 4_bits.X.production.hex to uploads\69cdf3ca-db95-4f60-8c65-8ed9879bf512.hex
+2025-12-19 08:00:33,683 - INFO - 2 changes detected
+2025-12-19 08:00:34,717 - INFO - Command completed with return code: 0
+2025-12-19 08:00:34,717 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:00:30
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:00:30
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:00:34,717 - INFO - STDERR: 
+2025-12-19 08:00:34,717 - INFO - Programming succeeded
+2025-12-19 08:00:34,718 - INFO - Client c77d939f-5551-4076-8065-c6e084a5c725 finished programming
+2025-12-19 08:00:47,896 - INFO - Client connected with ID: 883124ec-7cc0-4394-a59d-a399c9bb83fd
+2025-12-19 08:00:47,914 - INFO - Client connected with ID: 0011a9ad-af33-4cc7-95d7-303698d182ee
+2025-12-19 08:00:51,312 - INFO - Client connected with ID: 906e57b3-5eac-4c15-8e84-11b73831c4c5
+2025-12-19 08:00:51,907 - WARNING - http://10.218.234.30:8181/_nicegui/client/497b13db-63e4-4aff-8840-d3f9fbe626c5/upload/47 not found
+2025-12-19 08:00:58,393 - INFO - Upload event triggered for client 0011a9ad-af33-4cc7-95d7-303698d182ee
+2025-12-19 08:00:58,394 - INFO - Uploading file: 4_bits.X.production.hex
+2025-12-19 08:00:58,394 - INFO - File content length: 281 bytes
+2025-12-19 08:00:58,396 - INFO - File uploaded for client 0011a9ad-af33-4cc7-95d7-303698d182ee: 4_bits.X.production.hex -> uploads\0011a9ad-af33-4cc7-95d7-303698d182ee.hex
+2025-12-19 08:00:58,396 - INFO - Client 0011a9ad-af33-4cc7-95d7-303698d182ee successfully uploaded: 4_bits.X.production.hex to uploads\0011a9ad-af33-4cc7-95d7-303698d182ee.hex
+2025-12-19 08:00:58,460 - INFO - 1 change detected
+2025-12-19 08:01:02,985 - INFO - Upload event triggered for client 906e57b3-5eac-4c15-8e84-11b73831c4c5
+2025-12-19 08:01:02,986 - INFO - Uploading file: pacman.X.production.hex
+2025-12-19 08:01:02,986 - INFO - File content length: 7026 bytes
+2025-12-19 08:01:02,988 - INFO - File uploaded for client 906e57b3-5eac-4c15-8e84-11b73831c4c5: pacman.X.production.hex -> uploads\906e57b3-5eac-4c15-8e84-11b73831c4c5.hex
+2025-12-19 08:01:02,988 - INFO - Client 906e57b3-5eac-4c15-8e84-11b73831c4c5 successfully uploaded: pacman.X.production.hex to uploads\906e57b3-5eac-4c15-8e84-11b73831c4c5.hex
+2025-12-19 08:01:03,055 - INFO - 2 changes detected
+2025-12-19 08:01:06,900 - INFO - Client 0011a9ad-af33-4cc7-95d7-303698d182ee started programming
+2025-12-19 08:01:06,900 - INFO - Starting programming for file: uploads\0011a9ad-af33-4cc7-95d7-303698d182ee.hex
+2025-12-19 08:01:06,902 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\0011a9ad-af33-4cc7-95d7-303698d182ee.hex -M -Y
+2025-12-19 08:01:06,902 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\0011a9ad-af33-4cc7-95d7-303698d182ee.hex
+2025-12-19 08:01:06,902 - INFO - Hex file exists: True
+2025-12-19 08:01:16,418 - INFO - Command completed with return code: 0
+2025-12-19 08:01:16,418 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:01:12
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:01:12
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:01:16,418 - INFO - STDERR: 
+2025-12-19 08:01:16,418 - INFO - Programming succeeded
+2025-12-19 08:01:16,419 - INFO - Client 0011a9ad-af33-4cc7-95d7-303698d182ee finished programming
+2025-12-19 08:01:25,633 - INFO - Client 906e57b3-5eac-4c15-8e84-11b73831c4c5 started programming
+2025-12-19 08:01:25,633 - INFO - Starting programming for file: uploads\906e57b3-5eac-4c15-8e84-11b73831c4c5.hex
+2025-12-19 08:01:25,635 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\906e57b3-5eac-4c15-8e84-11b73831c4c5.hex -M -Y
+2025-12-19 08:01:25,635 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\906e57b3-5eac-4c15-8e84-11b73831c4c5.hex
+2025-12-19 08:01:25,636 - INFO - Hex file exists: True
+2025-12-19 08:01:35,857 - INFO - Command completed with return code: 0
+2025-12-19 08:01:35,857 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:01:31
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:01:31
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:01:35,857 - INFO - STDERR: 
+2025-12-19 08:01:35,857 - INFO - Programming succeeded
+2025-12-19 08:01:35,858 - INFO - Client 906e57b3-5eac-4c15-8e84-11b73831c4c5 finished programming
+2025-12-19 08:01:36,900 - INFO - Upload event triggered for client 883124ec-7cc0-4394-a59d-a399c9bb83fd
+2025-12-19 08:01:36,901 - INFO - Uploading file: Contador-HEX.X.production.hex
+2025-12-19 08:01:36,901 - INFO - File content length: 461 bytes
+2025-12-19 08:01:36,903 - INFO - File uploaded for client 883124ec-7cc0-4394-a59d-a399c9bb83fd: Contador-HEX.X.production.hex -> uploads\883124ec-7cc0-4394-a59d-a399c9bb83fd.hex
+2025-12-19 08:01:36,903 - INFO - Client 883124ec-7cc0-4394-a59d-a399c9bb83fd successfully uploaded: Contador-HEX.X.production.hex to uploads\883124ec-7cc0-4394-a59d-a399c9bb83fd.hex
+2025-12-19 08:01:36,979 - INFO - 1 change detected
+2025-12-19 08:01:45,297 - INFO - Client 883124ec-7cc0-4394-a59d-a399c9bb83fd started programming
+2025-12-19 08:01:45,297 - INFO - Starting programming for file: uploads\883124ec-7cc0-4394-a59d-a399c9bb83fd.hex
+2025-12-19 08:01:45,298 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\883124ec-7cc0-4394-a59d-a399c9bb83fd.hex -M -Y
+2025-12-19 08:01:45,300 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\883124ec-7cc0-4394-a59d-a399c9bb83fd.hex
+2025-12-19 08:01:45,300 - INFO - Hex file exists: True
+2025-12-19 08:01:54,856 - INFO - Command completed with return code: 0
+2025-12-19 08:01:54,857 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:01:50
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:01:50
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:01:54,857 - INFO - STDERR: 
+2025-12-19 08:01:54,857 - INFO - Programming succeeded
+2025-12-19 08:01:54,858 - INFO - Client 883124ec-7cc0-4394-a59d-a399c9bb83fd finished programming
+2025-12-19 08:02:45,200 - INFO - Client 883124ec-7cc0-4394-a59d-a399c9bb83fd opened logs
+2025-12-19 08:02:49,174 - INFO - Upload event triggered for client 0011a9ad-af33-4cc7-95d7-303698d182ee
+2025-12-19 08:02:49,174 - INFO - Uploading file: subrutina.X.production.hex
+2025-12-19 08:02:49,175 - INFO - File content length: 338 bytes
+2025-12-19 08:02:49,176 - INFO - Overwriting existing file for client 0011a9ad-af33-4cc7-95d7-303698d182ee
+2025-12-19 08:02:49,177 - INFO - File uploaded for client 0011a9ad-af33-4cc7-95d7-303698d182ee: subrutina.X.production.hex -> uploads\0011a9ad-af33-4cc7-95d7-303698d182ee.hex
+2025-12-19 08:02:49,177 - INFO - Client 0011a9ad-af33-4cc7-95d7-303698d182ee successfully uploaded: subrutina.X.production.hex to uploads\0011a9ad-af33-4cc7-95d7-303698d182ee.hex
+2025-12-19 08:02:49,269 - INFO - 3 changes detected
+2025-12-19 08:02:50,963 - INFO - Upload event triggered for client 883124ec-7cc0-4394-a59d-a399c9bb83fd
+2025-12-19 08:02:50,964 - INFO - Uploading file: IPN-UPIICSA-display.X.production.hex
+2025-12-19 08:02:50,964 - INFO - File content length: 455 bytes
+2025-12-19 08:02:50,965 - INFO - Overwriting existing file for client 883124ec-7cc0-4394-a59d-a399c9bb83fd
+2025-12-19 08:02:50,967 - INFO - File uploaded for client 883124ec-7cc0-4394-a59d-a399c9bb83fd: IPN-UPIICSA-display.X.production.hex -> uploads\883124ec-7cc0-4394-a59d-a399c9bb83fd.hex
+2025-12-19 08:02:50,967 - INFO - Client 883124ec-7cc0-4394-a59d-a399c9bb83fd successfully uploaded: IPN-UPIICSA-display.X.production.hex to uploads\883124ec-7cc0-4394-a59d-a399c9bb83fd.hex
+2025-12-19 08:02:51,048 - INFO - 3 changes detected
+2025-12-19 08:02:54,115 - INFO - Upload event triggered for client 906e57b3-5eac-4c15-8e84-11b73831c4c5
+2025-12-19 08:02:54,115 - INFO - Uploading file: frase_misa.X.production.hex
+2025-12-19 08:02:54,115 - INFO - File content length: 2771 bytes
+2025-12-19 08:02:54,116 - INFO - Overwriting existing file for client 906e57b3-5eac-4c15-8e84-11b73831c4c5
+2025-12-19 08:02:54,119 - INFO - File uploaded for client 906e57b3-5eac-4c15-8e84-11b73831c4c5: frase_misa.X.production.hex -> uploads\906e57b3-5eac-4c15-8e84-11b73831c4c5.hex
+2025-12-19 08:02:54,119 - INFO - Client 906e57b3-5eac-4c15-8e84-11b73831c4c5 successfully uploaded: frase_misa.X.production.hex to uploads\906e57b3-5eac-4c15-8e84-11b73831c4c5.hex
+2025-12-19 08:02:54,176 - INFO - 3 changes detected
+2025-12-19 08:02:56,634 - INFO - Client 0011a9ad-af33-4cc7-95d7-303698d182ee started programming
+2025-12-19 08:02:56,635 - INFO - Starting programming for file: uploads\0011a9ad-af33-4cc7-95d7-303698d182ee.hex
+2025-12-19 08:02:56,637 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\0011a9ad-af33-4cc7-95d7-303698d182ee.hex -M -Y
+2025-12-19 08:02:56,637 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\0011a9ad-af33-4cc7-95d7-303698d182ee.hex
+2025-12-19 08:02:56,637 - INFO - Hex file exists: True
+2025-12-19 08:03:06,167 - INFO - Command completed with return code: 0
+2025-12-19 08:03:06,167 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:03:02
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:03:02
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:03:06,167 - INFO - STDERR: 
+2025-12-19 08:03:06,167 - INFO - Programming succeeded
+2025-12-19 08:03:06,168 - INFO - Client 0011a9ad-af33-4cc7-95d7-303698d182ee finished programming
+2025-12-19 08:03:16,474 - INFO - Client 883124ec-7cc0-4394-a59d-a399c9bb83fd started programming
+2025-12-19 08:03:16,474 - INFO - Starting programming for file: uploads\883124ec-7cc0-4394-a59d-a399c9bb83fd.hex
+2025-12-19 08:03:16,476 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\883124ec-7cc0-4394-a59d-a399c9bb83fd.hex -M -Y
+2025-12-19 08:03:16,476 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\883124ec-7cc0-4394-a59d-a399c9bb83fd.hex
+2025-12-19 08:03:16,476 - INFO - Hex file exists: True
+2025-12-19 08:03:26,021 - INFO - Command completed with return code: 0
+2025-12-19 08:03:26,022 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:03:22
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:03:22
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:03:26,022 - INFO - STDERR: 
+2025-12-19 08:03:26,022 - INFO - Programming succeeded
+2025-12-19 08:03:26,023 - INFO - Client 883124ec-7cc0-4394-a59d-a399c9bb83fd finished programming
+2025-12-19 08:03:36,486 - INFO - Client 906e57b3-5eac-4c15-8e84-11b73831c4c5 started programming
+2025-12-19 08:03:36,486 - INFO - Starting programming for file: uploads\906e57b3-5eac-4c15-8e84-11b73831c4c5.hex
+2025-12-19 08:03:36,488 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\906e57b3-5eac-4c15-8e84-11b73831c4c5.hex -M -Y
+2025-12-19 08:03:36,488 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\906e57b3-5eac-4c15-8e84-11b73831c4c5.hex
+2025-12-19 08:03:36,488 - INFO - Hex file exists: True
+2025-12-19 08:03:46,239 - INFO - Command completed with return code: 0
+2025-12-19 08:03:46,239 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:03:42
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:03:42
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:03:46,239 - INFO - STDERR: 
+2025-12-19 08:03:46,240 - INFO - Programming succeeded
+2025-12-19 08:03:46,240 - INFO - Client 906e57b3-5eac-4c15-8e84-11b73831c4c5 finished programming
+2025-12-19 08:07:04,105 - INFO - Client connected with ID: 6673f968-2080-4670-b58e-ff9d754679d4
+2025-12-19 08:07:20,076 - INFO - Upload event triggered for client 6673f968-2080-4670-b58e-ff9d754679d4
+2025-12-19 08:07:20,076 - INFO - Uploading file: contador.X.production.hex
+2025-12-19 08:07:20,076 - INFO - File content length: 535 bytes
+2025-12-19 08:07:20,078 - INFO - File uploaded for client 6673f968-2080-4670-b58e-ff9d754679d4: contador.X.production.hex -> uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:07:20,079 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 successfully uploaded: contador.X.production.hex to uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:07:20,174 - INFO - 1 change detected
+2025-12-19 08:07:20,424 - INFO - Client connected with ID: d5a8b6c9-5670-428e-8b30-096a38330596
+2025-12-19 08:07:24,198 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 started programming
+2025-12-19 08:07:24,198 - INFO - Starting programming for file: uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:07:24,201 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex -M -Y
+2025-12-19 08:07:24,201 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:07:24,201 - INFO - Hex file exists: True
+2025-12-19 08:07:30,140 - INFO - Upload event triggered for client d5a8b6c9-5670-428e-8b30-096a38330596
+2025-12-19 08:07:30,140 - INFO - Uploading file: Pares-impares-CUSTOM.X.production.hex
+2025-12-19 08:07:30,140 - INFO - File content length: 273 bytes
+2025-12-19 08:07:30,141 - INFO - File uploaded for client d5a8b6c9-5670-428e-8b30-096a38330596: Pares-impares-CUSTOM.X.production.hex -> uploads\d5a8b6c9-5670-428e-8b30-096a38330596.hex
+2025-12-19 08:07:30,142 - INFO - Client d5a8b6c9-5670-428e-8b30-096a38330596 successfully uploaded: Pares-impares-CUSTOM.X.production.hex to uploads\d5a8b6c9-5670-428e-8b30-096a38330596.hex
+2025-12-19 08:07:30,225 - INFO - 2 changes detected
+2025-12-19 08:07:30,792 - INFO - Command completed with return code: 39
+2025-12-19 08:07:30,792 - INFO - STDOUT: Auto-Detect: No known part found.
+
+
+
+2025-12-19 08:07:30,792 - INFO - STDERR: 
+2025-12-19 08:07:30,792 - ERROR - Programming failed with code 39
+2025-12-19 08:07:30,793 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 finished programming
+2025-12-19 08:07:40,325 - INFO - Upload event triggered for client 906e57b3-5eac-4c15-8e84-11b73831c4c5
+2025-12-19 08:07:40,325 - INFO - Uploading file: frase_marquesina.X.production.hex
+2025-12-19 08:07:40,325 - INFO - File content length: 5358 bytes
+2025-12-19 08:07:40,326 - INFO - Overwriting existing file for client 906e57b3-5eac-4c15-8e84-11b73831c4c5
+2025-12-19 08:07:40,328 - INFO - File uploaded for client 906e57b3-5eac-4c15-8e84-11b73831c4c5: frase_marquesina.X.production.hex -> uploads\906e57b3-5eac-4c15-8e84-11b73831c4c5.hex
+2025-12-19 08:07:40,328 - INFO - Client 906e57b3-5eac-4c15-8e84-11b73831c4c5 successfully uploaded: frase_marquesina.X.production.hex to uploads\906e57b3-5eac-4c15-8e84-11b73831c4c5.hex
+2025-12-19 08:07:40,389 - INFO - 3 changes detected
+2025-12-19 08:07:42,056 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 started programming
+2025-12-19 08:07:42,057 - INFO - Starting programming for file: uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:07:42,059 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex -M -Y
+2025-12-19 08:07:42,059 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:07:42,059 - INFO - Hex file exists: True
+2025-12-19 08:07:51,610 - INFO - Command completed with return code: 0
+2025-12-19 08:07:51,610 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:07:47
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:07:47
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:07:51,610 - INFO - STDERR: 
+2025-12-19 08:07:51,610 - INFO - Programming succeeded
+2025-12-19 08:07:51,611 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 finished programming
+2025-12-19 08:08:19,197 - INFO - Client 906e57b3-5eac-4c15-8e84-11b73831c4c5 started programming
+2025-12-19 08:08:19,197 - INFO - Starting programming for file: uploads\906e57b3-5eac-4c15-8e84-11b73831c4c5.hex
+2025-12-19 08:08:19,199 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\906e57b3-5eac-4c15-8e84-11b73831c4c5.hex -M -Y
+2025-12-19 08:08:19,200 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\906e57b3-5eac-4c15-8e84-11b73831c4c5.hex
+2025-12-19 08:08:19,200 - INFO - Hex file exists: True
+2025-12-19 08:08:29,265 - INFO - Command completed with return code: 0
+2025-12-19 08:08:29,266 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:08:24
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:08:24
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:08:29,266 - INFO - STDERR: 
+2025-12-19 08:08:29,266 - INFO - Programming succeeded
+2025-12-19 08:08:29,267 - INFO - Client 906e57b3-5eac-4c15-8e84-11b73831c4c5 finished programming
+2025-12-19 08:08:29,267 - INFO - Client 906e57b3-5eac-4c15-8e84-11b73831c4c5 started programming
+2025-12-19 08:08:29,267 - INFO - Starting programming for file: uploads\906e57b3-5eac-4c15-8e84-11b73831c4c5.hex
+2025-12-19 08:08:29,269 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\906e57b3-5eac-4c15-8e84-11b73831c4c5.hex -M -Y
+2025-12-19 08:08:29,269 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\906e57b3-5eac-4c15-8e84-11b73831c4c5.hex
+2025-12-19 08:08:29,269 - INFO - Hex file exists: True
+2025-12-19 08:08:39,207 - INFO - Command completed with return code: 0
+2025-12-19 08:08:39,207 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:08:34
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:08:34
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:08:39,207 - INFO - STDERR: 
+2025-12-19 08:08:39,207 - INFO - Programming succeeded
+2025-12-19 08:08:39,208 - INFO - Client 906e57b3-5eac-4c15-8e84-11b73831c4c5 finished programming
+2025-12-19 08:08:49,317 - INFO - Client d5a8b6c9-5670-428e-8b30-096a38330596 started programming
+2025-12-19 08:08:49,317 - INFO - Starting programming for file: uploads\d5a8b6c9-5670-428e-8b30-096a38330596.hex
+2025-12-19 08:08:49,319 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\d5a8b6c9-5670-428e-8b30-096a38330596.hex -M -Y
+2025-12-19 08:08:49,320 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\d5a8b6c9-5670-428e-8b30-096a38330596.hex
+2025-12-19 08:08:49,320 - INFO - Hex file exists: True
+2025-12-19 08:08:58,838 - INFO - Command completed with return code: 0
+2025-12-19 08:08:58,838 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:08:54
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:08:54
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:08:58,839 - INFO - STDERR: 
+2025-12-19 08:08:58,839 - INFO - Programming succeeded
+2025-12-19 08:08:58,839 - INFO - Client d5a8b6c9-5670-428e-8b30-096a38330596 finished programming
+2025-12-19 08:09:18,196 - INFO - Client connected with ID: f4848db1-8b82-4f87-9bb9-719d8af024b7
+2025-12-19 08:09:51,870 - INFO - Upload event triggered for client 6673f968-2080-4670-b58e-ff9d754679d4
+2025-12-19 08:09:51,870 - INFO - Uploading file: ipn.X.production.hex
+2025-12-19 08:09:51,870 - INFO - File content length: 1075 bytes
+2025-12-19 08:09:51,871 - INFO - Overwriting existing file for client 6673f968-2080-4670-b58e-ff9d754679d4
+2025-12-19 08:09:51,873 - INFO - File uploaded for client 6673f968-2080-4670-b58e-ff9d754679d4: ipn.X.production.hex -> uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:09:51,873 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 successfully uploaded: ipn.X.production.hex to uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:09:51,928 - INFO - 3 changes detected
+2025-12-19 08:09:59,254 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 started programming
+2025-12-19 08:09:59,255 - INFO - Starting programming for file: uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:09:59,256 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex -M -Y
+2025-12-19 08:09:59,257 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:09:59,257 - INFO - Hex file exists: True
+2025-12-19 08:10:08,859 - INFO - Command completed with return code: 0
+2025-12-19 08:10:08,859 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:10:04
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:10:04
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:10:08,859 - INFO - STDERR: 
+2025-12-19 08:10:08,859 - INFO - Programming succeeded
+2025-12-19 08:10:08,860 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 finished programming
+2025-12-19 08:10:46,855 - INFO - Upload event triggered for client f4848db1-8b82-4f87-9bb9-719d8af024b7
+2025-12-19 08:10:46,855 - INFO - Uploading file: 4-bits-CUSTOM.X.production.hex
+2025-12-19 08:10:46,855 - INFO - File content length: 273 bytes
+2025-12-19 08:10:46,856 - INFO - File uploaded for client f4848db1-8b82-4f87-9bb9-719d8af024b7: 4-bits-CUSTOM.X.production.hex -> uploads\f4848db1-8b82-4f87-9bb9-719d8af024b7.hex
+2025-12-19 08:10:46,857 - INFO - Client f4848db1-8b82-4f87-9bb9-719d8af024b7 successfully uploaded: 4-bits-CUSTOM.X.production.hex to uploads\f4848db1-8b82-4f87-9bb9-719d8af024b7.hex
+2025-12-19 08:10:46,952 - INFO - 1 change detected
+2025-12-19 08:10:54,164 - INFO - Client f4848db1-8b82-4f87-9bb9-719d8af024b7 started programming
+2025-12-19 08:10:54,164 - INFO - Starting programming for file: uploads\f4848db1-8b82-4f87-9bb9-719d8af024b7.hex
+2025-12-19 08:10:54,166 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\f4848db1-8b82-4f87-9bb9-719d8af024b7.hex -M -Y
+2025-12-19 08:10:54,166 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\f4848db1-8b82-4f87-9bb9-719d8af024b7.hex
+2025-12-19 08:10:54,166 - INFO - Hex file exists: True
+2025-12-19 08:11:03,687 - INFO - Command completed with return code: 0
+2025-12-19 08:11:03,688 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:10:59
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:10:59
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:11:03,688 - INFO - STDERR: 
+2025-12-19 08:11:03,688 - INFO - Programming succeeded
+2025-12-19 08:11:03,688 - INFO - Client f4848db1-8b82-4f87-9bb9-719d8af024b7 finished programming
+2025-12-19 08:11:30,989 - INFO - Upload event triggered for client 906e57b3-5eac-4c15-8e84-11b73831c4c5
+2025-12-19 08:11:30,990 - INFO - Uploading file: upiicsa.X.production.hex
+2025-12-19 08:11:30,990 - INFO - File content length: 3594 bytes
+2025-12-19 08:11:30,991 - INFO - Overwriting existing file for client 906e57b3-5eac-4c15-8e84-11b73831c4c5
+2025-12-19 08:11:30,992 - INFO - File uploaded for client 906e57b3-5eac-4c15-8e84-11b73831c4c5: upiicsa.X.production.hex -> uploads\906e57b3-5eac-4c15-8e84-11b73831c4c5.hex
+2025-12-19 08:11:30,993 - INFO - Client 906e57b3-5eac-4c15-8e84-11b73831c4c5 successfully uploaded: upiicsa.X.production.hex to uploads\906e57b3-5eac-4c15-8e84-11b73831c4c5.hex
+2025-12-19 08:11:31,069 - INFO - 3 changes detected
+2025-12-19 08:11:45,953 - INFO - Client 906e57b3-5eac-4c15-8e84-11b73831c4c5 started programming
+2025-12-19 08:11:45,953 - INFO - Starting programming for file: uploads\906e57b3-5eac-4c15-8e84-11b73831c4c5.hex
+2025-12-19 08:11:45,955 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\906e57b3-5eac-4c15-8e84-11b73831c4c5.hex -M -Y
+2025-12-19 08:11:45,956 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\906e57b3-5eac-4c15-8e84-11b73831c4c5.hex
+2025-12-19 08:11:45,956 - INFO - Hex file exists: True
+2025-12-19 08:11:55,811 - INFO - Command completed with return code: 0
+2025-12-19 08:11:55,811 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:11:51
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:11:51
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:11:55,811 - INFO - STDERR: 
+2025-12-19 08:11:55,811 - INFO - Programming succeeded
+2025-12-19 08:11:55,812 - INFO - Client 906e57b3-5eac-4c15-8e84-11b73831c4c5 finished programming
+2025-12-19 08:13:24,640 - INFO - Client connected with ID: c3dc79b0-f109-43f1-9b3a-606da08968bb
+2025-12-19 08:13:33,230 - INFO - Upload event triggered for client c3dc79b0-f109-43f1-9b3a-606da08968bb
+2025-12-19 08:13:33,230 - INFO - Uploading file: Contador-Decimal.X.production.hex
+2025-12-19 08:13:33,230 - INFO - File content length: 449 bytes
+2025-12-19 08:13:33,232 - INFO - File uploaded for client c3dc79b0-f109-43f1-9b3a-606da08968bb: Contador-Decimal.X.production.hex -> uploads\c3dc79b0-f109-43f1-9b3a-606da08968bb.hex
+2025-12-19 08:13:33,232 - INFO - Client c3dc79b0-f109-43f1-9b3a-606da08968bb successfully uploaded: Contador-Decimal.X.production.hex to uploads\c3dc79b0-f109-43f1-9b3a-606da08968bb.hex
+2025-12-19 08:13:33,316 - INFO - 1 change detected
+2025-12-19 08:13:37,860 - INFO - Upload event triggered for client 6673f968-2080-4670-b58e-ff9d754679d4
+2025-12-19 08:13:37,860 - INFO - Uploading file: contrasena.X.production.hex
+2025-12-19 08:13:37,860 - INFO - File content length: 379 bytes
+2025-12-19 08:13:37,861 - INFO - Overwriting existing file for client 6673f968-2080-4670-b58e-ff9d754679d4
+2025-12-19 08:13:37,863 - INFO - File uploaded for client 6673f968-2080-4670-b58e-ff9d754679d4: contrasena.X.production.hex -> uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:13:37,863 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 successfully uploaded: contrasena.X.production.hex to uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:13:37,916 - INFO - 3 changes detected
+2025-12-19 08:13:42,893 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 started programming
+2025-12-19 08:13:42,893 - INFO - Starting programming for file: uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:13:42,895 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex -M -Y
+2025-12-19 08:13:42,896 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:13:42,896 - INFO - Hex file exists: True
+2025-12-19 08:13:52,402 - INFO - Command completed with return code: 0
+2025-12-19 08:13:52,403 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:13:48
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:13:48
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:13:52,403 - INFO - STDERR: 
+2025-12-19 08:13:52,403 - INFO - Programming succeeded
+2025-12-19 08:13:52,403 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 finished programming
+2025-12-19 08:14:00,825 - INFO - Client c3dc79b0-f109-43f1-9b3a-606da08968bb started programming
+2025-12-19 08:14:00,825 - INFO - Starting programming for file: uploads\c3dc79b0-f109-43f1-9b3a-606da08968bb.hex
+2025-12-19 08:14:00,827 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\c3dc79b0-f109-43f1-9b3a-606da08968bb.hex -M -Y
+2025-12-19 08:14:00,827 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\c3dc79b0-f109-43f1-9b3a-606da08968bb.hex
+2025-12-19 08:14:00,828 - INFO - Hex file exists: True
+2025-12-19 08:14:10,362 - INFO - Command completed with return code: 0
+2025-12-19 08:14:10,362 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:14:06
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:14:06
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:14:10,362 - INFO - STDERR: 
+2025-12-19 08:14:10,362 - INFO - Programming succeeded
+2025-12-19 08:14:10,363 - INFO - Client c3dc79b0-f109-43f1-9b3a-606da08968bb finished programming
+2025-12-19 08:14:29,805 - INFO - Upload event triggered for client 906e57b3-5eac-4c15-8e84-11b73831c4c5
+2025-12-19 08:14:29,805 - INFO - Uploading file: Relog.X.production.hex
+2025-12-19 08:14:29,806 - INFO - File content length: 3864 bytes
+2025-12-19 08:14:29,807 - INFO - Overwriting existing file for client 906e57b3-5eac-4c15-8e84-11b73831c4c5
+2025-12-19 08:14:29,808 - INFO - File uploaded for client 906e57b3-5eac-4c15-8e84-11b73831c4c5: Relog.X.production.hex -> uploads\906e57b3-5eac-4c15-8e84-11b73831c4c5.hex
+2025-12-19 08:14:29,809 - INFO - Client 906e57b3-5eac-4c15-8e84-11b73831c4c5 successfully uploaded: Relog.X.production.hex to uploads\906e57b3-5eac-4c15-8e84-11b73831c4c5.hex
+2025-12-19 08:14:29,869 - INFO - 3 changes detected
+2025-12-19 08:14:54,470 - INFO - Client connected with ID: ed4fc517-0e89-4034-b804-8923adc07d72
+2025-12-19 08:15:01,182 - INFO - Upload event triggered for client ed4fc517-0e89-4034-b804-8923adc07d72
+2025-12-19 08:15:01,182 - INFO - Uploading file: Relog.X.production.hex
+2025-12-19 08:15:01,182 - INFO - File content length: 3864 bytes
+2025-12-19 08:15:01,184 - INFO - File uploaded for client ed4fc517-0e89-4034-b804-8923adc07d72: Relog.X.production.hex -> uploads\ed4fc517-0e89-4034-b804-8923adc07d72.hex
+2025-12-19 08:15:01,184 - INFO - Client ed4fc517-0e89-4034-b804-8923adc07d72 successfully uploaded: Relog.X.production.hex to uploads\ed4fc517-0e89-4034-b804-8923adc07d72.hex
+2025-12-19 08:15:01,274 - INFO - 1 change detected
+2025-12-19 08:15:05,127 - INFO - Client ed4fc517-0e89-4034-b804-8923adc07d72 started programming
+2025-12-19 08:15:05,128 - INFO - Starting programming for file: uploads\ed4fc517-0e89-4034-b804-8923adc07d72.hex
+2025-12-19 08:15:05,129 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\ed4fc517-0e89-4034-b804-8923adc07d72.hex -M -Y
+2025-12-19 08:15:05,129 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\ed4fc517-0e89-4034-b804-8923adc07d72.hex
+2025-12-19 08:15:05,132 - INFO - Hex file exists: True
+2025-12-19 08:15:15,064 - INFO - Command completed with return code: 0
+2025-12-19 08:15:15,064 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:15:10
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:15:10
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:15:15,065 - INFO - STDERR: 
+2025-12-19 08:15:15,065 - INFO - Programming succeeded
+2025-12-19 08:15:15,065 - INFO - Client ed4fc517-0e89-4034-b804-8923adc07d72 finished programming
+2025-12-19 08:15:29,186 - INFO - Client connected with ID: 0675b273-91aa-400f-81aa-815d277a0742
+2025-12-19 08:15:43,874 - WARNING - http://10.218.234.30:8181/_nicegui/client/ffd3316b-1495-40af-a259-062b2b67f4a9/upload/47 not found
+2025-12-19 08:15:44,900 - INFO - Client connected with ID: 765ae33d-782f-471a-a4ef-2f355d495ec3
+2025-12-19 08:15:49,671 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 started programming
+2025-12-19 08:15:49,671 - INFO - Starting programming for file: uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:15:49,674 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex -M -Y
+2025-12-19 08:15:49,674 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:15:49,675 - INFO - Hex file exists: True
+2025-12-19 08:15:50,161 - INFO - Upload event triggered for client 765ae33d-782f-471a-a4ef-2f355d495ec3
+2025-12-19 08:15:50,161 - INFO - Uploading file: Letrero.X.production.hex
+2025-12-19 08:15:50,161 - INFO - File content length: 492 bytes
+2025-12-19 08:15:50,163 - INFO - File uploaded for client 765ae33d-782f-471a-a4ef-2f355d495ec3: Letrero.X.production.hex -> uploads\765ae33d-782f-471a-a4ef-2f355d495ec3.hex
+2025-12-19 08:15:50,163 - INFO - Client 765ae33d-782f-471a-a4ef-2f355d495ec3 successfully uploaded: Letrero.X.production.hex to uploads\765ae33d-782f-471a-a4ef-2f355d495ec3.hex
+2025-12-19 08:15:50,232 - INFO - 2 changes detected
+2025-12-19 08:15:59,198 - INFO - Command completed with return code: 0
+2025-12-19 08:15:59,198 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:15:55
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:15:55
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:15:59,198 - INFO - STDERR: 
+2025-12-19 08:15:59,198 - INFO - Programming succeeded
+2025-12-19 08:15:59,199 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 finished programming
+2025-12-19 08:16:09,793 - INFO - Client 765ae33d-782f-471a-a4ef-2f355d495ec3 started programming
+2025-12-19 08:16:09,794 - INFO - Starting programming for file: uploads\765ae33d-782f-471a-a4ef-2f355d495ec3.hex
+2025-12-19 08:16:09,795 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\765ae33d-782f-471a-a4ef-2f355d495ec3.hex -M -Y
+2025-12-19 08:16:09,796 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\765ae33d-782f-471a-a4ef-2f355d495ec3.hex
+2025-12-19 08:16:09,796 - INFO - Hex file exists: True
+2025-12-19 08:16:19,300 - INFO - Command completed with return code: 0
+2025-12-19 08:16:19,300 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:16:15
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:16:15
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:16:19,300 - INFO - STDERR: 
+2025-12-19 08:16:19,300 - INFO - Programming succeeded
+2025-12-19 08:16:19,301 - INFO - Client 765ae33d-782f-471a-a4ef-2f355d495ec3 finished programming
+2025-12-19 08:18:12,228 - INFO - Upload event triggered for client 6673f968-2080-4670-b58e-ff9d754679d4
+2025-12-19 08:18:12,228 - INFO - Uploading file: contrasena.X.production.hex
+2025-12-19 08:18:12,228 - INFO - File content length: 379 bytes
+2025-12-19 08:18:12,229 - INFO - Overwriting existing file for client 6673f968-2080-4670-b58e-ff9d754679d4
+2025-12-19 08:18:12,230 - INFO - File uploaded for client 6673f968-2080-4670-b58e-ff9d754679d4: contrasena.X.production.hex -> uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:18:12,231 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 successfully uploaded: contrasena.X.production.hex to uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:18:12,304 - INFO - 3 changes detected
+2025-12-19 08:18:17,198 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 started programming
+2025-12-19 08:18:17,199 - INFO - Starting programming for file: uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:18:17,200 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex -M -Y
+2025-12-19 08:18:17,201 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:18:17,201 - INFO - Hex file exists: True
+2025-12-19 08:18:26,706 - INFO - Command completed with return code: 0
+2025-12-19 08:18:26,706 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:18:22
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:18:22
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:18:26,706 - INFO - STDERR: 
+2025-12-19 08:18:26,706 - INFO - Programming succeeded
+2025-12-19 08:18:26,707 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 finished programming
+2025-12-19 08:18:26,940 - INFO - Client connected with ID: 8ec918cc-53de-47f0-aa1f-64c83839aedf
+2025-12-19 08:18:42,848 - INFO - Upload event triggered for client 8ec918cc-53de-47f0-aa1f-64c83839aedf
+2025-12-19 08:18:42,848 - INFO - Uploading file: 1s_delay.X.production.hex
+2025-12-19 08:18:42,848 - INFO - File content length: 273 bytes
+2025-12-19 08:18:42,850 - INFO - File uploaded for client 8ec918cc-53de-47f0-aa1f-64c83839aedf: 1s_delay.X.production.hex -> uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:18:42,851 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf successfully uploaded: 1s_delay.X.production.hex to uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:18:42,926 - INFO - 1 change detected
+2025-12-19 08:18:57,328 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf started programming
+2025-12-19 08:18:57,328 - INFO - Starting programming for file: uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:18:57,330 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex -M -Y
+2025-12-19 08:18:57,330 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:18:57,330 - INFO - Hex file exists: True
+2025-12-19 08:19:03,879 - INFO - Command completed with return code: 39
+2025-12-19 08:19:03,879 - INFO - STDOUT: Auto-Detect: No known part found.
+
+
+
+2025-12-19 08:19:03,879 - INFO - STDERR: 
+2025-12-19 08:19:03,879 - ERROR - Programming failed with code 39
+2025-12-19 08:19:03,880 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf finished programming
+2025-12-19 08:19:06,085 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf opened logs
+2025-12-19 08:19:30,285 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf started programming
+2025-12-19 08:19:30,285 - INFO - Starting programming for file: uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:19:30,287 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex -M -Y
+2025-12-19 08:19:30,287 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:19:30,287 - INFO - Hex file exists: True
+2025-12-19 08:19:39,734 - INFO - Command completed with return code: 0
+2025-12-19 08:19:39,734 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:19:35
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:19:35
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:19:39,734 - INFO - STDERR: 
+2025-12-19 08:19:39,734 - INFO - Programming succeeded
+2025-12-19 08:19:39,735 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf finished programming
+2025-12-19 08:19:51,864 - INFO - Upload event triggered for client ed4fc517-0e89-4034-b804-8923adc07d72
+2025-12-19 08:19:51,865 - INFO - Uploading file: Keypad-orden.X.production.hex
+2025-12-19 08:19:51,865 - INFO - File content length: 7201 bytes
+2025-12-19 08:19:51,866 - INFO - Overwriting existing file for client ed4fc517-0e89-4034-b804-8923adc07d72
+2025-12-19 08:19:51,868 - INFO - File uploaded for client ed4fc517-0e89-4034-b804-8923adc07d72: Keypad-orden.X.production.hex -> uploads\ed4fc517-0e89-4034-b804-8923adc07d72.hex
+2025-12-19 08:19:51,868 - INFO - Client ed4fc517-0e89-4034-b804-8923adc07d72 successfully uploaded: Keypad-orden.X.production.hex to uploads\ed4fc517-0e89-4034-b804-8923adc07d72.hex
+2025-12-19 08:19:52,025 - INFO - 3 changes detected
+2025-12-19 08:20:07,849 - INFO - Client ed4fc517-0e89-4034-b804-8923adc07d72 started programming
+2025-12-19 08:20:07,850 - INFO - Starting programming for file: uploads\ed4fc517-0e89-4034-b804-8923adc07d72.hex
+2025-12-19 08:20:07,852 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\ed4fc517-0e89-4034-b804-8923adc07d72.hex -M -Y
+2025-12-19 08:20:07,852 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\ed4fc517-0e89-4034-b804-8923adc07d72.hex
+2025-12-19 08:20:07,853 - INFO - Hex file exists: True
+2025-12-19 08:20:18,126 - INFO - Command completed with return code: 0
+2025-12-19 08:20:18,126 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:20:13
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:20:13
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:20:18,126 - INFO - STDERR: 
+2025-12-19 08:20:18,126 - INFO - Programming succeeded
+2025-12-19 08:20:18,127 - INFO - Client ed4fc517-0e89-4034-b804-8923adc07d72 finished programming
+2025-12-19 08:20:18,128 - INFO - Client ed4fc517-0e89-4034-b804-8923adc07d72 started programming
+2025-12-19 08:20:18,128 - INFO - Starting programming for file: uploads\ed4fc517-0e89-4034-b804-8923adc07d72.hex
+2025-12-19 08:20:18,129 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\ed4fc517-0e89-4034-b804-8923adc07d72.hex -M -Y
+2025-12-19 08:20:18,130 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\ed4fc517-0e89-4034-b804-8923adc07d72.hex
+2025-12-19 08:20:18,130 - INFO - Hex file exists: True
+2025-12-19 08:20:28,265 - INFO - Command completed with return code: 0
+2025-12-19 08:20:28,266 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:20:23
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:20:23
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:20:28,266 - INFO - STDERR: 
+2025-12-19 08:20:28,266 - INFO - Programming succeeded
+2025-12-19 08:20:28,266 - INFO - Client ed4fc517-0e89-4034-b804-8923adc07d72 finished programming
+2025-12-19 08:21:29,183 - INFO - Client connected with ID: 5a9bd3bf-7943-4551-bfa4-481be4b2ab28
+2025-12-19 08:21:51,433 - INFO - Upload event triggered for client 8ec918cc-53de-47f0-aa1f-64c83839aedf
+2025-12-19 08:21:51,433 - INFO - Uploading file: Timers_multi.X.production.hex
+2025-12-19 08:21:51,433 - INFO - File content length: 494 bytes
+2025-12-19 08:21:51,434 - INFO - Overwriting existing file for client 8ec918cc-53de-47f0-aa1f-64c83839aedf
+2025-12-19 08:21:51,435 - INFO - File uploaded for client 8ec918cc-53de-47f0-aa1f-64c83839aedf: Timers_multi.X.production.hex -> uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:21:51,436 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf successfully uploaded: Timers_multi.X.production.hex to uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:21:51,532 - INFO - 3 changes detected
+2025-12-19 08:21:56,946 - INFO - Upload event triggered for client 6673f968-2080-4670-b58e-ff9d754679d4
+2025-12-19 08:21:56,946 - INFO - Uploading file: cumple.X.production.hex
+2025-12-19 08:21:56,946 - INFO - File content length: 273 bytes
+2025-12-19 08:21:56,947 - INFO - Overwriting existing file for client 6673f968-2080-4670-b58e-ff9d754679d4
+2025-12-19 08:21:56,949 - INFO - File uploaded for client 6673f968-2080-4670-b58e-ff9d754679d4: cumple.X.production.hex -> uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:21:56,949 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 successfully uploaded: cumple.X.production.hex to uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:21:57,186 - INFO - 3 changes detected
+2025-12-19 08:22:04,999 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 started programming
+2025-12-19 08:22:05,000 - INFO - Starting programming for file: uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:22:05,002 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex -M -Y
+2025-12-19 08:22:05,002 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:22:05,002 - INFO - Hex file exists: True
+2025-12-19 08:22:11,553 - INFO - Command completed with return code: 39
+2025-12-19 08:22:11,554 - INFO - STDOUT: Auto-Detect: No known part found.
+
+
+
+2025-12-19 08:22:11,554 - INFO - STDERR: 
+2025-12-19 08:22:11,554 - ERROR - Programming failed with code 39
+2025-12-19 08:22:11,555 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 finished programming
+2025-12-19 08:22:14,974 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 opened logs
+2025-12-19 08:22:21,905 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 started programming
+2025-12-19 08:22:21,905 - INFO - Starting programming for file: uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:22:21,907 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex -M -Y
+2025-12-19 08:22:21,907 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:22:21,908 - INFO - Hex file exists: True
+2025-12-19 08:22:31,427 - INFO - Command completed with return code: 0
+2025-12-19 08:22:31,427 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:22:27
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:22:27
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:22:31,427 - INFO - STDERR: 
+2025-12-19 08:22:31,427 - INFO - Programming succeeded
+2025-12-19 08:22:31,428 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 finished programming
+2025-12-19 08:22:46,390 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf started programming
+2025-12-19 08:22:46,391 - INFO - Starting programming for file: uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:22:46,392 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex -M -Y
+2025-12-19 08:22:46,393 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:22:46,393 - INFO - Hex file exists: True
+2025-12-19 08:22:55,828 - INFO - Command completed with return code: 0
+2025-12-19 08:22:55,828 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:22:51
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:22:51
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:22:55,829 - INFO - STDERR: 
+2025-12-19 08:22:55,829 - INFO - Programming succeeded
+2025-12-19 08:22:55,829 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf finished programming
+2025-12-19 08:23:23,589 - INFO - Upload event triggered for client 5a9bd3bf-7943-4551-bfa4-481be4b2ab28
+2025-12-19 08:23:23,589 - INFO - Uploading file: Relog.X.production.hex
+2025-12-19 08:23:23,589 - INFO - File content length: 3864 bytes
+2025-12-19 08:23:23,591 - INFO - File uploaded for client 5a9bd3bf-7943-4551-bfa4-481be4b2ab28: Relog.X.production.hex -> uploads\5a9bd3bf-7943-4551-bfa4-481be4b2ab28.hex
+2025-12-19 08:23:23,591 - INFO - Client 5a9bd3bf-7943-4551-bfa4-481be4b2ab28 successfully uploaded: Relog.X.production.hex to uploads\5a9bd3bf-7943-4551-bfa4-481be4b2ab28.hex
+2025-12-19 08:23:23,668 - INFO - 1 change detected
+2025-12-19 08:23:38,626 - INFO - Client 5a9bd3bf-7943-4551-bfa4-481be4b2ab28 started programming
+2025-12-19 08:23:38,627 - INFO - Starting programming for file: uploads\5a9bd3bf-7943-4551-bfa4-481be4b2ab28.hex
+2025-12-19 08:23:38,629 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\5a9bd3bf-7943-4551-bfa4-481be4b2ab28.hex -M -Y
+2025-12-19 08:23:38,629 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\5a9bd3bf-7943-4551-bfa4-481be4b2ab28.hex
+2025-12-19 08:23:38,629 - INFO - Hex file exists: True
+2025-12-19 08:23:48,494 - INFO - Command completed with return code: 0
+2025-12-19 08:23:48,494 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:23:44
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:23:44
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:23:48,494 - INFO - STDERR: 
+2025-12-19 08:23:48,495 - INFO - Programming succeeded
+2025-12-19 08:23:48,495 - INFO - Client 5a9bd3bf-7943-4551-bfa4-481be4b2ab28 finished programming
+2025-12-19 08:23:48,496 - INFO - Client 5a9bd3bf-7943-4551-bfa4-481be4b2ab28 started programming
+2025-12-19 08:23:48,496 - INFO - Starting programming for file: uploads\5a9bd3bf-7943-4551-bfa4-481be4b2ab28.hex
+2025-12-19 08:23:48,498 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\5a9bd3bf-7943-4551-bfa4-481be4b2ab28.hex -M -Y
+2025-12-19 08:23:48,498 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\5a9bd3bf-7943-4551-bfa4-481be4b2ab28.hex
+2025-12-19 08:23:48,499 - INFO - Hex file exists: True
+2025-12-19 08:23:58,317 - INFO - Command completed with return code: 0
+2025-12-19 08:23:58,317 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:23:54
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:23:54
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:23:58,318 - INFO - STDERR: 
+2025-12-19 08:23:58,318 - INFO - Programming succeeded
+2025-12-19 08:23:58,318 - INFO - Client 5a9bd3bf-7943-4551-bfa4-481be4b2ab28 finished programming
+2025-12-19 08:25:05,584 - INFO - Upload event triggered for client 6673f968-2080-4670-b58e-ff9d754679d4
+2025-12-19 08:25:05,584 - INFO - Uploading file: sol.X.production.hex
+2025-12-19 08:25:05,585 - INFO - File content length: 833 bytes
+2025-12-19 08:25:05,586 - INFO - Overwriting existing file for client 6673f968-2080-4670-b58e-ff9d754679d4
+2025-12-19 08:25:05,588 - INFO - File uploaded for client 6673f968-2080-4670-b58e-ff9d754679d4: sol.X.production.hex -> uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:25:05,588 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 successfully uploaded: sol.X.production.hex to uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:25:05,661 - INFO - 3 changes detected
+2025-12-19 08:25:13,476 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 started programming
+2025-12-19 08:25:13,476 - INFO - Starting programming for file: uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:25:13,478 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex -M -Y
+2025-12-19 08:25:13,478 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:25:13,479 - INFO - Hex file exists: True
+2025-12-19 08:25:23,000 - INFO - Command completed with return code: 0
+2025-12-19 08:25:23,000 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:25:19
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:25:19
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:25:23,000 - INFO - STDERR: 
+2025-12-19 08:25:23,000 - INFO - Programming succeeded
+2025-12-19 08:25:23,001 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 finished programming
+2025-12-19 08:25:29,514 - INFO - Upload event triggered for client 5a9bd3bf-7943-4551-bfa4-481be4b2ab28
+2025-12-19 08:25:29,514 - INFO - Uploading file: Menu_Keypad.X.production.hex
+2025-12-19 08:25:29,514 - INFO - File content length: 19711 bytes
+2025-12-19 08:25:29,515 - INFO - Overwriting existing file for client 5a9bd3bf-7943-4551-bfa4-481be4b2ab28
+2025-12-19 08:25:29,517 - INFO - File uploaded for client 5a9bd3bf-7943-4551-bfa4-481be4b2ab28: Menu_Keypad.X.production.hex -> uploads\5a9bd3bf-7943-4551-bfa4-481be4b2ab28.hex
+2025-12-19 08:25:29,517 - INFO - Client 5a9bd3bf-7943-4551-bfa4-481be4b2ab28 successfully uploaded: Menu_Keypad.X.production.hex to uploads\5a9bd3bf-7943-4551-bfa4-481be4b2ab28.hex
+2025-12-19 08:25:29,575 - INFO - 3 changes detected
+2025-12-19 08:25:33,831 - INFO - Client connected with ID: addbb82a-0741-4e44-baad-a5434abe1923
+2025-12-19 08:25:43,628 - INFO - Client 5a9bd3bf-7943-4551-bfa4-481be4b2ab28 started programming
+2025-12-19 08:25:43,629 - INFO - Starting programming for file: uploads\5a9bd3bf-7943-4551-bfa4-481be4b2ab28.hex
+2025-12-19 08:25:43,632 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\5a9bd3bf-7943-4551-bfa4-481be4b2ab28.hex -M -Y
+2025-12-19 08:25:43,632 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\5a9bd3bf-7943-4551-bfa4-481be4b2ab28.hex
+2025-12-19 08:25:43,632 - INFO - Hex file exists: True
+2025-12-19 08:25:50,802 - INFO - Upload event triggered for client addbb82a-0741-4e44-baad-a5434abe1923
+2025-12-19 08:25:50,802 - INFO - Uploading file: frase_2.X.production.hex
+2025-12-19 08:25:50,802 - INFO - File content length: 8596 bytes
+2025-12-19 08:25:50,804 - INFO - File uploaded for client addbb82a-0741-4e44-baad-a5434abe1923: frase_2.X.production.hex -> uploads\addbb82a-0741-4e44-baad-a5434abe1923.hex
+2025-12-19 08:25:50,804 - INFO - Client addbb82a-0741-4e44-baad-a5434abe1923 successfully uploaded: frase_2.X.production.hex to uploads\addbb82a-0741-4e44-baad-a5434abe1923.hex
+2025-12-19 08:25:50,956 - INFO - 1 change detected
+2025-12-19 08:25:55,075 - INFO - Command completed with return code: 0
+2025-12-19 08:25:55,075 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:25:49
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:25:49
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:25:55,075 - INFO - STDERR: 
+2025-12-19 08:25:55,075 - INFO - Programming succeeded
+2025-12-19 08:25:55,076 - INFO - Client 5a9bd3bf-7943-4551-bfa4-481be4b2ab28 finished programming
+2025-12-19 08:25:56,068 - INFO - 1 change detected
+2025-12-19 08:26:12,246 - INFO - Client addbb82a-0741-4e44-baad-a5434abe1923 started programming
+2025-12-19 08:26:12,246 - INFO - Starting programming for file: uploads\addbb82a-0741-4e44-baad-a5434abe1923.hex
+2025-12-19 08:26:12,248 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\addbb82a-0741-4e44-baad-a5434abe1923.hex -M -Y
+2025-12-19 08:26:12,248 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\addbb82a-0741-4e44-baad-a5434abe1923.hex
+2025-12-19 08:26:12,248 - INFO - Hex file exists: True
+2025-12-19 08:26:22,511 - INFO - Command completed with return code: 0
+2025-12-19 08:26:22,511 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:26:17
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:26:17
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:26:22,511 - INFO - STDERR: 
+2025-12-19 08:26:22,511 - INFO - Programming succeeded
+2025-12-19 08:26:22,512 - INFO - Client addbb82a-0741-4e44-baad-a5434abe1923 finished programming
+2025-12-19 08:27:20,088 - INFO - Upload event triggered for client 6673f968-2080-4670-b58e-ff9d754679d4
+2025-12-19 08:27:20,089 - INFO - Uploading file: contador_dec.X.production.hex
+2025-12-19 08:27:20,089 - INFO - File content length: 494 bytes
+2025-12-19 08:27:20,090 - INFO - Overwriting existing file for client 6673f968-2080-4670-b58e-ff9d754679d4
+2025-12-19 08:27:20,092 - INFO - File uploaded for client 6673f968-2080-4670-b58e-ff9d754679d4: contador_dec.X.production.hex -> uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:27:20,092 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 successfully uploaded: contador_dec.X.production.hex to uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:27:20,152 - INFO - 3 changes detected
+2025-12-19 08:27:21,474 - INFO - 1 change detected
+2025-12-19 08:27:23,525 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 started programming
+2025-12-19 08:27:23,525 - INFO - Starting programming for file: uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:27:23,528 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex -M -Y
+2025-12-19 08:27:23,528 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:27:23,528 - INFO - Hex file exists: True
+2025-12-19 08:27:30,118 - INFO - Command completed with return code: 39
+2025-12-19 08:27:30,118 - INFO - STDOUT: Auto-Detect: No known part found.
+
+
+
+2025-12-19 08:27:30,118 - INFO - STDERR: 
+2025-12-19 08:27:30,118 - ERROR - Programming failed with code 39
+2025-12-19 08:27:30,119 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 finished programming
+2025-12-19 08:27:42,267 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 started programming
+2025-12-19 08:27:42,267 - INFO - Starting programming for file: uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:27:42,269 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex -M -Y
+2025-12-19 08:27:42,269 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:27:42,270 - INFO - Hex file exists: True
+2025-12-19 08:27:51,837 - INFO - Command completed with return code: 0
+2025-12-19 08:27:51,837 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:27:47
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:27:47
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:27:51,837 - INFO - STDERR: 
+2025-12-19 08:27:51,837 - INFO - Programming succeeded
+2025-12-19 08:27:51,838 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 finished programming
+2025-12-19 08:28:47,686 - INFO - Upload event triggered for client 8ec918cc-53de-47f0-aa1f-64c83839aedf
+2025-12-19 08:28:47,687 - INFO - Uploading file: Letrero-scrroll.X.production.hex
+2025-12-19 08:28:47,687 - INFO - File content length: 4440 bytes
+2025-12-19 08:28:47,688 - INFO - Overwriting existing file for client 8ec918cc-53de-47f0-aa1f-64c83839aedf
+2025-12-19 08:28:47,690 - INFO - File uploaded for client 8ec918cc-53de-47f0-aa1f-64c83839aedf: Letrero-scrroll.X.production.hex -> uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:28:47,690 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf successfully uploaded: Letrero-scrroll.X.production.hex to uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:28:47,779 - INFO - 3 changes detected
+2025-12-19 08:28:50,684 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf started programming
+2025-12-19 08:28:50,685 - INFO - Starting programming for file: uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:28:50,687 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex -M -Y
+2025-12-19 08:28:50,687 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:28:50,687 - INFO - Hex file exists: True
+2025-12-19 08:29:00,616 - INFO - Command completed with return code: 0
+2025-12-19 08:29:00,617 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:28:56
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:28:56
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:29:00,617 - INFO - STDERR: 
+2025-12-19 08:29:00,617 - INFO - Programming succeeded
+2025-12-19 08:29:00,618 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf finished programming
+2025-12-19 08:29:17,183 - INFO - Upload event triggered for client 6673f968-2080-4670-b58e-ff9d754679d4
+2025-12-19 08:29:17,183 - INFO - Uploading file: subrutina_3seg.X.production.hex
+2025-12-19 08:29:17,184 - INFO - File content length: 355 bytes
+2025-12-19 08:29:17,185 - INFO - Overwriting existing file for client 6673f968-2080-4670-b58e-ff9d754679d4
+2025-12-19 08:29:17,186 - INFO - File uploaded for client 6673f968-2080-4670-b58e-ff9d754679d4: subrutina_3seg.X.production.hex -> uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:29:17,186 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 successfully uploaded: subrutina_3seg.X.production.hex to uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:29:17,238 - INFO - 3 changes detected
+2025-12-19 08:29:19,865 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 started programming
+2025-12-19 08:29:19,865 - INFO - Starting programming for file: uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:29:19,868 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex -M -Y
+2025-12-19 08:29:19,868 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:29:19,868 - INFO - Hex file exists: True
+2025-12-19 08:29:29,389 - INFO - Command completed with return code: 0
+2025-12-19 08:29:29,389 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:29:25
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:29:25
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:29:29,389 - INFO - STDERR: 
+2025-12-19 08:29:29,389 - INFO - Programming succeeded
+2025-12-19 08:29:29,390 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 finished programming
+2025-12-19 08:30:14,787 - INFO - Upload event triggered for client 8ec918cc-53de-47f0-aa1f-64c83839aedf
+2025-12-19 08:30:14,787 - INFO - Uploading file: Caracter_1.X.production-1.hex
+2025-12-19 08:30:14,787 - INFO - File content length: 2333 bytes
+2025-12-19 08:30:14,788 - INFO - Overwriting existing file for client 8ec918cc-53de-47f0-aa1f-64c83839aedf
+2025-12-19 08:30:14,789 - INFO - File uploaded for client 8ec918cc-53de-47f0-aa1f-64c83839aedf: Caracter_1.X.production-1.hex -> uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:30:14,790 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf successfully uploaded: Caracter_1.X.production-1.hex to uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:30:14,856 - INFO - 3 changes detected
+2025-12-19 08:30:18,039 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf started programming
+2025-12-19 08:30:18,039 - INFO - Starting programming for file: uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:30:18,041 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex -M -Y
+2025-12-19 08:30:18,041 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:30:18,041 - INFO - Hex file exists: True
+2025-12-19 08:30:27,817 - INFO - Command completed with return code: 0
+2025-12-19 08:30:27,817 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:30:23
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:30:23
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:30:27,817 - INFO - STDERR: 
+2025-12-19 08:30:27,817 - INFO - Programming succeeded
+2025-12-19 08:30:27,818 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf finished programming
+2025-12-19 08:30:56,148 - INFO - Upload event triggered for client 6673f968-2080-4670-b58e-ff9d754679d4
+2025-12-19 08:30:56,148 - INFO - Uploading file: caracter.X.production.hex
+2025-12-19 08:30:56,148 - INFO - File content length: 2228 bytes
+2025-12-19 08:30:56,149 - INFO - Overwriting existing file for client 6673f968-2080-4670-b58e-ff9d754679d4
+2025-12-19 08:30:56,151 - INFO - File uploaded for client 6673f968-2080-4670-b58e-ff9d754679d4: caracter.X.production.hex -> uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:30:56,151 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 successfully uploaded: caracter.X.production.hex to uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:30:56,243 - INFO - 3 changes detected
+2025-12-19 08:31:00,786 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 started programming
+2025-12-19 08:31:00,786 - INFO - Starting programming for file: uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:31:00,788 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex -M -Y
+2025-12-19 08:31:00,788 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:31:00,788 - INFO - Hex file exists: True
+2025-12-19 08:31:10,508 - INFO - Command completed with return code: 0
+2025-12-19 08:31:10,509 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:31:06
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:31:06
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:31:10,509 - INFO - STDERR: 
+2025-12-19 08:31:10,509 - INFO - Programming succeeded
+2025-12-19 08:31:10,510 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 finished programming
+2025-12-19 08:32:34,584 - INFO - Upload event triggered for client 8ec918cc-53de-47f0-aa1f-64c83839aedf
+2025-12-19 08:32:34,584 - INFO - Uploading file: upiicsa.X.production.hex
+2025-12-19 08:32:34,584 - INFO - File content length: 3242 bytes
+2025-12-19 08:32:34,585 - INFO - Overwriting existing file for client 8ec918cc-53de-47f0-aa1f-64c83839aedf
+2025-12-19 08:32:34,587 - INFO - File uploaded for client 8ec918cc-53de-47f0-aa1f-64c83839aedf: upiicsa.X.production.hex -> uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:32:34,588 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf successfully uploaded: upiicsa.X.production.hex to uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:32:34,678 - INFO - 3 changes detected
+2025-12-19 08:32:42,040 - INFO - Upload event triggered for client 8ec918cc-53de-47f0-aa1f-64c83839aedf
+2025-12-19 08:32:42,041 - INFO - Uploading file: IPN-LCD.X.production.hex
+2025-12-19 08:32:42,041 - INFO - File content length: 3521 bytes
+2025-12-19 08:32:42,042 - INFO - Overwriting existing file for client 8ec918cc-53de-47f0-aa1f-64c83839aedf
+2025-12-19 08:32:42,044 - INFO - File uploaded for client 8ec918cc-53de-47f0-aa1f-64c83839aedf: IPN-LCD.X.production.hex -> uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:32:42,044 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf successfully uploaded: IPN-LCD.X.production.hex to uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:32:42,106 - INFO - 3 changes detected
+2025-12-19 08:32:43,490 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf started programming
+2025-12-19 08:32:43,490 - INFO - Starting programming for file: uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:32:43,492 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex -M -Y
+2025-12-19 08:32:43,492 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:32:43,492 - INFO - Hex file exists: True
+2025-12-19 08:32:53,320 - INFO - Command completed with return code: 0
+2025-12-19 08:32:53,320 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:32:49
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:32:49
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:32:53,320 - INFO - STDERR: 
+2025-12-19 08:32:53,320 - INFO - Programming succeeded
+2025-12-19 08:32:53,321 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf finished programming
+2025-12-19 08:33:20,793 - INFO - Upload event triggered for client 6673f968-2080-4670-b58e-ff9d754679d4
+2025-12-19 08:33:20,794 - INFO - Uploading file: pacman.X.production.hex
+2025-12-19 08:33:20,794 - INFO - File content length: 7105 bytes
+2025-12-19 08:33:20,795 - INFO - Overwriting existing file for client 6673f968-2080-4670-b58e-ff9d754679d4
+2025-12-19 08:33:20,797 - INFO - File uploaded for client 6673f968-2080-4670-b58e-ff9d754679d4: pacman.X.production.hex -> uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:33:20,797 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 successfully uploaded: pacman.X.production.hex to uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:33:20,868 - INFO - 3 changes detected
+2025-12-19 08:33:24,189 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 started programming
+2025-12-19 08:33:24,189 - INFO - Starting programming for file: uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:33:24,191 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex -M -Y
+2025-12-19 08:33:24,191 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:33:24,191 - INFO - Hex file exists: True
+2025-12-19 08:33:34,357 - INFO - Command completed with return code: 0
+2025-12-19 08:33:34,357 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:33:29
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:33:29
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:33:34,357 - INFO - STDERR: 
+2025-12-19 08:33:34,358 - INFO - Programming succeeded
+2025-12-19 08:33:34,358 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 finished programming
+2025-12-19 08:34:10,293 - INFO - Upload event triggered for client 8ec918cc-53de-47f0-aa1f-64c83839aedf
+2025-12-19 08:34:10,293 - INFO - Uploading file: pacman.X.production.hex
+2025-12-19 08:34:10,293 - INFO - File content length: 7026 bytes
+2025-12-19 08:34:10,295 - INFO - Overwriting existing file for client 8ec918cc-53de-47f0-aa1f-64c83839aedf
+2025-12-19 08:34:10,297 - INFO - File uploaded for client 8ec918cc-53de-47f0-aa1f-64c83839aedf: pacman.X.production.hex -> uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:34:10,297 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf successfully uploaded: pacman.X.production.hex to uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:34:10,355 - INFO - 3 changes detected
+2025-12-19 08:34:11,624 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf started programming
+2025-12-19 08:34:11,624 - INFO - Starting programming for file: uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:34:11,626 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex -M -Y
+2025-12-19 08:34:11,626 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:34:11,627 - INFO - Hex file exists: True
+2025-12-19 08:34:21,796 - INFO - Command completed with return code: 0
+2025-12-19 08:34:21,796 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:34:17
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:34:17
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:34:21,796 - INFO - STDERR: 
+2025-12-19 08:34:21,796 - INFO - Programming succeeded
+2025-12-19 08:34:21,797 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf finished programming
+2025-12-19 08:34:36,310 - INFO - Upload event triggered for client 6673f968-2080-4670-b58e-ff9d754679d4
+2025-12-19 08:34:36,311 - INFO - Uploading file: upiicsa.X.production.hex
+2025-12-19 08:34:36,311 - INFO - File content length: 3660 bytes
+2025-12-19 08:34:36,312 - INFO - Overwriting existing file for client 6673f968-2080-4670-b58e-ff9d754679d4
+2025-12-19 08:34:36,314 - INFO - File uploaded for client 6673f968-2080-4670-b58e-ff9d754679d4: upiicsa.X.production.hex -> uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:34:36,314 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 successfully uploaded: upiicsa.X.production.hex to uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:34:36,389 - INFO - 3 changes detected
+2025-12-19 08:34:43,903 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 started programming
+2025-12-19 08:34:43,904 - INFO - Starting programming for file: uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:34:43,905 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex -M -Y
+2025-12-19 08:34:43,906 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:34:43,906 - INFO - Hex file exists: True
+2025-12-19 08:34:53,731 - INFO - Command completed with return code: 0
+2025-12-19 08:34:53,731 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:34:49
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:34:49
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:34:53,731 - INFO - STDERR: 
+2025-12-19 08:34:53,731 - INFO - Programming succeeded
+2025-12-19 08:34:53,732 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 finished programming
+2025-12-19 08:36:02,612 - INFO - 2 changes detected
+2025-12-19 08:36:42,955 - INFO - Upload event triggered for client 8ec918cc-53de-47f0-aa1f-64c83839aedf
+2025-12-19 08:36:42,955 - INFO - Uploading file: Pacman.X.production.hex
+2025-12-19 08:36:42,956 - INFO - File content length: 10222 bytes
+2025-12-19 08:36:42,957 - INFO - Overwriting existing file for client 8ec918cc-53de-47f0-aa1f-64c83839aedf
+2025-12-19 08:36:42,959 - INFO - File uploaded for client 8ec918cc-53de-47f0-aa1f-64c83839aedf: Pacman.X.production.hex -> uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:36:42,960 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf successfully uploaded: Pacman.X.production.hex to uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:36:43,019 - INFO - 3 changes detected
+2025-12-19 08:36:44,116 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf started programming
+2025-12-19 08:36:44,116 - INFO - Starting programming for file: uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:36:44,118 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex -M -Y
+2025-12-19 08:36:44,118 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:36:44,119 - INFO - Hex file exists: True
+2025-12-19 08:36:54,669 - INFO - Command completed with return code: 0
+2025-12-19 08:36:54,669 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:36:49
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:36:49
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:36:54,670 - INFO - STDERR: 
+2025-12-19 08:36:54,670 - INFO - Programming succeeded
+2025-12-19 08:36:54,671 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf finished programming
+2025-12-19 08:37:09,342 - INFO - Upload event triggered for client 6673f968-2080-4670-b58e-ff9d754679d4
+2025-12-19 08:37:09,343 - INFO - Uploading file: frase.X.production.hex
+2025-12-19 08:37:09,343 - INFO - File content length: 7145 bytes
+2025-12-19 08:37:09,344 - INFO - Overwriting existing file for client 6673f968-2080-4670-b58e-ff9d754679d4
+2025-12-19 08:37:09,346 - INFO - File uploaded for client 6673f968-2080-4670-b58e-ff9d754679d4: frase.X.production.hex -> uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:37:09,346 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 successfully uploaded: frase.X.production.hex to uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:37:09,445 - INFO - 3 changes detected
+2025-12-19 08:37:10,860 - INFO - Upload event triggered for client 5a9bd3bf-7943-4551-bfa4-481be4b2ab28
+2025-12-19 08:37:10,860 - INFO - Uploading file: Keypad-orden.X.production.hex
+2025-12-19 08:37:10,860 - INFO - File content length: 7201 bytes
+2025-12-19 08:37:10,861 - INFO - Overwriting existing file for client 5a9bd3bf-7943-4551-bfa4-481be4b2ab28
+2025-12-19 08:37:10,863 - INFO - File uploaded for client 5a9bd3bf-7943-4551-bfa4-481be4b2ab28: Keypad-orden.X.production.hex -> uploads\5a9bd3bf-7943-4551-bfa4-481be4b2ab28.hex
+2025-12-19 08:37:10,863 - INFO - Client 5a9bd3bf-7943-4551-bfa4-481be4b2ab28 successfully uploaded: Keypad-orden.X.production.hex to uploads\5a9bd3bf-7943-4551-bfa4-481be4b2ab28.hex
+2025-12-19 08:37:10,919 - INFO - 3 changes detected
+2025-12-19 08:37:13,547 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 started programming
+2025-12-19 08:37:13,548 - INFO - Starting programming for file: uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:37:13,550 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex -M -Y
+2025-12-19 08:37:13,550 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:37:13,551 - INFO - Hex file exists: True
+2025-12-19 08:37:23,750 - INFO - Command completed with return code: 0
+2025-12-19 08:37:23,751 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:37:19
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:37:19
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:37:23,751 - INFO - STDERR: 
+2025-12-19 08:37:23,751 - INFO - Programming succeeded
+2025-12-19 08:37:23,752 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 finished programming
+2025-12-19 08:38:02,200 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 started programming
+2025-12-19 08:38:02,201 - INFO - Starting programming for file: uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:38:02,203 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex -M -Y
+2025-12-19 08:38:02,203 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\6673f968-2080-4670-b58e-ff9d754679d4.hex
+2025-12-19 08:38:02,203 - INFO - Hex file exists: True
+2025-12-19 08:38:12,340 - INFO - Command completed with return code: 0
+2025-12-19 08:38:12,340 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:38:07
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:38:07
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:38:12,340 - INFO - STDERR: 
+2025-12-19 08:38:12,340 - INFO - Programming succeeded
+2025-12-19 08:38:12,341 - INFO - Client 6673f968-2080-4670-b58e-ff9d754679d4 finished programming
+2025-12-19 08:39:03,198 - INFO - Client connected with ID: 32a48a18-32e7-4f5e-b063-0b56580f2e27
+2025-12-19 08:39:14,643 - INFO - Upload event triggered for client 32a48a18-32e7-4f5e-b063-0b56580f2e27
+2025-12-19 08:39:14,644 - INFO - Uploading file: pacman.X.production.hex
+2025-12-19 08:39:14,644 - INFO - File content length: 7105 bytes
+2025-12-19 08:39:14,646 - INFO - File uploaded for client 32a48a18-32e7-4f5e-b063-0b56580f2e27: pacman.X.production.hex -> uploads\32a48a18-32e7-4f5e-b063-0b56580f2e27.hex
+2025-12-19 08:39:14,646 - INFO - Client 32a48a18-32e7-4f5e-b063-0b56580f2e27 successfully uploaded: pacman.X.production.hex to uploads\32a48a18-32e7-4f5e-b063-0b56580f2e27.hex
+2025-12-19 08:39:14,721 - INFO - 1 change detected
+2025-12-19 08:39:18,655 - INFO - Client 32a48a18-32e7-4f5e-b063-0b56580f2e27 started programming
+2025-12-19 08:39:18,655 - INFO - Starting programming for file: uploads\32a48a18-32e7-4f5e-b063-0b56580f2e27.hex
+2025-12-19 08:39:18,657 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\32a48a18-32e7-4f5e-b063-0b56580f2e27.hex -M -Y
+2025-12-19 08:39:18,657 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\32a48a18-32e7-4f5e-b063-0b56580f2e27.hex
+2025-12-19 08:39:18,658 - INFO - Hex file exists: True
+2025-12-19 08:39:28,892 - INFO - Command completed with return code: 0
+2025-12-19 08:39:28,892 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:39:24
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:39:24
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:39:28,892 - INFO - STDERR: 
+2025-12-19 08:39:28,892 - INFO - Programming succeeded
+2025-12-19 08:39:28,893 - INFO - Client 32a48a18-32e7-4f5e-b063-0b56580f2e27 finished programming
+2025-12-19 08:40:18,340 - INFO - Client 5a9bd3bf-7943-4551-bfa4-481be4b2ab28 started programming
+2025-12-19 08:40:18,341 - INFO - Starting programming for file: uploads\5a9bd3bf-7943-4551-bfa4-481be4b2ab28.hex
+2025-12-19 08:40:18,342 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\5a9bd3bf-7943-4551-bfa4-481be4b2ab28.hex -M -Y
+2025-12-19 08:40:18,343 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\5a9bd3bf-7943-4551-bfa4-481be4b2ab28.hex
+2025-12-19 08:40:18,343 - INFO - Hex file exists: True
+2025-12-19 08:40:28,520 - INFO - Command completed with return code: 0
+2025-12-19 08:40:28,520 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:40:23
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:40:23
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:40:28,521 - INFO - STDERR: 
+2025-12-19 08:40:28,521 - INFO - Programming succeeded
+2025-12-19 08:40:28,521 - INFO - Client 5a9bd3bf-7943-4551-bfa4-481be4b2ab28 finished programming
+2025-12-19 08:41:09,670 - INFO - Upload event triggered for client 32a48a18-32e7-4f5e-b063-0b56580f2e27
+2025-12-19 08:41:09,671 - INFO - Uploading file: Wiiiiii.X.production.hex
+2025-12-19 08:41:09,671 - INFO - File content length: 6192 bytes
+2025-12-19 08:41:09,672 - INFO - Overwriting existing file for client 32a48a18-32e7-4f5e-b063-0b56580f2e27
+2025-12-19 08:41:09,674 - INFO - File uploaded for client 32a48a18-32e7-4f5e-b063-0b56580f2e27: Wiiiiii.X.production.hex -> uploads\32a48a18-32e7-4f5e-b063-0b56580f2e27.hex
+2025-12-19 08:41:09,674 - INFO - Client 32a48a18-32e7-4f5e-b063-0b56580f2e27 successfully uploaded: Wiiiiii.X.production.hex to uploads\32a48a18-32e7-4f5e-b063-0b56580f2e27.hex
+2025-12-19 08:41:09,731 - INFO - 3 changes detected
+2025-12-19 08:41:15,590 - INFO - Client 32a48a18-32e7-4f5e-b063-0b56580f2e27 started programming
+2025-12-19 08:41:15,590 - INFO - Starting programming for file: uploads\32a48a18-32e7-4f5e-b063-0b56580f2e27.hex
+2025-12-19 08:41:15,592 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\32a48a18-32e7-4f5e-b063-0b56580f2e27.hex -M -Y
+2025-12-19 08:41:15,592 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\32a48a18-32e7-4f5e-b063-0b56580f2e27.hex
+2025-12-19 08:41:15,592 - INFO - Hex file exists: True
+2025-12-19 08:41:25,710 - INFO - Command completed with return code: 0
+2025-12-19 08:41:25,711 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:41:21
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:41:21
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:41:25,711 - INFO - STDERR: 
+2025-12-19 08:41:25,711 - INFO - Programming succeeded
+2025-12-19 08:41:25,712 - INFO - Client 32a48a18-32e7-4f5e-b063-0b56580f2e27 finished programming
+2025-12-19 08:44:15,796 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf started programming
+2025-12-19 08:44:15,796 - INFO - Starting programming for file: uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:44:15,798 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex -M -Y
+2025-12-19 08:44:15,798 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:44:15,799 - INFO - Hex file exists: True
+2025-12-19 08:44:26,327 - INFO - Command completed with return code: 0
+2025-12-19 08:44:26,327 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:44:21
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:44:21
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:44:26,328 - INFO - STDERR: 
+2025-12-19 08:44:26,328 - INFO - Programming succeeded
+2025-12-19 08:44:26,329 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf finished programming
+2025-12-19 08:45:08,799 - INFO - Upload event triggered for client 8ec918cc-53de-47f0-aa1f-64c83839aedf
+2025-12-19 08:45:08,799 - INFO - Uploading file: Keypad-orden.X.production.hex
+2025-12-19 08:45:08,799 - INFO - File content length: 7201 bytes
+2025-12-19 08:45:08,801 - INFO - Overwriting existing file for client 8ec918cc-53de-47f0-aa1f-64c83839aedf
+2025-12-19 08:45:08,802 - INFO - File uploaded for client 8ec918cc-53de-47f0-aa1f-64c83839aedf: Keypad-orden.X.production.hex -> uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:45:08,803 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf successfully uploaded: Keypad-orden.X.production.hex to uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:45:08,898 - INFO - 3 changes detected
+2025-12-19 08:45:09,536 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf started programming
+2025-12-19 08:45:09,536 - INFO - Starting programming for file: uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:45:09,538 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex -M -Y
+2025-12-19 08:45:09,538 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:45:09,539 - INFO - Hex file exists: True
+2025-12-19 08:45:19,728 - INFO - Command completed with return code: 0
+2025-12-19 08:45:19,728 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:45:15
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:45:15
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:45:19,728 - INFO - STDERR: 
+2025-12-19 08:45:19,729 - INFO - Programming succeeded
+2025-12-19 08:45:19,729 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf finished programming
+2025-12-19 08:50:18,335 - INFO - Upload event triggered for client 8ec918cc-53de-47f0-aa1f-64c83839aedf
+2025-12-19 08:50:18,335 - INFO - Uploading file: frase_2.X.production.hex
+2025-12-19 08:50:18,335 - INFO - File content length: 8596 bytes
+2025-12-19 08:50:18,336 - INFO - Overwriting existing file for client 8ec918cc-53de-47f0-aa1f-64c83839aedf
+2025-12-19 08:50:18,338 - INFO - File uploaded for client 8ec918cc-53de-47f0-aa1f-64c83839aedf: frase_2.X.production.hex -> uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:50:18,339 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf successfully uploaded: frase_2.X.production.hex to uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:50:18,421 - INFO - 3 changes detected
+2025-12-19 08:50:18,933 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf started programming
+2025-12-19 08:50:18,933 - INFO - Starting programming for file: uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:50:18,935 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex -M -Y
+2025-12-19 08:50:18,936 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:50:18,936 - INFO - Hex file exists: True
+2025-12-19 08:50:29,230 - INFO - Command completed with return code: 0
+2025-12-19 08:50:29,230 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:50:24
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:50:24
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:50:29,230 - INFO - STDERR: 
+2025-12-19 08:50:29,230 - INFO - Programming succeeded
+2025-12-19 08:50:29,231 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf finished programming
+2025-12-19 08:54:45,091 - INFO - Upload event triggered for client 8ec918cc-53de-47f0-aa1f-64c83839aedf
+2025-12-19 08:54:45,091 - INFO - Uploading file: Relog.X.production.hex
+2025-12-19 08:54:45,092 - INFO - File content length: 3955 bytes
+2025-12-19 08:54:45,093 - INFO - Overwriting existing file for client 8ec918cc-53de-47f0-aa1f-64c83839aedf
+2025-12-19 08:54:45,094 - INFO - File uploaded for client 8ec918cc-53de-47f0-aa1f-64c83839aedf: Relog.X.production.hex -> uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:54:45,095 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf successfully uploaded: Relog.X.production.hex to uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:54:45,186 - INFO - 3 changes detected
+2025-12-19 08:54:46,462 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf started programming
+2025-12-19 08:54:46,462 - INFO - Starting programming for file: uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:54:46,464 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex -M -Y
+2025-12-19 08:54:46,464 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:54:46,464 - INFO - Hex file exists: True
+2025-12-19 08:54:56,366 - INFO - Command completed with return code: 0
+2025-12-19 08:54:56,367 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:54:52
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:54:52
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:54:56,367 - INFO - STDERR: 
+2025-12-19 08:54:56,367 - INFO - Programming succeeded
+2025-12-19 08:54:56,368 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf finished programming
+2025-12-19 08:55:03,382 - INFO - Upload event triggered for client 5a9bd3bf-7943-4551-bfa4-481be4b2ab28
+2025-12-19 08:55:03,382 - INFO - Uploading file: pacman.X.production.hex
+2025-12-19 08:55:03,382 - INFO - File content length: 7026 bytes
+2025-12-19 08:55:03,384 - INFO - Overwriting existing file for client 5a9bd3bf-7943-4551-bfa4-481be4b2ab28
+2025-12-19 08:55:03,386 - INFO - File uploaded for client 5a9bd3bf-7943-4551-bfa4-481be4b2ab28: pacman.X.production.hex -> uploads\5a9bd3bf-7943-4551-bfa4-481be4b2ab28.hex
+2025-12-19 08:55:03,386 - INFO - Client 5a9bd3bf-7943-4551-bfa4-481be4b2ab28 successfully uploaded: pacman.X.production.hex to uploads\5a9bd3bf-7943-4551-bfa4-481be4b2ab28.hex
+2025-12-19 08:55:03,486 - INFO - 3 changes detected
+2025-12-19 08:55:21,877 - INFO - Client 5a9bd3bf-7943-4551-bfa4-481be4b2ab28 started programming
+2025-12-19 08:55:21,877 - INFO - Starting programming for file: uploads\5a9bd3bf-7943-4551-bfa4-481be4b2ab28.hex
+2025-12-19 08:55:21,879 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\5a9bd3bf-7943-4551-bfa4-481be4b2ab28.hex -M -Y
+2025-12-19 08:55:21,880 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\5a9bd3bf-7943-4551-bfa4-481be4b2ab28.hex
+2025-12-19 08:55:21,880 - INFO - Hex file exists: True
+2025-12-19 08:55:25,981 - INFO - Client connected with ID: 844d8abc-fd1f-455d-970d-fe1ac1e9664b
+2025-12-19 08:55:32,074 - INFO - Command completed with return code: 0
+2025-12-19 08:55:32,074 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:55:27
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:55:27
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:55:32,074 - INFO - STDERR: 
+2025-12-19 08:55:32,074 - INFO - Programming succeeded
+2025-12-19 08:55:32,075 - INFO - Client 5a9bd3bf-7943-4551-bfa4-481be4b2ab28 finished programming
+2025-12-19 08:55:50,800 - INFO - Upload event triggered for client 844d8abc-fd1f-455d-970d-fe1ac1e9664b
+2025-12-19 08:55:50,800 - INFO - Uploading file: Keypad-orden.X.production.hex
+2025-12-19 08:55:50,800 - INFO - File content length: 7201 bytes
+2025-12-19 08:55:50,802 - INFO - File uploaded for client 844d8abc-fd1f-455d-970d-fe1ac1e9664b: Keypad-orden.X.production.hex -> uploads\844d8abc-fd1f-455d-970d-fe1ac1e9664b.hex
+2025-12-19 08:55:50,802 - INFO - Client 844d8abc-fd1f-455d-970d-fe1ac1e9664b successfully uploaded: Keypad-orden.X.production.hex to uploads\844d8abc-fd1f-455d-970d-fe1ac1e9664b.hex
+2025-12-19 08:55:50,900 - INFO - 1 change detected
+2025-12-19 08:55:59,319 - INFO - Client 844d8abc-fd1f-455d-970d-fe1ac1e9664b started programming
+2025-12-19 08:55:59,319 - INFO - Starting programming for file: uploads\844d8abc-fd1f-455d-970d-fe1ac1e9664b.hex
+2025-12-19 08:55:59,321 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\844d8abc-fd1f-455d-970d-fe1ac1e9664b.hex -M -Y
+2025-12-19 08:55:59,321 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\844d8abc-fd1f-455d-970d-fe1ac1e9664b.hex
+2025-12-19 08:55:59,321 - INFO - Hex file exists: True
+2025-12-19 08:56:09,530 - INFO - Command completed with return code: 0
+2025-12-19 08:56:09,530 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:56:04
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:56:04
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:56:09,530 - INFO - STDERR: 
+2025-12-19 08:56:09,531 - INFO - Programming succeeded
+2025-12-19 08:56:09,531 - INFO - Client 844d8abc-fd1f-455d-970d-fe1ac1e9664b finished programming
+2025-12-19 08:56:20,120 - INFO - Upload event triggered for client 844d8abc-fd1f-455d-970d-fe1ac1e9664b
+2025-12-19 08:56:20,120 - INFO - Uploading file: Relog.X.production.hex
+2025-12-19 08:56:20,120 - INFO - File content length: 3864 bytes
+2025-12-19 08:56:20,121 - INFO - Overwriting existing file for client 844d8abc-fd1f-455d-970d-fe1ac1e9664b
+2025-12-19 08:56:20,123 - INFO - File uploaded for client 844d8abc-fd1f-455d-970d-fe1ac1e9664b: Relog.X.production.hex -> uploads\844d8abc-fd1f-455d-970d-fe1ac1e9664b.hex
+2025-12-19 08:56:20,123 - INFO - Client 844d8abc-fd1f-455d-970d-fe1ac1e9664b successfully uploaded: Relog.X.production.hex to uploads\844d8abc-fd1f-455d-970d-fe1ac1e9664b.hex
+2025-12-19 08:56:20,212 - INFO - 3 changes detected
+2025-12-19 08:56:23,926 - INFO - Client 844d8abc-fd1f-455d-970d-fe1ac1e9664b started programming
+2025-12-19 08:56:23,926 - INFO - Starting programming for file: uploads\844d8abc-fd1f-455d-970d-fe1ac1e9664b.hex
+2025-12-19 08:56:23,929 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\844d8abc-fd1f-455d-970d-fe1ac1e9664b.hex -M -Y
+2025-12-19 08:56:23,929 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\844d8abc-fd1f-455d-970d-fe1ac1e9664b.hex
+2025-12-19 08:56:23,929 - INFO - Hex file exists: True
+2025-12-19 08:56:33,851 - INFO - Command completed with return code: 0
+2025-12-19 08:56:33,851 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:56:29
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:56:29
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:56:33,851 - INFO - STDERR: 
+2025-12-19 08:56:33,852 - INFO - Programming succeeded
+2025-12-19 08:56:33,852 - INFO - Client 844d8abc-fd1f-455d-970d-fe1ac1e9664b finished programming
+2025-12-19 08:57:02,986 - INFO - Upload event triggered for client 8ec918cc-53de-47f0-aa1f-64c83839aedf
+2025-12-19 08:57:02,986 - INFO - Uploading file: Keypad-pirnt.X.production.hex
+2025-12-19 08:57:02,986 - INFO - File content length: 6004 bytes
+2025-12-19 08:57:02,987 - INFO - Overwriting existing file for client 8ec918cc-53de-47f0-aa1f-64c83839aedf
+2025-12-19 08:57:02,989 - INFO - File uploaded for client 8ec918cc-53de-47f0-aa1f-64c83839aedf: Keypad-pirnt.X.production.hex -> uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:57:02,989 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf successfully uploaded: Keypad-pirnt.X.production.hex to uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:57:03,074 - INFO - 3 changes detected
+2025-12-19 08:57:04,840 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf started programming
+2025-12-19 08:57:04,841 - INFO - Starting programming for file: uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:57:04,842 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex -M -Y
+2025-12-19 08:57:04,842 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 08:57:04,843 - INFO - Hex file exists: True
+2025-12-19 08:57:14,900 - INFO - Command completed with return code: 0
+2025-12-19 08:57:14,900 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 08:57:10
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 08:57:10
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 08:57:14,900 - INFO - STDERR: 
+2025-12-19 08:57:14,900 - INFO - Programming succeeded
+2025-12-19 08:57:14,901 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf finished programming
+2025-12-19 09:00:09,668 - INFO - Client connected with ID: 19923179-e8e8-47a0-a4f4-998e778e0385
+2025-12-19 09:00:25,040 - INFO - Upload event triggered for client 19923179-e8e8-47a0-a4f4-998e778e0385
+2025-12-19 09:00:25,040 - INFO - Uploading file: Keypad-orden.X.production.hex
+2025-12-19 09:00:25,040 - INFO - File content length: 7201 bytes
+2025-12-19 09:00:25,042 - INFO - File uploaded for client 19923179-e8e8-47a0-a4f4-998e778e0385: Keypad-orden.X.production.hex -> uploads\19923179-e8e8-47a0-a4f4-998e778e0385.hex
+2025-12-19 09:00:25,042 - INFO - Client 19923179-e8e8-47a0-a4f4-998e778e0385 successfully uploaded: Keypad-orden.X.production.hex to uploads\19923179-e8e8-47a0-a4f4-998e778e0385.hex
+2025-12-19 09:00:25,106 - INFO - 1 change detected
+2025-12-19 09:00:29,071 - INFO - Client 19923179-e8e8-47a0-a4f4-998e778e0385 started programming
+2025-12-19 09:00:29,071 - INFO - Starting programming for file: uploads\19923179-e8e8-47a0-a4f4-998e778e0385.hex
+2025-12-19 09:00:29,073 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\19923179-e8e8-47a0-a4f4-998e778e0385.hex -M -Y
+2025-12-19 09:00:29,073 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\19923179-e8e8-47a0-a4f4-998e778e0385.hex
+2025-12-19 09:00:29,074 - INFO - Hex file exists: True
+2025-12-19 09:00:39,257 - INFO - Command completed with return code: 0
+2025-12-19 09:00:39,257 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 09:00:34
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 09:00:34
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 09:00:39,257 - INFO - STDERR: 
+2025-12-19 09:00:39,257 - INFO - Programming succeeded
+2025-12-19 09:00:39,258 - INFO - Client 19923179-e8e8-47a0-a4f4-998e778e0385 finished programming
+2025-12-19 09:01:05,163 - INFO - Client connected with ID: 4d8d7324-b8de-46c6-aa7c-773245b4d040
+2025-12-19 09:01:05,359 - INFO - Client connected with ID: 40df241c-3851-4b44-b206-9e6affa95394
+2025-12-19 09:01:12,554 - INFO - Upload event triggered for client 4d8d7324-b8de-46c6-aa7c-773245b4d040
+2025-12-19 09:01:12,554 - INFO - Uploading file: pacman.X.production.hex
+2025-12-19 09:01:12,554 - INFO - File content length: 7105 bytes
+2025-12-19 09:01:12,556 - INFO - File uploaded for client 4d8d7324-b8de-46c6-aa7c-773245b4d040: pacman.X.production.hex -> uploads\4d8d7324-b8de-46c6-aa7c-773245b4d040.hex
+2025-12-19 09:01:12,557 - INFO - Client 4d8d7324-b8de-46c6-aa7c-773245b4d040 successfully uploaded: pacman.X.production.hex to uploads\4d8d7324-b8de-46c6-aa7c-773245b4d040.hex
+2025-12-19 09:01:12,653 - INFO - 2 changes detected
+2025-12-19 09:01:20,562 - WARNING - http://10.218.234.30:8181/_nicegui/auto/static/de934114aa3f61e93afef31cbec5021f/Programer.png not found
+2025-12-19 09:01:21,634 - WARNING - http://10.218.234.30:8181/_nicegui/auto/static/de934114aa3f61e93afef31cbec5021f/Programer.png not found
+2025-12-19 09:01:23,086 - INFO - Client 4d8d7324-b8de-46c6-aa7c-773245b4d040 started programming
+2025-12-19 09:01:23,086 - INFO - Starting programming for file: uploads\4d8d7324-b8de-46c6-aa7c-773245b4d040.hex
+2025-12-19 09:01:23,088 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\4d8d7324-b8de-46c6-aa7c-773245b4d040.hex -M -Y
+2025-12-19 09:01:23,088 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\4d8d7324-b8de-46c6-aa7c-773245b4d040.hex
+2025-12-19 09:01:23,089 - INFO - Hex file exists: True
+2025-12-19 09:01:33,289 - INFO - Command completed with return code: 0
+2025-12-19 09:01:33,289 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 09:01:28
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 09:01:28
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 09:01:33,289 - INFO - STDERR: 
+2025-12-19 09:01:33,289 - INFO - Programming succeeded
+2025-12-19 09:01:33,290 - INFO - Client 4d8d7324-b8de-46c6-aa7c-773245b4d040 finished programming
+2025-12-19 09:02:10,824 - INFO - Upload event triggered for client 8ec918cc-53de-47f0-aa1f-64c83839aedf
+2025-12-19 09:02:10,824 - INFO - Uploading file: De-order.X.production.hex
+2025-12-19 09:02:10,825 - INFO - File content length: 6004 bytes
+2025-12-19 09:02:10,826 - INFO - Overwriting existing file for client 8ec918cc-53de-47f0-aa1f-64c83839aedf
+2025-12-19 09:02:10,828 - INFO - File uploaded for client 8ec918cc-53de-47f0-aa1f-64c83839aedf: De-order.X.production.hex -> uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 09:02:10,829 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf successfully uploaded: De-order.X.production.hex to uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 09:02:10,883 - INFO - 3 changes detected
+2025-12-19 09:02:13,260 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf started programming
+2025-12-19 09:02:13,260 - INFO - Starting programming for file: uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 09:02:13,262 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex -M -Y
+2025-12-19 09:02:13,263 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 09:02:13,263 - INFO - Hex file exists: True
+2025-12-19 09:02:23,392 - INFO - Command completed with return code: 0
+2025-12-19 09:02:23,392 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 09:02:18
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 09:02:18
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 09:02:23,392 - INFO - STDERR: 
+2025-12-19 09:02:23,392 - INFO - Programming succeeded
+2025-12-19 09:02:23,393 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf finished programming
+2025-12-19 09:03:41,669 - INFO - Upload event triggered for client 40df241c-3851-4b44-b206-9e6affa95394
+2025-12-19 09:03:41,670 - INFO - Uploading file: frase_marquesina.X.production.hex
+2025-12-19 09:03:41,670 - INFO - File content length: 5358 bytes
+2025-12-19 09:03:41,671 - INFO - File uploaded for client 40df241c-3851-4b44-b206-9e6affa95394: frase_marquesina.X.production.hex -> uploads\40df241c-3851-4b44-b206-9e6affa95394.hex
+2025-12-19 09:03:41,671 - INFO - Client 40df241c-3851-4b44-b206-9e6affa95394 successfully uploaded: frase_marquesina.X.production.hex to uploads\40df241c-3851-4b44-b206-9e6affa95394.hex
+2025-12-19 09:03:41,761 - INFO - 1 change detected
+2025-12-19 09:03:51,998 - WARNING - http://10.218.234.30:8181/_nicegui/auto/static/de934114aa3f61e93afef31cbec5021f/Programer.png not found
+2025-12-19 09:03:53,839 - INFO - Client 40df241c-3851-4b44-b206-9e6affa95394 started programming
+2025-12-19 09:03:53,839 - INFO - Starting programming for file: uploads\40df241c-3851-4b44-b206-9e6affa95394.hex
+2025-12-19 09:03:53,842 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\40df241c-3851-4b44-b206-9e6affa95394.hex -M -Y
+2025-12-19 09:03:53,842 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\40df241c-3851-4b44-b206-9e6affa95394.hex
+2025-12-19 09:03:53,842 - INFO - Hex file exists: True
+2025-12-19 09:03:57,462 - INFO - 1 change detected
+2025-12-19 09:04:03,871 - INFO - Command completed with return code: 0
+2025-12-19 09:04:03,871 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 09:03:59
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 09:03:59
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 09:04:03,871 - INFO - STDERR: 
+2025-12-19 09:04:03,871 - INFO - Programming succeeded
+2025-12-19 09:04:03,872 - INFO - Client 40df241c-3851-4b44-b206-9e6affa95394 finished programming
+2025-12-19 09:04:32,056 - INFO - Upload event triggered for client 4d8d7324-b8de-46c6-aa7c-773245b4d040
+2025-12-19 09:04:32,056 - INFO - Uploading file: Keypad-orden.X.production.hex
+2025-12-19 09:04:32,056 - INFO - File content length: 7201 bytes
+2025-12-19 09:04:32,057 - INFO - Overwriting existing file for client 4d8d7324-b8de-46c6-aa7c-773245b4d040
+2025-12-19 09:04:32,059 - INFO - File uploaded for client 4d8d7324-b8de-46c6-aa7c-773245b4d040: Keypad-orden.X.production.hex -> uploads\4d8d7324-b8de-46c6-aa7c-773245b4d040.hex
+2025-12-19 09:04:32,059 - INFO - Client 4d8d7324-b8de-46c6-aa7c-773245b4d040 successfully uploaded: Keypad-orden.X.production.hex to uploads\4d8d7324-b8de-46c6-aa7c-773245b4d040.hex
+2025-12-19 09:04:32,125 - INFO - 3 changes detected
+2025-12-19 09:04:34,307 - WARNING - http://10.218.234.30:8181/_nicegui/auto/static/de934114aa3f61e93afef31cbec5021f/Programer.png not found
+2025-12-19 09:04:34,946 - INFO - Client 4d8d7324-b8de-46c6-aa7c-773245b4d040 started programming
+2025-12-19 09:04:34,946 - INFO - Starting programming for file: uploads\4d8d7324-b8de-46c6-aa7c-773245b4d040.hex
+2025-12-19 09:04:34,948 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\4d8d7324-b8de-46c6-aa7c-773245b4d040.hex -M -Y
+2025-12-19 09:04:34,949 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\4d8d7324-b8de-46c6-aa7c-773245b4d040.hex
+2025-12-19 09:04:34,950 - INFO - Hex file exists: True
+2025-12-19 09:04:45,124 - INFO - Command completed with return code: 0
+2025-12-19 09:04:45,124 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 09:04:40
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 09:04:40
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 09:04:45,124 - INFO - STDERR: 
+2025-12-19 09:04:45,124 - INFO - Programming succeeded
+2025-12-19 09:04:45,125 - INFO - Client 4d8d7324-b8de-46c6-aa7c-773245b4d040 finished programming
+2025-12-19 09:05:06,368 - INFO - Upload event triggered for client 8ec918cc-53de-47f0-aa1f-64c83839aedf
+2025-12-19 09:05:06,369 - INFO - Uploading file: Contrasena.X.production.hex
+2025-12-19 09:05:06,369 - INFO - File content length: 10560 bytes
+2025-12-19 09:05:06,370 - INFO - Overwriting existing file for client 8ec918cc-53de-47f0-aa1f-64c83839aedf
+2025-12-19 09:05:06,373 - INFO - File uploaded for client 8ec918cc-53de-47f0-aa1f-64c83839aedf: Contrasena.X.production.hex -> uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 09:05:06,374 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf successfully uploaded: Contrasena.X.production.hex to uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 09:05:06,425 - INFO - 3 changes detected
+2025-12-19 09:05:07,356 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf started programming
+2025-12-19 09:05:07,357 - INFO - Starting programming for file: uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 09:05:07,359 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex -M -Y
+2025-12-19 09:05:07,360 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\8ec918cc-53de-47f0-aa1f-64c83839aedf.hex
+2025-12-19 09:05:07,360 - INFO - Hex file exists: True
+2025-12-19 09:05:17,868 - INFO - Command completed with return code: 0
+2025-12-19 09:05:17,868 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 09:05:12
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 09:05:12
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 09:05:17,868 - INFO - STDERR: 
+2025-12-19 09:05:17,868 - INFO - Programming succeeded
+2025-12-19 09:05:17,869 - INFO - Client 8ec918cc-53de-47f0-aa1f-64c83839aedf finished programming
+2025-12-19 09:07:59,019 - INFO - Client connected with ID: e8ca378c-d58c-446d-9015-de337072c9e7
+2025-12-19 09:08:16,156 - INFO - Upload event triggered for client e8ca378c-d58c-446d-9015-de337072c9e7
+2025-12-19 09:08:16,156 - INFO - Uploading file: Desorden.X.production.hex
+2025-12-19 09:08:16,156 - INFO - File content length: 7038 bytes
+2025-12-19 09:08:16,159 - INFO - File uploaded for client e8ca378c-d58c-446d-9015-de337072c9e7: Desorden.X.production.hex -> uploads\e8ca378c-d58c-446d-9015-de337072c9e7.hex
+2025-12-19 09:08:16,160 - INFO - Client e8ca378c-d58c-446d-9015-de337072c9e7 successfully uploaded: Desorden.X.production.hex to uploads\e8ca378c-d58c-446d-9015-de337072c9e7.hex
+2025-12-19 09:08:16,216 - INFO - 2 changes detected
+2025-12-19 09:08:24,215 - INFO - Client e8ca378c-d58c-446d-9015-de337072c9e7 started programming
+2025-12-19 09:08:24,216 - INFO - Starting programming for file: uploads\e8ca378c-d58c-446d-9015-de337072c9e7.hex
+2025-12-19 09:08:24,218 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\e8ca378c-d58c-446d-9015-de337072c9e7.hex -M -Y
+2025-12-19 09:08:24,218 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\e8ca378c-d58c-446d-9015-de337072c9e7.hex
+2025-12-19 09:08:24,219 - INFO - Hex file exists: True
+2025-12-19 09:08:34,415 - INFO - Command completed with return code: 0
+2025-12-19 09:08:34,415 - INFO - STDOUT: Auto-Detect: Found part PIC18F4550.
+
+\|/-\|/-\|/-\|/ \ \-\|/-\|/-\|/-\|/-\|/-\|/-\|/ \- PICkit Program Report
+19-Dec-2025, 09:08:29
+Device Type: PIC18F4550
+
+Program Succeeded.
+\\|/-\|/-\|/-\|/-\|/-\|/-\|/- \ PICkit 2 Verify Report
+19-Dec-2025, 09:08:29
+Device Type: PIC18F4550
+
+Verify Succeeded.
+
+Operation Succeeded
+
+2025-12-19 09:08:34,415 - INFO - STDERR: 
+2025-12-19 09:08:34,415 - INFO - Programming succeeded
+2025-12-19 09:08:34,416 - INFO - Client e8ca378c-d58c-446d-9015-de337072c9e7 finished programming
+2025-12-19 09:09:54,458 - INFO - Client connected with ID: 40b87a3b-3a55-40f0-bdbb-6307d3c6e304
+2025-12-19 09:18:23,937 - INFO - Client connected with ID: a7c686f5-7e4f-4798-a620-83c27e96ecac
+2025-12-19 09:19:38,432 - INFO - Client 40df241c-3851-4b44-b206-9e6affa95394 started programming
+2025-12-19 09:19:38,432 - INFO - Starting programming for file: uploads\40df241c-3851-4b44-b206-9e6affa95394.hex
+2025-12-19 09:19:38,434 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\40df241c-3851-4b44-b206-9e6affa95394.hex -M -Y
+2025-12-19 09:19:38,435 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\40df241c-3851-4b44-b206-9e6affa95394.hex
+2025-12-19 09:19:38,435 - INFO - Hex file exists: True
+2025-12-19 09:19:38,522 - INFO - Command completed with return code: 10
+2025-12-19 09:19:38,523 - INFO - STDOUT: No PICkit 2, 3 or PKOB found.
+
+
+2025-12-19 09:19:38,523 - INFO - STDERR: 
+2025-12-19 09:19:38,523 - ERROR - Programming failed with code 10
+2025-12-19 09:19:38,524 - INFO - Client 40df241c-3851-4b44-b206-9e6affa95394 finished programming
+2025-12-19 09:19:57,745 - INFO - Client 40df241c-3851-4b44-b206-9e6affa95394 started programming
+2025-12-19 09:19:57,745 - INFO - Starting programming for file: uploads\40df241c-3851-4b44-b206-9e6affa95394.hex
+2025-12-19 09:19:57,747 - INFO - Executing command: ./pk2cmd.exe -B. -P -FC:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\40df241c-3851-4b44-b206-9e6affa95394.hex -M -Y
+2025-12-19 09:19:57,747 - INFO - Hex file path: C:\Users\mcmin\Documents\GitHub\Dispositivos-programables-UPIICSA\Pickit-WebServer\uploads\40df241c-3851-4b44-b206-9e6affa95394.hex
+2025-12-19 09:19:57,747 - INFO - Hex file exists: True
+2025-12-19 09:19:57,804 - INFO - Command completed with return code: 10
+2025-12-19 09:19:57,804 - INFO - STDOUT: No PICkit 2, 3 or PKOB found.
+
+
+2025-12-19 09:19:57,804 - INFO - STDERR: 
+2025-12-19 09:19:57,804 - ERROR - Programming failed with code 10
+2025-12-19 09:19:57,805 - INFO - Client 40df241c-3851-4b44-b206-9e6affa95394 finished programming

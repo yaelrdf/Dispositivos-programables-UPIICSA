@@ -74,16 +74,8 @@ void main(void) {
 void inicializar_sistema(void) {
     // Configurar OSCCON para 48MHz
     OSCCON = OSCCON_CONFIG;
-    
-    // Configurar TRIS para LCD (PORTD según documentación)
     TRISD = 0x00;  // Todo PORTD como salidas para LCD
-    
-    // Configurar TRIS para Keypad (PORTB según documentación)
-    // RB0-RB3: Salidas (filas)
-    // RB4-RB7: Entradas (columnas) - Requiere pull-up externas
     TRISB = 0xF0;  // RB4-RB7 como entradas (1), RB0-RB3 como salidas (0)
-    
-    // NOTA: Usar resistencias pull-up externas de 10kΩ en RB4-RB7
     
     // Configurar puertos digitales
     ADCON1 = 0x0F;  // Todo digital
@@ -91,16 +83,10 @@ void inicializar_sistema(void) {
 
 void mostrar_mensaje_inicial(void) {
     lcd_clear();
-    //lcd_printCenter("KEYPAD TEST", 0);
-    //lcd_printCenter("Presione tecla", 1);
     __delay_ms(2000);
     
     // Preparar display
     lcd_clear();
-    //lcd_setCursor(0, 0);
-    //lcd_print(">");
-    //lcd_setCursor(15, 0);
-    //lcd_print("<");
     
     lcd_setCursor(0, 1);
     lcd_print("Tecla: ");

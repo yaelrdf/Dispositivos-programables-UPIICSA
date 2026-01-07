@@ -1,113 +1,127 @@
 #include <xc.h>
+#include <stdint.h>
 #include "lcd.h"
 #include "config_bits.h"
 
 #define _XTAL_FREQ 8000000
 
-// Custom character
+// Custom character (convertido a formato LCD-x8c: 8 filas de 5 bits)
 const uint8_t custom_char[8] = {
-  0x11,
-  0x1B,
-  0x15,
-  0x11,
-  0x11,
-  0x0A,
-  0x04,
-  0x00
+    0b10001,   // 0x11 -> 10001
+    0b11011,   // 0x1B -> 11011
+    0b10101,   // 0x15 -> 10101
+    0b10001,   // 0x11 -> 10001
+    0b10001,   // 0x11 -> 10001
+    0b01010,   // 0x0A -> 01010
+    0b00100,   // 0x04 -> 00100
+    0b00000    // 0x00 -> 00000
 };
 
 void main(void) {
+    // Configuración de puertos
+    TRISA = 0xFF;               // Set PORTA as INPUT
+    TRISB = 0x00;               // Set PORTB as OUTPUT
+    ADCON1 = 0x0F;              // Puertos analógicos como digitales
+    OSCCON = 0x70;              // Set internal oscillator to 8MHz
     
-    TRISA = 0xFF;               /* Set PORTA as INPUT */
-    TRISB = 0x00;               /* Set PORTB as OUTPUT */
-    ADCON1 = 0x0F;
-    OSCCON = 0x70;             /* Set internal oscillator to 8MHz */
-    
-    // Initialize LCD on PORTD
-    LCD_Init();
+    // Initialize LCD (16 columnas, 2 filas)
+    lcd_begin(16, 2);
     
     // Create custom character
-    LCD_CreateChar(0, custom_char);
-    
+    lcd_createChar(0, custom_char);
     
     while(1) {
-      // Display messages
-      LCD_SetCursor(0, 0);
-      LCD_String("Holiiiss");
-      
-      __delay_ms(2000);
-      //Second line
-      LCD_SetCursor(1, 0);
-      LCD_String("Sabias que:");
-      
-      __delay_ms(2000);
-      LCD_Clear();
-      
-      LCD_SetCursor(0,0);
-      LCD_String("Te amo");
-      LCD_SetCursor(1,0);
-      LCD_String("Mucho <3");
-
-      __delay_ms(2000);
-      LCD_Clear();
-      LCD_String("Eres muy");
-      LCD_SetCursor(1,0);
-      LCD_String("Importante");
-      LCD_SetCursor(1,0);
-      __delay_ms(2000);
-      LCD_String("                "); 
-      LCD_SetCursor(1,0);
-      LCD_String("para mi"); 
-
-
-      __delay_ms(2000);
-      LCD_Clear();
-      LCD_SetCursor(0,0);
-      LCD_String("Me encantan:");
-      LCD_SetCursor(1,0);
-      LCD_String("Tus abrazos");
-
-      __delay_ms(2000);
-      LCD_Clear();
-      LCD_SetCursor(0,0);
-      LCD_String("Me encantan:");
-      LCD_SetCursor(1,0);
-      LCD_String("Tus besos");
-
-      __delay_ms(2000);
-      LCD_Clear();
-      LCD_SetCursor(0,0);
-      LCD_String("Me encanta:");
-      LCD_SetCursor(1,0);
-      LCD_String("Tu sonrisa");
-      
-      __delay_ms(2000);
-      LCD_Clear();
-      LCD_SetCursor(0,0);
-      LCD_String("Me encanta");
-      LCD_SetCursor(1,0);
-      LCD_String("Tu persona");
-
-      __delay_ms(2000);
-      LCD_Clear();
-      LCD_SetCursor(0,0);
-      LCD_String("Me encanta");
-      LCD_SetCursor(1,0);
-      LCD_String("Tu amor");
-
-      __delay_ms(2000);
-      LCD_Clear();
-      LCD_SetCursor(0,0);
-      LCD_String("Bestabe");
-      LCD_SetCursor(1,0);
-      LCD_String("Te amo muchisimo <3");
-
-      __delay_ms(2000);
-      LCD_Clear();
-      LCD_SetCursor(0,0);
-      LCD_String("No lo olvides");
-      LCD_SetCursor(1,0);
-      LCD_String(":)");
-      __delay_ms(2000);
+        // Display messages
+        lcd_setCursor(0, 0);
+        lcd_print("Holiiiss");
+        
+        __delay_ms(2000);
+        
+        // Second line
+        lcd_setCursor(0, 1);
+        lcd_print("Sabias que:");
+        
+        __delay_ms(2000);
+        lcd_clear();
+        
+        lcd_setCursor(0, 0);
+        lcd_print("Te amo");
+        lcd_setCursor(0, 1);
+        lcd_print("Mucho <3");
+        
+        __delay_ms(2000);
+        lcd_clear();
+        
+        lcd_setCursor(0, 0);
+        lcd_print("Eres muy");
+        lcd_setCursor(0, 1);
+        lcd_print("Importante");
+        
+        __delay_ms(2000);
+        
+        // Efecto especial: limpiar y mostrar "para mi"
+        lcd_setCursor(0, 1);
+        lcd_print("                "); // Limpiar línea 1
+        lcd_setCursor(0, 1);
+        lcd_print("para mi");
+        
+        __delay_ms(2000);
+        lcd_clear();
+        
+        lcd_setCursor(0, 0);
+        lcd_print("Me encantan:");
+        lcd_setCursor(0, 1);
+        lcd_print("Tus abrazos");
+        
+        __delay_ms(2000);
+        lcd_clear();
+        
+        lcd_setCursor(0, 0);
+        lcd_print("Me encantan:");
+        lcd_setCursor(0, 1);
+        lcd_print("Tus besos");
+        
+        __delay_ms(2000);
+        lcd_clear();
+        
+        lcd_setCursor(0, 0);
+        lcd_print("Me encanta:");
+        lcd_setCursor(0, 1);
+        lcd_print("Tu sonrisa");
+        
+        __delay_ms(2000);
+        lcd_clear();
+        
+        lcd_setCursor(0, 0);
+        lcd_print("Me encanta");
+        lcd_setCursor(0, 1);
+        lcd_print("Tu persona");
+        
+        __delay_ms(2000);
+        lcd_clear();
+        
+        lcd_setCursor(0, 0);
+        lcd_print("Me encanta");
+        lcd_setCursor(0, 1);
+        lcd_print("Tu amor");
+        
+        __delay_ms(2000);
+        lcd_clear();
+        
+        lcd_setCursor(0, 0);
+        lcd_print("Bestabe");
+        lcd_setCursor(0, 1);
+        lcd_print("Te amo muchisimo <3");
+        
+        __delay_ms(2000);
+        lcd_clear();
+        
+        lcd_setCursor(0, 0);
+        lcd_print("No lo olvides");
+        lcd_setCursor(0, 1);
+        lcd_print(":)");
+        
+        __delay_ms(2000);
+        lcd_clear();
     }
 }

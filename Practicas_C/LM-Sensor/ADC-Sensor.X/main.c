@@ -9,11 +9,9 @@ void main(void) {
     ADCON1 = 0x0F;
     
     lcd_begin(16, 2);
-    lcd_print("Testing...");
     
-    // Then configure ADC
+    //ADC
     TRISA0 = 1;
-//    ANSEL = 0x01;        // CRITICAL for PIC18F4550!
     ADCON0 = 0x01;
     ADCON1 = 0x0E;
     ADCON2 = 0x8A;

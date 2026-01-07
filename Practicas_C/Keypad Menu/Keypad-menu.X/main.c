@@ -1,6 +1,7 @@
 #include <xc.h>
 #include "lcd.h"
 #include "keypad.h"
+#include "config_bits.h"
 
 #define _XTAL_FREQ 8000000  // Define tu frecuencia aqu�
 
@@ -16,7 +17,6 @@ Keypad_t miTeclado;
 
 // Crear caracteres personalizados
 void crear_caracteres_personalizados(void) {
-    // Car�cter para la '�' - FIXED to look more like "�"
     uint8_t enie[8] = {
         0b11111,
         0b00000,
@@ -28,7 +28,7 @@ void crear_caracteres_personalizados(void) {
         0b10001
     };
     
-    // �rbol de navidad
+    // Arbol de navidad
     uint8_t arbol[8] = {
         0b00100,
         0b01110,
@@ -88,7 +88,7 @@ void crear_caracteres_personalizados(void) {
         0b00000
     };
     
-    // Bloque completo para barra de carga (posici�n 6)
+    // Bloque completo
     uint8_t bloque_completo[8] = {
         0b11111,
         0b11111,
@@ -100,13 +100,13 @@ void crear_caracteres_personalizados(void) {
         0b11111
     };
     
-    lcd_createChar(0, enie);         // � en posici�n 0
-    lcd_createChar(1, arbol);        // �rbol en posici�n 1
-    lcd_createChar(2, estrella);     // estrella en posici�n 2
-    lcd_createChar(3, campana);      // campana en posici�n 3
-    lcd_createChar(4, copo_nieve);   // copo en posici�n 4
-    lcd_createChar(5, regalo);       // regalo en posici�n 5
-    lcd_createChar(6, bloque_completo); // bloque completo en posici�n 6
+    lcd_createChar(0, enie);         
+    lcd_createChar(1, arbol);        
+    lcd_createChar(2, estrella);     
+    lcd_createChar(3, campana);      
+    lcd_createChar(4, copo_nieve);   
+    lcd_createChar(5, regalo);       
+    lcd_createChar(6, bloque_completo); 
 }
 
 // Pantalla principal
@@ -117,7 +117,7 @@ void mostrar_menu_principal(void) {
     lcd_print("A,B,C,D");
 }
 
-// Opci�n A: Feliz Navidad con decoraciones
+
 void opcion_a(void) {
     lcd_clear();
     
@@ -127,12 +127,12 @@ void opcion_a(void) {
     lcd_write(2);  // estrella
     
     lcd_setCursor(2, 1);
-    lcd_write(1);  // �rbol
+    lcd_write(1);  
     lcd_print("Navidad");
-    lcd_write(1);  // �rbol  
+    lcd_write(1);    
     
     while (1) {
-        // Verificar si se presion� '*'
+        
         char tecla = Keypad_GetKey(&miTeclado);
         if (tecla == '*') {
             break;
@@ -155,7 +155,7 @@ void opcion_a(void) {
     }
 }
 
-// Opci�n B: Texto decorativo de Navidad
+
 void opcion_b(void) {
     lcd_clear();
     
@@ -172,29 +172,28 @@ void opcion_b(void) {
     }
 }
 
-// Opci�n C: Barra de carga con "A�o" con �
+
 void opcion_c(void) {
     lcd_clear();
     lcd_printCenter("Cargando...", 0);
     
-    // Barra de progreso simple usando el car�cter de bloque completo
+    // Barra de progreso simple usando el caracter de bloque completo
     for (int pos = 0; pos < 16; pos++) {
         lcd_setCursor(pos, 1);
         lcd_write(6);  // Usar el bloque completo
         __delay_ms(100);
         
-        // Verificar si se presion� '*'
+        // Verificar si se presion '*'
         char tecla = Keypad_GetKey(&miTeclado);
         if (tecla == '*') {
             return;
         }
     }
     
-    // Mensaje final con "�"
     lcd_clear();
     lcd_setCursor(4, 0);
     lcd_print("Feliz A");
-    lcd_write(0);  // Mostrar '�' personalizada
+    lcd_write(0);  // Mostrar personalizada
     lcd_print("o");
     
     lcd_setCursor(4, 1);
@@ -210,7 +209,7 @@ void opcion_c(void) {
     }
 }
 
-// Opci�n D: Reloj simple
+// Opcion D: Reloj simple
 void opcion_d(void) {
     uint8_t minutos = 0;
     uint8_t segundos = 0;
@@ -235,7 +234,7 @@ void opcion_d(void) {
         for (int i = 0; i < 100; i++) {
             __delay_ms(10);
             
-            // Verificar si se presion� '*'
+            // Verificar si se presion '*'
             char tecla = Keypad_GetKey(&miTeclado);
             if (tecla == '*') {
                 return;
@@ -254,10 +253,10 @@ void opcion_d(void) {
 }
 
 void main(void) {
-    // Configuraci�n del PIC
-    OSCCON = 0x72;  // Internal oscillator setup
-    ADCON1 = 0x0F;  // All digital I/O
-    CMCON = 0x07;   // Comparators off
+    // Configuracion del PIC
+    OSCCON = 0x72;  // Configurar oscilador a 8MHz
+    ADCON1 = 0x0F;  // Configurar todos los pines como digitales
+    CMCON = 0x07;  
     
     // Inicializar LCD
     lcd_begin(16, 2);
@@ -288,7 +287,6 @@ void main(void) {
                 opcion_d();
                 break;
             case '*':
-                // Ya estamos en el men� principal
                 break;
             default:
                 // Otra tecla - mostrar mensaje

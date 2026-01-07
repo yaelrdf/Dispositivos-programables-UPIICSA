@@ -52,19 +52,8 @@ void main(void) {
 void inicializar_sistema(void) {
     // Configurar OSCCON para 48MHz
     OSCCON = OSCCON_CONFIG;
-    
-    // Configurar TRIS para LCD (PORTD según documentación)
     TRISD = 0x00;  // Todo PORTD como salidas para LCD
-    
-    // Configurar TRIS para Keypad (PORTB según documentación)
-    // RB0-RB3: Salidas (filas)
-    // RB4-RB7: Entradas (columnas) - SIN pull-up interno
     TRISB = 0xF0;  // RB4-RB7 como entradas (1), RB0-RB3 como salidas (0)
-    
-    // IMPORTANTE: PIC18F4550 no tiene WPUB, usar resistencias pull-up externas
-    // Asegúrate de conectar resistencias de 10kΩ de RB4-RB7 a VCC
-    
-    // Configurar puertos digitales
     ADCON1 = 0x0F;  // Todo digital
 }
 
