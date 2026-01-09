@@ -46,7 +46,7 @@ struct User {
 
 // User database in memory (edit this to add users)
 const User users[] = {
-    {"DEADBEEF", "Admin Master"},
+    {"DEADBEEF", "Admin Mast"},
     {"CAFEBABE", "Super Admin"},
     {"AABBCCDD", "Juan Perez"},
     {"11223344", "Maria Lopez"},

@@ -1,7 +1,7 @@
 #include <xc.h>
 #include "lcd.h"
 #include "keypad.h"
-#include "config_bits.h"
+
 
 #define _XTAL_FREQ 8000000  // Define tu frecuencia aqu�
 
