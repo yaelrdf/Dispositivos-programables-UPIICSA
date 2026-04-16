@@ -3,7 +3,7 @@
 #include "lcd.h"
 #include "keypad.h"
 
-#define _XTAL_FREQ 8000000  // Define tu frecuencia aquí
+#define _XTAL_FREQ 8000000  
 
 // Mapa del teclado
 char teclas[4][4] = {
@@ -14,8 +14,8 @@ char teclas[4][4] = {
 };
 
 Keypad_t miTeclado;
-volatile unsigned int piso = 0;  // Added volatile for interrupt safety
-volatile unsigned char emergency_stop = 0;  // Emergency flag
+volatile unsigned int piso = 0; 
+volatile unsigned char emergency_stop = 0;  
 
 // Pantalla principal
 void idle(void) {
@@ -32,24 +32,22 @@ void emergency_stop_sequence(void) {
     lcd_printCenter("PARADA", 0);
     lcd_printCenter("EMERGENCIA", 1);
     
-    // Wait for reset or acknowledgment
     while (1) {
-        // Check if 'C' is pressed to reset (or any other key you prefer)
         if (Keypad_IsPressed(&miTeclado, 'C')) {
             emergency_stop = 0;  // Clear emergency flag
             __delay_ms(500);     // Debounce delay
             break;
         }
-        __delay_ms(10);  // Small delay to avoid busy waiting
+        __delay_ms(10); 
     }
     
-    idle();  // Return to idle state
+    idle();
 }
 
-// Modified movement functions with emergency check
+
 void subir(void) {
     unsigned int steps = 0;
-    emergency_stop = 0;  // Clear emergency flag at start
+    emergency_stop = 0;  
     
     lcd_clear();
     lcd_printCenter("Subiendo...", 0);
@@ -57,20 +55,17 @@ void subir(void) {
     lcd_print("Piso: ");
     lcd_printNum(piso);
     
-    // Simulate movement with emergency check
-    while (steps < 10 && !emergency_stop) {  // 10 steps simulation
-        __delay_ms(100);  // Movement delay
+    while (steps < 10 && !emergency_stop) { 
+        __delay_ms(100); 
         
-        // Check for emergency stop during movement
         if (Keypad_IsPressed(&miTeclado, 'D')) {
             emergency_stop_sequence();
-            return;  // Exit if emergency activated
+            return; 
         }
         
         steps++;
     }
     
-    // Only increment floor if no emergency
     if (!emergency_stop) {
         piso++;
         idle();
@@ -79,7 +74,7 @@ void subir(void) {
 
 void bajar(void) {
     unsigned int steps = 0;
-    emergency_stop = 0;  // Clear emergency flag at start
+    emergency_stop = 0; 
     
     lcd_clear();
     lcd_printCenter("Bajando...", 0);
@@ -87,20 +82,18 @@ void bajar(void) {
     lcd_print("Piso: ");
     lcd_printNum(piso);
     
-    // Simulate movement with emergency check
-    while (steps < 10 && !emergency_stop) {  // 10 steps simulation
-        __delay_ms(100);  // Movement delay
+
+    while (steps < 10 && !emergency_stop) {  
+        __delay_ms(100);  
         
-        // Check for emergency stop during movement
         if (Keypad_IsPressed(&miTeclado, 'D')) {
             emergency_stop_sequence();
-            return;  // Exit if emergency activated
+            return;  
         }
         
         steps++;
     }
     
-    // Only decrement floor if no emergency
     if (!emergency_stop) {
         piso--;
         idle();
@@ -132,20 +125,17 @@ void main(void) {
     // Inicializar teclado
     Keypad_Init(&miTeclado, teclas);
     
-    emergency_stop = 0;  // Initialize emergency flag
+    emergency_stop = 0;  
     idle();
 
     while (1) {
-        // Check for emergency stop even in idle
         if (Keypad_IsPressed(&miTeclado, 'D')) {
             emergency_stop_sequence();
-            continue;  // Skip the rest of the loop
+            continue;  
         }
         
-        // Esperar entrada del usuario with emergency check
         char tecla = Keypad_WaitForKey(&miTeclado);
         
-        // Check if emergency was pressed while waiting
         if (emergency_stop) {
             continue;
         }
