@@ -18,4 +18,4 @@ Se muestran conexiones recomendadas despues de una revision a la protoboard orig
 - [Diagrama recomendado DISPLAY](Protoboard/Protoboard-Alejandra/Protoboard-Alejandra.pdf)
 - [Archivos de diseño](Protoboard/Protoboard-Alejandra)
 
-Se muestran conexiones recomendadas con base a fotografias y a el conocimiento proporcionado por la practica.
+Se muestran conexiones recomendadas con base a fotografias y a el conocimiento practico.
